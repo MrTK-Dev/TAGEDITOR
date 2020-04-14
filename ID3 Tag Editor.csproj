@@ -107,5 +107,8 @@
     <Folder Include="Files\output\" />
     <Folder Include="resources\" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MrTK_Logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
