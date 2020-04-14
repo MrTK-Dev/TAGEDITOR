@@ -1,0 +1,263 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+using System.IO;
+using System.Diagnostics;
+using System.Drawing;
+
+namespace ID3_Tag_Editor
+{
+    /// <summary>
+    /// Interaktionslogik für MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
+
+        public void OutputCount(object sender, RoutedEventArgs e)
+        {
+            string[] allFiles = Read();
+
+            Console.WriteLine("The folder contains {0} songs.", allFiles.Length);
+
+            for (int i = 0; i < allFiles.Length; i++)
+            {
+                if (allFiles[i].Contains(".mp3"))
+                {
+                    TagLib.File Song = TagLib.File.Create(allFiles[i]);
+
+                    if (Song.Tag.FirstPerformer != null && Song.Tag.Title != null)
+                    {
+                        string newFileName = Song.Tag.FirstPerformer + " - " + Song.Tag.Title.Replace(":", " ").Replace("<", "").Replace(">", "").Replace("/", "_").Replace(@"\", "_");
+                        Debug.WriteLine(newFileName);
+
+                        //Album
+                        if (string.IsNullOrEmpty(Song.Tag.Album))
+                        {
+                            if (ContainsAny(Song.Tag.Title, new string[] {"Remix", "Cover", "Flip", "Rework", "Edit", "Redo", "VIP" }))
+                            {
+                                string newName;
+
+                                //Test
+                                if (!Song.Tag.Title.Contains("["))
+                                {
+                                    if (Song.Tag.Title.Contains("("))
+                                    {
+                                        string[] Splitted = Song.Tag.Title.Split('(');
+
+                                        newName = RemoveLastChar(Splitted[0]);
+                                    }
+
+                                    else
+                                    {
+                                        newName = Song.Tag.Title;
+                                    }
+                                }
+
+                                else
+                                {
+                                    string[] Splitted = Song.Tag.Title.Split('[');
+
+                                    newName = RemoveLastChar(Splitted[0]);
+                                }
+
+                                Song.Tag.Album = newName + " (The Remixes)";
+                            }
+
+                            else
+                            {
+                                Song.Tag.Album = Song.Tag.Title + " - Single";
+                            }
+                        }
+
+                        else
+                        {
+                            string[] Splitted = Song.Tag.Title.Split('[');
+                        }
+
+                        Song.Save();
+
+                        Console.WriteLine("Title: " + Song.Tag.Title);
+                        Console.WriteLine("Artist: " + Song.Tag.FirstPerformer);
+                        Console.WriteLine("Album: " + Song.Tag.Album);
+
+                        if (Modes.text != Modes.Text_Mode.none)
+                        {
+
+                            if (Modes.text == Modes.Text_Mode.all || Modes.text == Modes.Text_Mode.Folders)
+                            {
+                                string newPath = Paths.Output + @"\" + Song.Tag.Album.Replace(":", " ").Replace("/", "_");
+
+                                if (!Directory.Exists(newPath))
+                                {
+                                    Directory.CreateDirectory(newPath);
+
+                                    Debug.WriteLine("Created the directory {0}", Song.Tag.Album);
+                                }
+
+                                File.Move(allFiles[i], newPath + @"\" + newFileName + ".mp3");
+                            }
+
+                            else if (Modes.text == Modes.Text_Mode.Rename)
+                            {
+                                File.Move(allFiles[i], Paths.Output + @"\" + newFileName + ".mp3");
+                            }
+                        }
+
+                        if (Modes.image != Modes.Image_Mode.none || Modes.image_2 != Modes.Image_2_Mode.none)
+                        {
+                            var mStream = new MemoryStream();
+                            var firstPicture = Song.Tag.Pictures.FirstOrDefault();
+                            if (firstPicture != null)
+                            {
+                                byte[] pData = firstPicture.Data.Data;
+                                mStream.Write(pData, 0, Convert.ToInt32(pData.Length));
+                                var CoverImage = new Bitmap(mStream, false);
+                                mStream.Dispose();
+
+                                if (Modes.image == Modes.Image_Mode.CheckSquare || Modes.image == Modes.Image_Mode.all)
+                                {
+                                    if (CoverImage.Width != CoverImage.Height)
+                                    {
+                                        Console.WriteLine("{0} [{1} x {2}]", newFileName, CoverImage.Width, CoverImage.Height);
+                                    }
+                                }
+
+                                if (Modes.image == Modes.Image_Mode.CheckSize || Modes.image == Modes.Image_Mode.all)
+                                {
+                                    if (CoverImage.Width > 2000)
+                                    {
+                                        Console.WriteLine("{0} [{1} x {2}]", newFileName, CoverImage.Width, CoverImage.Height);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tags are missing!");
+                    }
+                }
+            }
+        }
+
+        public void ChangeImage(object sender, RoutedEventArgs e)
+        {
+            if (Modes.image_2 == Modes.Image_2_Mode.overwrite)
+            {
+                string[] allFiles = Directory.GetFiles(Paths.ImageSource);
+
+                List<string> SongFiles = new List<string>();
+                List<string> Coverfile = new List<string>();
+
+                for (int i = 0; i < allFiles.Length; i++)
+                {
+                    if (allFiles[i].Contains(".mp3"))
+                    {
+                        SongFiles.Add(allFiles[i]);
+                    }
+                    else if (allFiles[i].Contains("folder."))
+                    {
+                        Coverfile.Add(allFiles[i]);
+                    }
+                }
+
+                for (int i = 0; i < SongFiles.Count; i++)
+                {
+                    TagLib.File Song = TagLib.File.Create(SongFiles[i]);
+                    Debug.WriteLine(Song.Tag.Track);
+
+                    if (File.Exists(Coverfile[0]))
+                    {
+                        var pic = new TagLib.IPicture[1];
+                        pic[0] = new TagLib.Picture(Coverfile[0]);
+                        Song.Tag.Pictures = pic;
+                        Song.Save();
+                    }
+                }
+            }
+        }
+
+        public string[] Read()
+        {
+            return Directory.GetFiles(Paths.Input);
+
+            //return Directory.GetFiles(@"F:\Μουσική\MusicALL");
+        }
+
+        public string RemoveLastChar(string Input)
+        {
+            return Input.Substring(0, Input.Length - 1);
+        }
+
+        public bool ContainsAny(string Input, string[] Chars)
+        {
+            for (int i = 0; i < Chars.Length; i++)
+            {
+                if (Input.Contains(Chars[i]))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static class Paths
+        {
+            public static string Input = @"F:\Μουσική\________";
+
+            public static string Output = Input;
+
+            public static string ImageSource = @"F:\Μουσική\________\Infected Mushroom - More than Just a Name MP3_320";
+        }
+
+        public static class Modes
+        {
+            public static Text_Mode text = Text_Mode.all;
+            public static Image_Mode image = Image_Mode.all;
+            public static Image_2_Mode image_2 = Image_2_Mode.overwrite;
+
+            public enum Text_Mode
+            {
+                Folders,
+                Rename,
+                all,
+                none
+            }
+
+            public enum Image_Mode
+            {
+                CheckSize,
+                CheckSquare,
+                all,
+                none
+            }
+
+            public enum Image_2_Mode
+            {
+                delete,
+                overwrite,
+                none
+            }
+        }
+    }
+}
+
+/*
+
+ */
