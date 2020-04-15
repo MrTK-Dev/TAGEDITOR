@@ -62,6 +62,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Saves.cs" />
+    <Compile Include="scripts\DefaultVar.cs" />
+    <Compile Include="scripts\TabHandler.cs" />
+    <Compile Include="scripts\Settings.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

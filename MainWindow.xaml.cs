@@ -255,6 +255,11 @@ namespace ID3_Tag_Editor
                 none
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
 
