@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Diagnostics;
 using System.Drawing;
+using ID3_Tag_Editor;
+using Scripts;
 
 namespace ID3_Tag_Editor
 {
@@ -23,9 +25,19 @@ namespace ID3_Tag_Editor
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow Main;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            UI.allSubMenus = new List<StackPanel>()
+            {
+                panel_SubMenu_Automation,
+                panel_SubMenu_Editor
+            };
+
+            Scripts.PanelHandler.HideSubMenus();
         }
 
         public void OutputCount(object sender, RoutedEventArgs e)
@@ -256,11 +268,27 @@ namespace ID3_Tag_Editor
             }
         }
 
+        private void Button_OpenSubMenu_Automation(object sender, RoutedEventArgs e)
+        {
+            Scripts.PanelHandler.HighlightSubMenu(panel_SubMenu_Automation);
+        }
+
+        private void Button_OpenSubMenu_Editor(object sender, RoutedEventArgs e)
+        {
+            Scripts.PanelHandler.HighlightSubMenu(panel_SubMenu_Editor);
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        public static class UI
+        {
+            public static List<StackPanel> allSubMenus = new List<StackPanel>();
+        }
     }
+
 }
 
 /*

@@ -5,29 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ID3_Tag_Editor"
         mc:Ignorable="d"
-        Title="TAGEDITOR by MrTK" Height="600" Width="950" ResizeMode="CanResizeWithGrip" Icon="MrTK_Logo.png" MinHeight="600" MinWidth="950">
+        Title="TAGEDITOR by MrTK" Height="600" Width="950" ResizeMode="CanResizeWithGrip" Icon="MrTK_Logo.png" MinHeight="600" MinWidth="950" Background="#FFB2C3C7" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <local:TabHandler x:Key="TabHandling"/>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
 
         </Grid.ColumnDefinitions>
-        <Button Content="Rename" HorizontalAlignment="Left" Margin="335,200,0,0" VerticalAlignment="Top" Width="75" Click="OutputCount"/>
-        <Button Content="Image" HorizontalAlignment="Left" Margin="335,270,0,0" VerticalAlignment="Top" Width="75" Click="ChangeImage"/>
+        <Button Content="Rename" HorizontalAlignment="Left" Margin="1160,120,-293,0" VerticalAlignment="Top" Width="75" Click="OutputCount"/>
+        <Button Name="Test1" Content="Image" HorizontalAlignment="Left" Margin="1160,190,-293,0" VerticalAlignment="Top" Width="75" Click="ChangeImage"/>
         <StackPanel x:Name="panel_SideMenu" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Stretch" Width="100" Background="#FF2A2A2A" CanVerticallyScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
-            <Button Content="Automation" HorizontalAlignment="Left" Height="40" Margin="0,0,0,0" Width="100" Click="Button_Click"/>
-            <StackPanel x:Name="panel_Sub_Automation" Height="80" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
+            <Button Content="Automation" Height="40" Margin="0,0,0,0" Click="Button_OpenSubMenu_Automation"/>
+            <StackPanel x:Name="panel_SubMenu_Automation" Height="80" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
                 <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Background="#FF2A2A2A" Foreground="White" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
                 <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
                 <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
                 <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Background="#FF2A2A2A" Foreground="White" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
             </StackPanel>
-            <Button Content="Editor" HorizontalAlignment="Left" Height="40" Margin="0,0,0,0" Width="100" Click="Button_Click"/>
-            <StackPanel x:Name="panel_Sub_Editor" Height="100" Margin="0,0,0,0" Width="100" Background="#FF780A0A"/>
+            <Button Content="Editor" HorizontalAlignment="Left" Height="40" Margin="0,0,0,0" Width="100" Click="Button_OpenSubMenu_Editor"/>
+            <StackPanel x:Name="panel_SubMenu_Editor" Height="100" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
+                <StackPanel x:Name="panel_SubMenu_Automation_Copy" Height="80" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
+                    <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Background="#FF2A2A2A" Foreground="White" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
+                    <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
+                    <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
+                    <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Background="#FF2A2A2A" Foreground="White" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
         <Image x:Name="image_Logo" HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="MrTK_Logo.png"/>
         <StackPanel x:Name="panel_TopMenu" HorizontalAlignment="Stretch" Height="100" Margin="100,0,0,0" VerticalAlignment="Top" Background="#FF2D285B"/>
         <StackPanel x:Name="panel_BottomMenu" HorizontalAlignment="Stretch" Height="10" Margin="100,0,10,0" VerticalAlignment="Bottom" Background="#FF87733C"/>
         <StackPanel x:Name="panel_EditorPopUp" HorizontalAlignment="Right"  Margin="0,100,10,10" VerticalAlignment="Stretch" Width="152" Background="#FF889772"/>
         <StackPanel x:Name="panel_RightMenu" HorizontalAlignment="Right" Margin="0,100,0,10" VerticalAlignment="Stretch" Width="10" Background="#FF0FFF66"/>
+        <DockPanel HorizontalAlignment="Stretch" LastChildFill="False" Margin="100,100,162,10" VerticalAlignment="Stretch" Background="#FFC3A2A2"/>
 
     </Grid>
 </Window>

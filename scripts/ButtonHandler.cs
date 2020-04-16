@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ID3_Tag_Editor
 {
-    class DefaultVar
+    class ButtonHandler
     {
-        
     }
 }

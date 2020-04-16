@@ -62,7 +62,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Saves.cs" />
+    <Compile Include="scripts\PanelHandler.cs" />
+    <Compile Include="scripts\ButtonHandler.cs" />
+    <Compile Include="scripts\Saves.cs" />
     <Compile Include="scripts\DefaultVar.cs" />
     <Compile Include="scripts\TabHandler.cs" />
     <Compile Include="scripts\Settings.cs" />
