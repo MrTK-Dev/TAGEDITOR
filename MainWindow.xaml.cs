@@ -25,8 +25,6 @@ namespace ID3_Tag_Editor
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static MainWindow Main;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -37,7 +35,7 @@ namespace ID3_Tag_Editor
                 panel_SubMenu_Editor
             };
 
-            Scripts.PanelHandler.HideSubMenus();
+            PanelHandler.HideSubMenus();
         }
 
         public void OutputCount(object sender, RoutedEventArgs e)
@@ -60,7 +58,7 @@ namespace ID3_Tag_Editor
                         //Album
                         if (string.IsNullOrEmpty(Song.Tag.Album))
                         {
-                            if (ContainsAny(Song.Tag.Title, new string[] {"Remix", "Cover", "Flip", "Rework", "Edit", "Redo", "VIP" }))
+                            if (Song.Tag.Title.ContainsAny(new string[] {"Remix", "Cover", "Flip", "Rework", "Edit", "Redo", "VIP" }))
                             {
                                 string newName;
 
@@ -71,7 +69,7 @@ namespace ID3_Tag_Editor
                                     {
                                         string[] Splitted = Song.Tag.Title.Split('(');
 
-                                        newName = RemoveLastChar(Splitted[0]);
+                                        newName = Splitted[0].RemoveLastChar();
                                     }
 
                                     else
@@ -84,7 +82,7 @@ namespace ID3_Tag_Editor
                                 {
                                     string[] Splitted = Song.Tag.Title.Split('[');
 
-                                    newName = RemoveLastChar(Splitted[0]);
+                                    newName = Splitted[0].RemoveLastChar();
                                 }
 
                                 Song.Tag.Album = newName + " (The Remixes)";
@@ -206,27 +204,10 @@ namespace ID3_Tag_Editor
 
         public string[] Read()
         {
-            return Directory.GetFiles(Paths.Input);
-
-            //return Directory.GetFiles(@"F:\Μουσική\MusicALL");
-        }
-
-        public string RemoveLastChar(string Input)
-        {
-            return Input.Substring(0, Input.Length - 1);
-        }
-
-        public bool ContainsAny(string Input, string[] Chars)
-        {
-            for (int i = 0; i < Chars.Length; i++)
-            {
-                if (Input.Contains(Chars[i]))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            if (User.Paths.Import != null)
+                return Directory.GetFiles(User.Paths.Import);
+            else
+                return null;
         }
 
         public static class Paths
@@ -240,9 +221,9 @@ namespace ID3_Tag_Editor
 
         public static class Modes
         {
-            public static Text_Mode text = Text_Mode.all;
+            public static Text_Mode text = Text_Mode.Rename;
             public static Image_Mode image = Image_Mode.all;
-            public static Image_2_Mode image_2 = Image_2_Mode.overwrite;
+            public static Image_2_Mode image_2 = Image_2_Mode.none;
 
             public enum Text_Mode
             {
@@ -287,10 +268,12 @@ namespace ID3_Tag_Editor
         {
             public static List<StackPanel> allSubMenus = new List<StackPanel>();
         }
+
+        private void Button_Click_OpenFileDialog(object sender, RoutedEventArgs e)
+        {
+            //User.OpenFileDialogSample.OpenDialog(TextBox_Dialog);
+
+            User.FolderBrowserDialogSample.OpenDialog(TextBox_Dialog);
+        }
     }
-
 }
-
-/*
-
- */
