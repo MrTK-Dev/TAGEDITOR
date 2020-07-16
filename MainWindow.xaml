@@ -41,10 +41,10 @@
         <DockPanel HorizontalAlignment="Stretch" LastChildFill="False" Margin="100,100,162,10" VerticalAlignment="Stretch" Background="#FFC3A2A2">
             <Button Content="Rename" Height="459" VerticalAlignment="Top" Width="75"  Click="OutputCount"/>
         </DockPanel>
-        <Button Content="Input Folder" HorizontalAlignment="Left" Margin="270,335,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_OpenFileDialog"/>
-        <TextBox x:Name="TextBox_Dialog" HorizontalAlignment="Left" Height="85" Margin="255,380,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Output Folder" HorizontalAlignment="Left" Margin="460,335,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_OpenFileDialog"/>
-        <TextBox x:Name="TextBox_Dialog_Copy" HorizontalAlignment="Left" Height="85" Margin="460,380,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="test123" Content="Input Folder" HorizontalAlignment="Left" Margin="270,335,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_OpenFolderDialog_Input"/>
+        <TextBox x:Name="TextBox_Dialog_Input" HorizontalAlignment="Left" Height="85" Margin="255,380,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Output Folder" HorizontalAlignment="Left" Margin="460,335,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_OpenFolderDialog_Output"/>
+        <TextBox x:Name="TextBox_Dialog_Output" HorizontalAlignment="Left" Height="85" Margin="460,380,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

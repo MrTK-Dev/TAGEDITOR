@@ -269,11 +269,18 @@ namespace ID3_Tag_Editor
             public static List<StackPanel> allSubMenus = new List<StackPanel>();
         }
 
-        private void Button_Click_OpenFileDialog(object sender, RoutedEventArgs e)
+        private void Button_Click_OpenFolderDialog_Input(object sender, RoutedEventArgs e)
         {
-            //User.OpenFileDialogSample.OpenDialog(TextBox_Dialog);
+            Debug.WriteLine(sender.ToString());
 
-            User.FolderBrowserDialogSample.OpenDialog(TextBox_Dialog);
+            User.FolderBrowserDialogSample.OpenDialog(TextBox_Dialog_Input);
+        }
+
+        private void Button_Click_OpenFolderDialog_Output(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine(sender.ToString());
+
+            User.FolderBrowserDialogSample.OpenDialog(TextBox_Dialog_Output);
         }
     }
 }
