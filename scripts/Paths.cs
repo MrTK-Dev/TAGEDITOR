@@ -11,6 +11,8 @@ using ID3_Tag_Editor;
 using System.Windows.Forms;
 using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 using TextBox = System.Windows.Controls.TextBox;
+using ID3_Tag_Editor.scripts;
+using static User.Paths;
 
 namespace User
 {
@@ -19,28 +21,62 @@ namespace User
     /// </summary>
     public static class Paths
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        //private static string DefaultPath = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
-        private static string DefaultPath = @"F:\Μουσική\________";
+        public static class Defaults
+        {
+            public static string Music = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
+        }
 
         /// <summary>
         /// 
         /// </summary>
-        public static string Import = DefaultPath;
+        public static string Import = Defaults.Music;
 
         /// <summary>
         /// 
         /// </summary>
-        public static string Export = DefaultPath;
+        public static string Export = Import;
 
         /// <summary>
         /// 
         /// </summary>
         public static string ImageFile = null;
+
+        public enum PathType
+        {
+            INPUT,
+            OUTPUT,
+            NONE
+        }
     }
 
+    public partial class PathMethods : MainWindow
+    {
+        public static void SelectFolder(TextBox textBox, PathType pathType)
+        {
+            if (pathType != PathType.NONE)
+            {
+                string newPath = OpenStuff.Folders.OpenDialog("Hallo", Defaults.Music);
+
+                if (pathType == PathType.INPUT)
+                    Import = newPath;
+
+                else if (pathType == PathType.OUTPUT)
+                    Export = newPath;
+
+                textBox.Text = newPath;
+            }
+
+            else
+            {
+                //Error
+            }
+        }
+
+        public static void SelectFile()
+        {
+
+        }
+    }
 
     public partial class OpenFileDialogSample : MainWindow
     {
@@ -66,31 +102,6 @@ namespace User
 
             //if (openFileDialog.ShowDialog() == true)
                 textBox.Text = Path.GetFileName(openFileDialog.FileName);
-        }
-    }
-
-    public partial class FolderBrowserDialogSample : MainWindow
-    {
-        public FolderBrowserDialogSample()
-        {
-            InitializeComponent();
-        }
-
-        public static void OpenDialog(TextBox textBox)
-        {
-            FolderBrowserDialog objDialog = new FolderBrowserDialog();
-
-            objDialog.Description = "lolsfjasfjafjsijaf";
-
-            objDialog.SelectedPath = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
-
-            DialogResult newResult = objDialog.ShowDialog();
-
-            if (newResult == System.Windows.Forms.DialogResult.OK)
-                textBox.Text = objDialog.SelectedPath;
-
-            else
-                textBox.Text = "Invalid Input!";
         }
     }
 }

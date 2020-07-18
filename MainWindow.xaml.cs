@@ -17,6 +17,7 @@ using System.Diagnostics;
 using System.Drawing;
 using ID3_Tag_Editor;
 using Scripts;
+using User;
 
 namespace ID3_Tag_Editor
 {
@@ -110,7 +111,7 @@ namespace ID3_Tag_Editor
 
                             if (Modes.text == Modes.Text_Mode.all || Modes.text == Modes.Text_Mode.Folders)
                             {
-                                string newPath = Paths.Output + @"\" + Song.Tag.Album.Replace(":", " ").Replace("/", "_");
+                                string newPath = User.Paths.Export + @"\" + Song.Tag.Album.Replace(":", " ").Replace("/", "_");
 
                                 if (!Directory.Exists(newPath))
                                 {
@@ -124,7 +125,7 @@ namespace ID3_Tag_Editor
 
                             else if (Modes.text == Modes.Text_Mode.Rename)
                             {
-                                File.Move(allFiles[i], Paths.Output + @"\" + newFileName + ".mp3");
+                                File.Move(allFiles[i], User.Paths.Export + @"\" + newFileName + ".mp3");
                             }
                         }
 
@@ -169,7 +170,7 @@ namespace ID3_Tag_Editor
         {
             if (Modes.image_2 == Modes.Image_2_Mode.overwrite)
             {
-                string[] allFiles = Directory.GetFiles(Paths.ImageSource);
+                string[] allFiles = Directory.GetFiles(Paths.ImageFile);
 
                 List<string> SongFiles = new List<string>();
                 List<string> Coverfile = new List<string>();
@@ -205,18 +206,9 @@ namespace ID3_Tag_Editor
         public string[] Read()
         {
             if (User.Paths.Import != null)
-                return Directory.GetFiles(User.Paths.Import);
+                return Directory.GetFiles(Paths.Import);
             else
                 return null;
-        }
-
-        public static class Paths
-        {
-            public static string Input = @"F:\Μουσική\________";
-
-            public static string Output = Input;
-
-            public static string ImageSource = @"F:\Μουσική\________\Infected Mushroom - More than Just a Name MP3_320";
         }
 
         public static class Modes
@@ -269,18 +261,14 @@ namespace ID3_Tag_Editor
             public static List<StackPanel> allSubMenus = new List<StackPanel>();
         }
 
-        private void Button_Click_OpenFolderDialog_Input(object sender, RoutedEventArgs e)
+        private void BClick_SelectFolder_Input(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine(sender.ToString());
-
-            User.FolderBrowserDialogSample.OpenDialog(TextBox_Dialog_Input);
+            PathMethods.SelectFolder(TextBox_Dialog_Input, User.Paths.PathType.INPUT);
         }
 
-        private void Button_Click_OpenFolderDialog_Output(object sender, RoutedEventArgs e)
+        private void BClick_SelectFolder_Output(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine(sender.ToString());
-
-            User.FolderBrowserDialogSample.OpenDialog(TextBox_Dialog_Output);
+            PathMethods.SelectFolder(TextBox_Dialog_Output, User.Paths.PathType.OUTPUT);
         }
     }
 }
