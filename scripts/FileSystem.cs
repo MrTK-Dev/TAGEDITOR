@@ -15,6 +15,11 @@ namespace ID3_Tag_Editor.scripts
     /// </summary>
     public static class FileSystem
     {
+        /// <summary>
+        /// Serializes a given object to a json-formatted string.
+        /// </summary>
+        /// <param name="Object">The object that gets serialized.</param>
+        /// <returns>String in json format.</returns>
         private static string ConvertToJSON(object Object)
         {
             var options = new JsonSerializerOptions
@@ -22,11 +27,15 @@ namespace ID3_Tag_Editor.scripts
                 WriteIndented = true
             };
 
-            string newContent = System.Text.Json.JsonSerializer.Serialize(Object, options);
-
-            return newContent;
+            return System.Text.Json.JsonSerializer.Serialize(Object, options); ;
         }
 
+        /// <summary>
+        /// Saves an object to the given file.
+        /// </summary>
+        /// <param name="Path">Folder containing the created file.</param>
+        /// <param name="fileName">Name of the created file. Fileending is automatical set to ".json".</param>
+        /// <param name="Content">The object that gets saved.</param>
         public static void SaveToJSON(string Path, string fileName, object Content)
         {
             File.WriteAllText(Paths.GetFullPath(Path, fileName + ".json"), ConvertToJSON(Content));
@@ -37,6 +46,12 @@ namespace ID3_Tag_Editor.scripts
             return System.Text.Json.JsonSerializer.Deserialize<dynamic>(File.ReadAllText(Paths.GetFullPath(Path, fileName + ".json")));
         }*/
 
+        /// <summary>
+        /// Returns an "dynamic" object from a read file. The given object has to be used as a dynamic object, so better cache values!
+        /// </summary>
+        /// <param name="Path">Folder containing the wanted file.</param>
+        /// <param name="fileName">Name of the wanted file. Fileending is automatical set to ".json".</param>
+        /// <returns>The "dynamic" object. Better be careful!</returns>
         public static object ReadFromJSON2(string Path, string fileName)
         {
             return JsonConvert.DeserializeObject(File.ReadAllText(Paths.GetFullPath(Path, fileName + ".json")));
@@ -47,6 +62,10 @@ namespace ID3_Tag_Editor.scripts
 
         }
 
+        /// <summary>
+        /// Creates a directory if it does not exist.
+        /// </summary>
+        /// <param name="Path">Path to the wanted folder.</param>
         public static void CreateDirectory(string Path)
         {
             if (!IsDirectory(Path))
@@ -55,16 +74,24 @@ namespace ID3_Tag_Editor.scripts
             }
         }
 
+        /// <summary>
+        /// Checks if the given directory exists. This functions exists because of the weird relative paths.
+        /// </summary>
+        /// <param name="Path">Path to the wanted directory.</param>
+        /// <returns>True, if the directory exists.</returns>
         public static bool IsDirectory(string Path)
         {
             return Directory.Exists(Paths.GetFullPath(Path));
         }
 
+        /// <summary>
+        /// Checks if the given file exists. This functions exists because of the weird relative paths.
+        /// </summary>
+        /// <param name="Path"></param>
+        /// <param name="fileName"></param>
+        /// <returns>True, if the file exists.</returns>
         public static bool IsFile(string Path, string fileName)
         {
-
-            Debug.WriteLine(Paths.GetFullPath(Path, fileName));
-
             return File.Exists(Paths.GetFullPath(Path, fileName));
         }
     }
