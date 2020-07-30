@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace ID3_Tag_Editor
@@ -35,6 +36,23 @@ namespace ID3_Tag_Editor
         public static string RemoveLastChar(this string Input)
         {
             return Input.Substring(0, Input.Length - 1);
+        }
+
+        #endregion
+
+        #region JsonElement
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="jsonElement"></param>
+        /// <returns></returns>
+        public static T ToObject<T>(this JsonElement jsonElement)
+        {
+            var json = jsonElement.GetRawText();
+
+            return JsonSerializer.Deserialize<T>(json);
         }
 
         #endregion

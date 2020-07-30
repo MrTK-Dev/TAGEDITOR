@@ -30,13 +30,26 @@ namespace ID3_Tag_Editor
         {
             InitializeComponent();
 
+            #region LoadUI Variables
+
             UI.allSubMenus = new List<StackPanel>()
             {
                 panel_SubMenu_Automation,
                 panel_SubMenu_Editor
             };
 
+            UI.userPathBoxes.Import = TextBox_Dialog_Input;
+            UI.userPathBoxes.Export = TextBox_Dialog_Output;
+
+            #endregion
+
+            #region LoadUI Graphics
+
             PanelHandler.HideSubMenus();
+
+            #endregion
+
+            Settings.Load();
         }
 
         public void OutputCount(object sender, RoutedEventArgs e)
@@ -97,7 +110,7 @@ namespace ID3_Tag_Editor
 
                         else
                         {
-                            string[] Splitted = Song.Tag.Title.Split('[');
+                            //string[] Splitted = Song.Tag.Title.Split('[');
                         }
 
                         Song.Save();
@@ -164,6 +177,8 @@ namespace ID3_Tag_Editor
                     }
                 }
             }
+
+            Settings.Save();
         }
 
         public void ChangeImage(object sender, RoutedEventArgs e)
@@ -259,6 +274,13 @@ namespace ID3_Tag_Editor
         public static class UI
         {
             public static List<StackPanel> allSubMenus = new List<StackPanel>();
+
+            public static class userPathBoxes
+            {
+                public static TextBox Import = new TextBox();
+
+                public static TextBox Export = new TextBox();
+            }
         }
 
         private void BClick_SelectFolder_Input(object sender, RoutedEventArgs e)

@@ -9,7 +9,7 @@ namespace ID3_Tag_Editor
 {
     public static class Saves
     {
-        public static void jaloley()
+        public static void Jaloley()
         {
             
         }

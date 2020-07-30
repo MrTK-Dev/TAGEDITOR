@@ -13,6 +13,8 @@ using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 using TextBox = System.Windows.Controls.TextBox;
 using ID3_Tag_Editor.scripts;
 using static User.Paths;
+using System.Reflection;
+using System.Diagnostics;
 
 namespace User
 {
@@ -24,6 +26,28 @@ namespace User
         public static class Defaults
         {
             public static string Music = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
+        }
+
+        public static string GetApplicationPath()
+        {
+            //ONLY WHILE DEBUG
+            var location = new Uri(Assembly.GetEntryAssembly().GetName().CodeBase);
+
+            return Path.GetFullPath(Path.Combine(new FileInfo(location.AbsolutePath).Directory.FullName + @"\", @"..\..\")).Replace("%", " ").Replace("20", "");
+        }
+
+        public static string GetFullPath(string Path)
+        {
+            return GetFullPath(Path, null);
+        }
+
+        public static string GetFullPath(string Path, string fileName)
+        {
+            if (fileName == null)
+                return GetApplicationPath() + Path;
+
+            else
+                return GetApplicationPath() + Path + @"/" + fileName;
         }
 
         /// <summary>
@@ -55,15 +79,21 @@ namespace User
         {
             if (pathType != PathType.NONE)
             {
-                string newPath = OpenStuff.Folders.OpenDialog("Hallo", Defaults.Music);
-
                 if (pathType == PathType.INPUT)
-                    Import = newPath;
+                {
+                    Import = OpenStuff.Folders.OpenDialog("Hallo", Import);
+
+                    textBox.Text = Import;
+                }
 
                 else if (pathType == PathType.OUTPUT)
-                    Export = newPath;
+                {
+                    Export = OpenStuff.Folders.OpenDialog("Hallo", Export);
 
-                textBox.Text = newPath;
+                    textBox.Text = Export;
+                }
+
+                Settings.Save();
             }
 
             else
