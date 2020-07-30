@@ -75,6 +75,32 @@ namespace ID3_Tag_Editor.scripts
         }
 
         /// <summary>
+        /// Returns an array of filenames of the given path.
+        /// </summary>
+        /// <param name="Path">The path with the wanted files.</param>
+        /// <param name="subFolders">Wether the search considers subfolders.</param>
+        /// <returns>An array of filenames.</returns>
+        public static string[] GetFilesFromDirectory(string Path)
+        {
+            return GetFilesFromDirectory(Path, false);
+        }
+
+        public static string[] GetFilesFromDirectory(string Path, bool subFolders)
+        {
+            if (IsDirectory(Path))
+            {
+                if (subFolders)
+                    return Directory.GetFiles(Path, "", SearchOption.AllDirectories);
+
+                else
+                    return Directory.GetFiles(Path);
+            }
+
+            else
+                return null;
+        }
+
+        /// <summary>
         /// Checks if the given directory exists. This functions exists because of the weird relative paths.
         /// </summary>
         /// <param name="Path">Path to the wanted directory.</param>

@@ -18,6 +18,7 @@ using System.Drawing;
 using ID3_Tag_Editor;
 using Scripts;
 using User;
+using ID3_Tag_Editor.scripts;
 
 namespace ID3_Tag_Editor
 {
@@ -54,7 +55,7 @@ namespace ID3_Tag_Editor
 
         public void OutputCount(object sender, RoutedEventArgs e)
         {
-            string[] allFiles = Read();
+            string[] allFiles = FileSystem.GetFilesFromDirectory(Paths.Import, true);
 
             Console.WriteLine("The folder contains {0} songs.", allFiles.Length);
 
@@ -216,14 +217,6 @@ namespace ID3_Tag_Editor
                     }
                 }
             }
-        }
-
-        public string[] Read()
-        {
-            if (User.Paths.Import != null)
-                return Directory.GetFiles(Paths.Import);
-            else
-                return null;
         }
 
         public static class Modes
