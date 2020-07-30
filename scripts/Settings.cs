@@ -1,18 +1,17 @@
 ﻿using ID3_Tag_Editor.scripts;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ID3_Tag_Editor
 {
     class Settings
     {
-        public static string settingsPath = @"User/Settings";
+        #region Variables
 
-        public static bool firstRun = true;
+        static readonly string settingsPath = @"User/Settings";
+
+        static bool firstRun = true;
+
+        #endregion
 
         #region Paths
 
@@ -22,61 +21,57 @@ namespace ID3_Tag_Editor
             public string Export { get; set; }
         }
 
-        static UserPaths userPaths = new UserPaths();
+        private static readonly UserPaths userPaths = new UserPaths();
 
         public static void LoadUserPaths(dynamic newUserPaths)
         {
-            string newImport = newUserPaths.Import;
+            User.Paths.Import = newUserPaths.Import;
 
-            string newExport = newUserPaths.Export;
+            User.Paths.Export = newUserPaths.Export;
 
-            User.Paths.Import = newImport;
+            MainWindow.UI.userPathBoxes.Import.Text = newUserPaths.Import;
 
-            MainWindow.UI.userPathBoxes.Import.Text = newImport;
-
-            Debug.WriteLine("Import: " + newImport);
-
-            User.Paths.Export = newExport;
-
-            MainWindow.UI.userPathBoxes.Export.Text = newExport;
-
-            Debug.WriteLine("Export: " + newExport);
+            MainWindow.UI.userPathBoxes.Export.Text = newUserPaths.Export;
         }
 
-        #endregion
-
-        public static void Save()
+        public static void SaveUserPaths()
         {
             Debug.WriteLine("Starting to save userPaths to File...");
 
             userPaths.Import = User.Paths.Import;
 
-            Debug.WriteLine("Import: " + userPaths.Import);
-
             userPaths.Export = User.Paths.Export;
-
-            Debug.WriteLine("Export: " + userPaths.Export);
 
             FileSystem.SaveToJSON(settingsPath, "Paths", userPaths);
 
             Debug.WriteLine("...saving done!");
         }
 
+        #endregion
+
+        #region Main
+
         public static void Load()
         {
             if (firstRun)
             {
-                if (!FileSystem.IsFile(settingsPath, "Paths.json"))
-                {
+                if (!FileSystem.IsDirectory(settingsPath))
                     FileSystem.CreateDirectory(settingsPath);
 
-                    Save();
-                }
+                if (!FileSystem.IsFile(settingsPath, "Paths.json"))
+                    SaveUserPaths();
 
                 firstRun = false;
             }
 
             LoadUserPaths(FileSystem.ReadFromJSON2(settingsPath, "Paths"));
         }
+
+        public static void Save()
+        {
+            SaveUserPaths();
+        }
+
+        #endregion
     }
 }
