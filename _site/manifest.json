@@ -1,0 +1,416 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/Megaport/source/repos/ID3 Tag Editor",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "CHANGELOG.html",
+          "hash": "n0WP076mktVHPfPJIpjeEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "VbiYQIawa5f7gH4vxhrlDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "gdhPrzl/5igsaQOu1Y0iVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "/eC9+DNeB8EDqZppw/sRYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "nw3zOG3j1J/ea/ir+fSKEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.App.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.App.html",
+          "hash": "AFY8oyYu3eCRiPwYLRIvww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.Extensions.html",
+          "hash": "BHSNTJzDN7qp0RPGxFHu3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.html",
+          "hash": "vWZ6Lro7nJlPXRDIct0ZRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html",
+          "hash": "mqW4ObilJAT86LqhngArUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html",
+          "hash": "RqhXcU9a5rMKYtfOylkr7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.Modes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.html",
+          "hash": "YPP8U/ECVPbbIEM5tFim5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.UI.userPathBoxes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.UI.userPathBoxes.html",
+          "hash": "OlkinF0YQUtj07tvczkBwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.UI.html",
+          "hash": "CqlUjJpEb95L4bH6emwZhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.MainWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.MainWindow.html",
+          "hash": "k7EEb8ypGDUwIu0n/sCxlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.Names.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.Names.html",
+          "hash": "qHZCjDp/d+0Cf6ItcV2M8Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.Saves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.Saves.html",
+          "hash": "uk+MN7JjYWjLFKIqQ+R4tQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.scripts.FileSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.scripts.FileSystem.html",
+          "hash": "SWRqoKW1Zp+Wc/8QD6Nvhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.scripts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.scripts.html",
+          "hash": "f6c0b2lm0ncPfLVawTAYnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.html",
+          "hash": "IjuXlIKqrERb+3CqLMYc6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Scripts.PanelHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Scripts.PanelHandler.html",
+          "hash": "dr9eIuH0P3nNdwSCG3nJgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Scripts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Scripts.html",
+          "hash": "FnUMVzsBVOuuu0PvG48LmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/User.OpenFileDialogSample.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/User.OpenFileDialogSample.html",
+          "hash": "zEaU/9mX6lNDrjs1gjMbXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/User.PathMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/User.PathMethods.html",
+          "hash": "oAC9gRcZzbPdK9y5RISkCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/User.Paths.Defaults.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/User.Paths.Defaults.html",
+          "hash": "x3yX158jQ57t4tsYuJHjVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/User.Paths.PathType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/User.Paths.PathType.html",
+          "hash": "aFK2DAxEcJM1F3+AKi7DOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/User.Paths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/User.Paths.html",
+          "hash": "C3/cYOBM8qq/rh0hSDeCwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/User.html",
+          "hash": "RNCUJQUkAGZd9UkHgsXGBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "obj/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "bRU5750KpdwE2I2Ex7yURg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "G2AoE5T/2VarbHvzLEo4TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 5,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 22,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

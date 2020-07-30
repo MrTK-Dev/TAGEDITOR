@@ -10,6 +10,9 @@ using User;
 
 namespace ID3_Tag_Editor.scripts
 {
+    /// <summary>
+    /// Class to create, change and delete files.
+    /// </summary>
     public static class FileSystem
     {
         private static string ConvertToJSON(object Object)

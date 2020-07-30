@@ -339,5 +339,10 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 
-# CUSTOM
+# |------------------CUSTOM------------------|
+
+# User Settings
 User/*
+
+#DocFX Stuff
+#api/*
