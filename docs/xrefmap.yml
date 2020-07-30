@@ -217,19 +217,6 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.MainWindow.OutputCount
   nameWithType: MainWindow.OutputCount
-- uid: ID3_Tag_Editor.MainWindow.Read
-  name: Read()
-  href: api/ID3_Tag_Editor.MainWindow.html#ID3_Tag_Editor_MainWindow_Read
-  commentId: M:ID3_Tag_Editor.MainWindow.Read
-  fullName: ID3_Tag_Editor.MainWindow.Read()
-  nameWithType: MainWindow.Read()
-- uid: ID3_Tag_Editor.MainWindow.Read*
-  name: Read
-  href: api/ID3_Tag_Editor.MainWindow.html#ID3_Tag_Editor_MainWindow_Read_
-  commentId: Overload:ID3_Tag_Editor.MainWindow.Read
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.MainWindow.Read
-  nameWithType: MainWindow.Read
 - uid: ID3_Tag_Editor.MainWindow.UI
   name: MainWindow.UI
   href: api/ID3_Tag_Editor.MainWindow.UI.html
@@ -310,6 +297,25 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.scripts.FileSystem.CreateDirectory
   nameWithType: FileSystem.CreateDirectory
+- uid: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String)
+  name: GetFilesFromDirectory(String)
+  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_GetFilesFromDirectory_System_String_
+  commentId: M:ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String)
+  fullName: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String)
+  nameWithType: FileSystem.GetFilesFromDirectory(String)
+- uid: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)
+  name: GetFilesFromDirectory(String, Boolean)
+  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_GetFilesFromDirectory_System_String_System_Boolean_
+  commentId: M:ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)
+  fullName: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String, System.Boolean)
+  nameWithType: FileSystem.GetFilesFromDirectory(String, Boolean)
+- uid: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory*
+  name: GetFilesFromDirectory
+  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_GetFilesFromDirectory_
+  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory
+  nameWithType: FileSystem.GetFilesFromDirectory
 - uid: ID3_Tag_Editor.scripts.FileSystem.IsDirectory(System.String)
   name: IsDirectory(String)
   href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_IsDirectory_System_String_
