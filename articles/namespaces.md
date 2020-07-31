@@ -1,6 +1,11 @@
-C# Coding Standards
-====================
+# Namespaces
 
-Introduction
-----------------
-The coding standard will be used in conjunction with customized version of *StyleCop* and *FxCop* [**TODO**] during both development and build process. This will help ensure that the standard is followed by all developers on the team in a consistent manner.
+## About
+
+All classes are bound to a namespace to make it easy to reference functions from different scripts. This is also done to support a readable docs page by docfx.
+
+## List of Namespaces
+
+- User
+
+Everything related to the user. This namespace contains classes to save & load user preferences and apply them to the application. It also controlls and applies themes and changes to the UI.
