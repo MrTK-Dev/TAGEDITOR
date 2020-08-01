@@ -36,11 +36,6 @@
     ·
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/issues">Request Features</a>
   </p>
-
-  <h2 align="center"><strong>Latest Release</strong>
-  <br />
-    0.0.1 - Alpha
-  </h2>
 </p>
 
 ----------
