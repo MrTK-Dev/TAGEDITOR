@@ -106,7 +106,7 @@
     <Compile Include="scripts\Saves.cs" />
     <Compile Include="scripts\DefaultVar.cs" />
     <Compile Include="scripts\TabHandler.cs" />
-    <Compile Include="scripts\Settings.cs" />
+    <Compile Include="scripts\Preferences.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
