@@ -17,11 +17,11 @@
     <img src="resources/MrTK_Logo.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center"><strong>ID3 TagEditor</strong>
+  <h1 align="center"><strong>ID3 TagEditor</strong>
   <br />
     by
     <a href="https://github.com/MrTK-Dev"><strong>MrTK</strong></a>
-  </h3>
+  </h1>
 
   <p align="center">
     C# Source Code for "ID3-TagEditor".
@@ -36,7 +36,34 @@
     ·
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/issues">Request Features</a>
   </p>
+
+  <h2 align="center"><strong>Latest Release</strong>
+  <br />
+    0.0.1 - Alpha
+  </h2>
 </p>
+
+----------
+
+<p align="center">
+  <h2 align="center"><strong>Latest Release</strong>
+  <br />
+    0.0.1 - Alpha
+  </h2>
+
+  <p align="center">
+    This Update finally adds a GUI.
+    <br />
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/releases"><strong>Download »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/tree/master/.github/CONTRIBUTING.md">Changelog</a>
+    ·
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/issues">Source Code</a>
+  </p>
+</p>
+
+
 
 <!-- MARKDOWN Shields -->
 
