@@ -19,6 +19,7 @@ using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.UI;
 using ID3_Tag_Editor.Scripts.User;
 using ID3_Tag_Editor.Scripts.Extensions;
+using ID3_Tag_Editor.Scripts.Tags;
 
 namespace ID3_Tag_Editor
 {
@@ -51,6 +52,9 @@ namespace ID3_Tag_Editor
             #endregion
 
             Preferences.Load();
+
+            //test
+            Tags.ProcessAllSongs();
         }
 
         public void OutputCount(object sender, RoutedEventArgs e)
