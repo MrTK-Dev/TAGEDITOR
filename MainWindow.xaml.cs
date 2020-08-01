@@ -15,10 +15,10 @@ using System.Windows.Shapes;
 using System.IO;
 using System.Diagnostics;
 using System.Drawing;
-using ID3_Tag_Editor;
-using Scripts;
-using User;
-using ID3_Tag_Editor.scripts;
+using ID3_Tag_Editor.Scripts.IO;
+using ID3_Tag_Editor.Scripts.UI;
+using ID3_Tag_Editor.Scripts.User;
+using ID3_Tag_Editor.Scripts.Extensions;
 
 namespace ID3_Tag_Editor
 {
@@ -39,8 +39,8 @@ namespace ID3_Tag_Editor
                 panel_SubMenu_Editor
             };
 
-            UI.userPathBoxes.Import = TextBox_Dialog_Input;
-            UI.userPathBoxes.Export = TextBox_Dialog_Output;
+            UI.UserPathBoxes.Import = TextBox_Dialog_Input;
+            UI.UserPathBoxes.Export = TextBox_Dialog_Output;
 
             #endregion
 
@@ -125,7 +125,7 @@ namespace ID3_Tag_Editor
 
                             if (Modes.text == Modes.Text_Mode.all || Modes.text == Modes.Text_Mode.Folders)
                             {
-                                string newPath = User.Paths.Export + @"\" + Song.Tag.Album.Replace(":", " ").Replace("/", "_");
+                                string newPath = Paths.Export + @"\" + Song.Tag.Album.Replace(":", " ").Replace("/", "_");
 
                                 if (!Directory.Exists(newPath))
                                 {
@@ -139,7 +139,7 @@ namespace ID3_Tag_Editor
 
                             else if (Modes.text == Modes.Text_Mode.Rename)
                             {
-                                File.Move(allFiles[i], User.Paths.Export + @"\" + newFileName + ".mp3");
+                                File.Move(allFiles[i], Paths.Export + @"\" + newFileName + ".mp3");
                             }
                         }
 
@@ -251,12 +251,12 @@ namespace ID3_Tag_Editor
 
         private void Button_OpenSubMenu_Automation(object sender, RoutedEventArgs e)
         {
-            Scripts.PanelHandler.HighlightSubMenu(panel_SubMenu_Automation);
+            PanelHandler.HighlightSubMenu(panel_SubMenu_Automation);
         }
 
         private void Button_OpenSubMenu_Editor(object sender, RoutedEventArgs e)
         {
-            Scripts.PanelHandler.HighlightSubMenu(panel_SubMenu_Editor);
+            PanelHandler.HighlightSubMenu(panel_SubMenu_Editor);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -268,7 +268,7 @@ namespace ID3_Tag_Editor
         {
             public static List<StackPanel> allSubMenus = new List<StackPanel>();
 
-            public static class userPathBoxes
+            public static class UserPathBoxes
             {
                 public static TextBox Import = new TextBox();
 
@@ -278,12 +278,12 @@ namespace ID3_Tag_Editor
 
         private void BClick_SelectFolder_Input(object sender, RoutedEventArgs e)
         {
-            PathMethods.SelectFolder(TextBox_Dialog_Input, User.Paths.PathType.INPUT);
+            PathMethods.SelectFolder(TextBox_Dialog_Input, Paths.PathType.INPUT);
         }
 
         private void BClick_SelectFolder_Output(object sender, RoutedEventArgs e)
         {
-            PathMethods.SelectFolder(TextBox_Dialog_Output, User.Paths.PathType.OUTPUT);
+            PathMethods.SelectFolder(TextBox_Dialog_Output, Paths.PathType.OUTPUT);
         }
     }
 }

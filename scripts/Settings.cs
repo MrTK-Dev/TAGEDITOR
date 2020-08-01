@@ -1,7 +1,7 @@
-﻿using ID3_Tag_Editor.scripts;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using ID3_Tag_Editor.Scripts.IO;
 
-namespace ID3_Tag_Editor
+namespace ID3_Tag_Editor.Scripts.User
 {
     /// <summary>
     /// This class handles everything related to saving settings made by the user. This heavily relies on the FileSystem by saving data on files.
@@ -51,13 +51,13 @@ namespace ID3_Tag_Editor
         /// <param name="newUserPaths">The loaded object from the json file.</param>
         public static void LoadUserPaths(dynamic newUserPaths)
         {
-            User.Paths.Import = newUserPaths.Import;
+            Paths.Import = newUserPaths.Import;
 
-            User.Paths.Export = newUserPaths.Export;
+            Paths.Export = newUserPaths.Export;
 
-            MainWindow.UI.userPathBoxes.Import.Text = newUserPaths.Import;
+            MainWindow.UI.UserPathBoxes.Import.Text = newUserPaths.Import;
 
-            MainWindow.UI.userPathBoxes.Export.Text = newUserPaths.Export;
+            MainWindow.UI.UserPathBoxes.Export.Text = newUserPaths.Export;
         }
 
         /// <summary>
@@ -68,9 +68,9 @@ namespace ID3_Tag_Editor
         {
             Debug.WriteLine("Starting to save userPaths to File...");
 
-            userPaths.Import = User.Paths.Import;
+            userPaths.Import = Paths.Import;
 
-            userPaths.Export = User.Paths.Export;
+            userPaths.Export = Paths.Export;
 
             FileSystem.SaveToJSON(settingsPath, "Paths", userPaths);
 

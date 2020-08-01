@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace ID3_Tag_Editor
+namespace ID3_Tag_Editor.Scripts.Extensions
 {
     public static class Extensions
     {

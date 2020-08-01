@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text.Json;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
-using User;
+using ID3_Tag_Editor.Scripts.User;
 
-namespace ID3_Tag_Editor.scripts
+namespace ID3_Tag_Editor.Scripts.IO
 {
     /// <summary>
     /// Class to create, change and delete files.

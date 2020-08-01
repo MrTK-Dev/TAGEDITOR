@@ -7,16 +7,15 @@ using System.Windows;
 using System.Windows.Controls;
 using Microsoft.Win32;
 using System.IO;
-using ID3_Tag_Editor;
 using System.Windows.Forms;
 using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 using TextBox = System.Windows.Controls.TextBox;
-using ID3_Tag_Editor.scripts;
-using static User.Paths;
 using System.Reflection;
 using System.Diagnostics;
+using static ID3_Tag_Editor.Scripts.User.Paths;
+using ID3_Tag_Editor.Scripts.UI;
 
-namespace User
+namespace ID3_Tag_Editor.Scripts.User
 {
     /// <summary>
     /// 

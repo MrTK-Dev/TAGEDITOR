@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using ID3_Tag_Editor;
 
-namespace Scripts
+namespace ID3_Tag_Editor.Scripts.UI
 {
     /// <summary>
     /// Handles everything related to Panels including the DropDownMenu.

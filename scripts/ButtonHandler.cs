@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ID3_Tag_Editor
+namespace ID3_Tag_Editor.Scripts.UI
 {
     class ButtonHandler
     {

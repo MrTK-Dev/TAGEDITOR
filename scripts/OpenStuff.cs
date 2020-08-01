@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 using TextBox = System.Windows.Controls.TextBox;
 
-namespace ID3_Tag_Editor.scripts
+namespace ID3_Tag_Editor.Scripts.UI
 {
     class OpenStuff
     {
