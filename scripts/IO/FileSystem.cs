@@ -87,10 +87,10 @@ namespace ID3_Tag_Editor.Scripts.IO
 
         public static string[] GetFilesFromDirectory(string Path, bool subFolders)
         {
-            if (IsDirectory(Path))
+            if (IsDirectory(Path, !(Path == Paths.Import)))
             {
                 if (subFolders)
-                    return Directory.GetFiles(Path, "", SearchOption.AllDirectories);
+                    return Directory.GetFiles(Path, "*", SearchOption.AllDirectories);
 
                 else
                     return Directory.GetFiles(Path);
@@ -100,14 +100,22 @@ namespace ID3_Tag_Editor.Scripts.IO
                 return null;
         }
 
+        public static bool IsDirectory(string Path)
+        {
+            return IsDirectory(Path, true);
+        }
+
         /// <summary>
         /// Checks if the given directory exists. This functions exists because of the weird relative paths.
         /// </summary>
         /// <param name="Path">Path to the wanted directory.</param>
         /// <returns>True, if the directory exists.</returns>
-        public static bool IsDirectory(string Path)
+        public static bool IsDirectory(string Path, bool isRelative)
         {
-            return Directory.Exists(Paths.GetFullPath(Path));
+            if (isRelative)
+                return Directory.Exists(Paths.GetFullPath(Path));
+            
+            return Directory.Exists(Path);
         }
 
         /// <summary>
