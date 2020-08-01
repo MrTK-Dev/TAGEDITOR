@@ -50,7 +50,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/releases"><strong>Download »</strong></a>
     <br />
     <br />
-    <a href="https://mrtk-dev.github.io/TAGEDITOR/CHANGELOG.html">Changelog</a>
+    <a href="https://mrtk-dev.github.io/TAGEDITOR/articles/CHANGELOG.html">Changelog</a>
     ·
     <a href="https://github.com/MrTK-Dev/TAGEDITOR">Source Code</a>
   </p>
