@@ -39,22 +39,5 @@ namespace ID3_Tag_Editor.Scripts.Extensions
         }
 
         #endregion
-
-        #region JsonElement
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="jsonElement"></param>
-        /// <returns></returns>
-        public static T ToObject<T>(this JsonElement jsonElement)
-        {
-            var json = jsonElement.GetRawText();
-
-            return JsonSerializer.Deserialize<T>(json);
-        }
-
-        #endregion
     }
 }
