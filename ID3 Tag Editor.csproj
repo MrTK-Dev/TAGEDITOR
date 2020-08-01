@@ -154,8 +154,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Files\input\" />
-    <Folder Include="Files\output\" />
     <Folder Include="resources\" />
   </ItemGroup>
   <ItemGroup>
