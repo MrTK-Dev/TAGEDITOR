@@ -50,7 +50,7 @@ namespace ID3_Tag_Editor
 
             #endregion
 
-            Settings.Load();
+            Preferences.Load();
         }
 
         public void OutputCount(object sender, RoutedEventArgs e)
@@ -179,7 +179,7 @@ namespace ID3_Tag_Editor
                 }
             }
 
-            Settings.Save();
+            Preferences.Save();
         }
 
         public void ChangeImage(object sender, RoutedEventArgs e)

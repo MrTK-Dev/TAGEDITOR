@@ -6,7 +6,7 @@ namespace ID3_Tag_Editor.Scripts.User
     /// <summary>
     /// This class handles everything related to saving settings made by the user. This heavily relies on the FileSystem by saving data on files.
     /// </summary>
-    class Settings
+    class Preferences
     {
         #region Variables
 
