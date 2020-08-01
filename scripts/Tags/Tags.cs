@@ -28,11 +28,11 @@ namespace ID3_Tag_Editor.Scripts.Tags
                         ProcessSong(allFiles[i]);
         }
 
-        public static void ProcessSong(string File)
+        public static void ProcessSong(string newFile)
         {
-            Debug.WriteLine(File);
+            Debug.WriteLine(newFile);
 
-            TagLib.File newSong = TagLib.File.Create(File);
+            TagLib.File newSong = TagLib.File.Create(newFile);
 
             if (newSong.Tag.FirstPerformer != null && newSong.Tag.Title != null)
             {
@@ -48,15 +48,17 @@ namespace ID3_Tag_Editor.Scripts.Tags
                 }
 
                 newSong.Save();
+
+                FileSystem.Files.RenameAndMove(Paths.Import, FileSystem.GetFileName(newFile, false), Paths.Export, newFileName);
             }
 
             else
-                Debug.WriteLine(File + " does not have the required Tags!");
+                Debug.WriteLine(newFile + " does not have the required Tags!");
         }
 
         static string GetFileName(string firstPerformer, string Title)
         {
-            return string.Format("{0} - {1}", ReplaceInvalidValues(firstPerformer), ReplaceInvalidValues(Title));
+            return string.Format("{0} - {1}.mp3", ReplaceInvalidValues(firstPerformer), ReplaceInvalidValues(Title));
         }
 
         static bool IsRemix(string fullTitle)
