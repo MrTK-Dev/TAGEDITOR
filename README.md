@@ -20,14 +20,14 @@
   <h3 align="center"><strong>ID3 TagEditor</strong>
   <br />
     by
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR"><strong>MrTK</strong></a>
+    <a href="https://github.com/MrTK-Dev"><strong>MrTK</strong></a>
   </h3>
 
   <p align="center">
     C# Source Code for "ID3-TagEditor".
     This application can be used to automate ID3-Tags of .mp3 files.
     <br />
-    <a href="https://mrtk-dev.github.io/TAGEDITOR/index.html"><strong>Explore the docs »</strong></a>
+    <a href="https://mrtk-dev.github.io/TAGEDITOR"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/pulls">Contribute</a>
