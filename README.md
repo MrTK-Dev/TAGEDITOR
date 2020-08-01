@@ -30,7 +30,7 @@
     <a href="https://mrtk-dev.github.io/TAGEDITOR"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/pulls">Contribute</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/tree/master/.github/CONTRIBUTING.md">Contribute</a>
     ·
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/issues">Report Bugs</a>
     ·
