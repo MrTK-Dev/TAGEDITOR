@@ -93,10 +93,22 @@ namespace ID3_Tag_Editor.Scripts.IO
                 
             }*/
 
+            /// <summary>
+            /// Rename and move a file to a new place.
+            /// </summary>
+            /// <param name="oldPath">Current path to the file.</param>
+            /// <param name="oldFileName">Current name of the file.</param>
+            /// <param name="newPath">New path to the file.</param>
+            /// <param name="newFileName">New name of the file.</param>
             public static void RenameAndMove(string oldPath, string oldFileName, string newPath, string newFileName)
             {
                 File.Move(oldPath + @"/" + oldFileName, newPath + @"/" + newFileName);
             }
+        }
+
+        public static string[] GetFilesFromDirectory(string Path)
+        {
+            return GetFilesFromDirectory(Path, false);
         }
 
         /// <summary>
@@ -105,11 +117,6 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// <param name="Path">The path with the wanted files.</param>
         /// <param name="subFolders">Wether the search considers subfolders.</param>
         /// <returns>An array of filenames.</returns>
-        public static string[] GetFilesFromDirectory(string Path)
-        {
-            return GetFilesFromDirectory(Path, false);
-        }
-
         public static string[] GetFilesFromDirectory(string Path, bool subFolders)
         {
             if (IsDirectory(Path, !(Path == Paths.Import)))
@@ -130,6 +137,12 @@ namespace ID3_Tag_Editor.Scripts.IO
             return GetFileName(Path, true);
         }
 
+        /// <summary>
+        /// Returns the name of a file from the given path as a string. You may switch from relative to absolute paths.
+        /// </summary>
+        /// <param name="Path">The path to the file.</param>
+        /// <param name="isRelative">True => relative path, false => absolute path</param>
+        /// <returns>File name as a string.</returns>
         public static string GetFileName(string Path, bool isRelative)
         {
             if (isRelative)
