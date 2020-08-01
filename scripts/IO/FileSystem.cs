@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -71,6 +71,31 @@ namespace ID3_Tag_Editor.Scripts.IO
             if (!IsDirectory(Path))
             {
                 Directory.CreateDirectory(Paths.GetFullPath(Path));
+            }
+        }
+
+        public static class Files
+        {
+            /*enum MoveType
+            {
+                Move,
+                Rename,
+                MoveAndRename
+            }
+
+            public static void Move()
+            {
+
+            }
+
+            public static void Rename(string oldFileName, string newFileName)
+            {
+                
+            }*/
+
+            public static void RenameAndMove(string oldPath, string oldFileName, string newPath, string newFileName)
+            {
+                File.Move(oldPath + @"/" + oldFileName, newPath + @"/" + newFileName);
             }
         }
 
