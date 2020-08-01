@@ -344,6 +344,8 @@ healthchecksdb
 # User Settings
 User/*
 
-#DocFX Stuff
-#api/*
+#DocFX log
 log.txt
+
+#ignore templates till homebrew version
+articles/templates/
