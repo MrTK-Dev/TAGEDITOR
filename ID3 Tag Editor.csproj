@@ -96,17 +96,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="scripts\Extensions.cs" />
-    <Compile Include="scripts\FileSystem.cs" />
-    <Compile Include="scripts\Names.cs" />
-    <Compile Include="scripts\OpenStuff.cs" />
-    <Compile Include="scripts\Paths.cs" />
-    <Compile Include="scripts\PanelHandler.cs" />
-    <Compile Include="scripts\ButtonHandler.cs" />
-    <Compile Include="scripts\Saves.cs" />
-    <Compile Include="scripts\DefaultVar.cs" />
-    <Compile Include="scripts\TabHandler.cs" />
-    <Compile Include="scripts\Preferences.cs" />
+    <Compile Include="Scripts\Extensions\Extensions.cs" />
+    <Compile Include="Scripts\IO\FileSystem.cs" />
+    <Compile Include="Scripts\Names.cs" />
+    <Compile Include="Scripts\Tags\Tags.cs" />
+    <Compile Include="Scripts\UI\OpenStuff.cs" />
+    <Compile Include="Scripts\User\Paths.cs" />
+    <Compile Include="Scripts\UI\PanelHandler.cs" />
+    <Compile Include="Scripts\UI\ButtonHandler.cs" />
+    <Compile Include="Scripts\Saves.cs" />
+    <Compile Include="Scripts\DefaultVar.cs" />
+    <Compile Include="Scripts\UI\TabHandler.cs" />
+    <Compile Include="Scripts\User\Preferences.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

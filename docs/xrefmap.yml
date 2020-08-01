@@ -328,6 +328,12 @@ references:
   commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)
   nameWithType: FileSystem.IsDirectory(String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String,System.Boolean)
+  name: IsDirectory(String, Boolean)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_System_String_System_Boolean_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String,System.Boolean)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String, System.Boolean)
+  nameWithType: FileSystem.IsDirectory(String, Boolean)
 - uid: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory*
   name: IsDirectory
   href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_
@@ -374,19 +380,44 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON
   nameWithType: FileSystem.SaveToJSON
-- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile(System.String,System.String,System.String)
-  name: WriteToFile(String, String, String)
-  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_WriteToFile_System_String_System_String_System_String_
-  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile(System.String,System.String,System.String)
-  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile(System.String, System.String, System.String)
-  nameWithType: FileSystem.WriteToFile(String, String, String)
-- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile*
-  name: WriteToFile
-  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_WriteToFile_
-  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile
+- uid: ID3_Tag_Editor.Scripts.Tags
+  name: ID3_Tag_Editor.Scripts.Tags
+  href: api/ID3_Tag_Editor.Scripts.Tags.html
+  commentId: N:ID3_Tag_Editor.Scripts.Tags
+  fullName: ID3_Tag_Editor.Scripts.Tags
+  nameWithType: ID3_Tag_Editor.Scripts.Tags
+- uid: ID3_Tag_Editor.Scripts.Tags.Tags
+  name: Tags
+  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.Tags
+  fullName: ID3_Tag_Editor.Scripts.Tags.Tags
+  nameWithType: Tags
+- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
+  name: ProcessAllSongs()
+  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessAllSongs
+  commentId: M:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
+  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs()
+  nameWithType: Tags.ProcessAllSongs()
+- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs*
+  name: ProcessAllSongs
+  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessAllSongs_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
   isSpec: "True"
-  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile
-  nameWithType: FileSystem.WriteToFile
+  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
+  nameWithType: Tags.ProcessAllSongs
+- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong(System.String)
+  name: ProcessSong(String)
+  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessSong_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong(System.String)
+  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong(System.String)
+  nameWithType: Tags.ProcessSong(String)
+- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong*
+  name: ProcessSong
+  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessSong_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong
+  nameWithType: Tags.ProcessSong
 - uid: ID3_Tag_Editor.Scripts.UI
   name: ID3_Tag_Editor.Scripts.UI
   href: api/ID3_Tag_Editor.Scripts.UI.html
