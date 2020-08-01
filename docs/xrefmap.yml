@@ -249,6 +249,31 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny
   nameWithType: Extensions.ContainsAny
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String,System.String[])
+  name: EqualsAny(String, String[])
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_EqualsAny_System_String_System_String___
+  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String,System.String[])
+  name.vb: EqualsAny(String, String())
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String, System.String[])
+  fullName.vb: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String, System.String())
+  nameWithType: Extensions.EqualsAny(String, String[])
+  nameWithType.vb: Extensions.EqualsAny(String, String())
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String,System.String[],System.Boolean)
+  name: EqualsAny(String, String[], Boolean)
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_EqualsAny_System_String_System_String___System_Boolean_
+  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String,System.String[],System.Boolean)
+  name.vb: EqualsAny(String, String(), Boolean)
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String, System.String[], System.Boolean)
+  fullName.vb: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny(System.String, System.String(), System.Boolean)
+  nameWithType: Extensions.EqualsAny(String, String[], Boolean)
+  nameWithType.vb: Extensions.EqualsAny(String, String(), Boolean)
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny*
+  name: EqualsAny
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_EqualsAny_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny
+  nameWithType: Extensions.EqualsAny
 - uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar(System.String)
   name: RemoveLastChar(String)
   href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_RemoveLastChar_System_String_
@@ -262,22 +287,6 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar
   nameWithType: Extensions.RemoveLastChar
-- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject*
-  name: ToObject
-  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_ToObject_
-  commentId: Overload:ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject
-  nameWithType: Extensions.ToObject
-- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject``1(System.Text.Json.JsonElement)
-  name: ToObject<T>(JsonElement)
-  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_ToObject__1_System_Text_Json_JsonElement_
-  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject``1(System.Text.Json.JsonElement)
-  name.vb: ToObject(Of T)(JsonElement)
-  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject<T>(System.Text.Json.JsonElement)
-  fullName.vb: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject(Of T)(System.Text.Json.JsonElement)
-  nameWithType: Extensions.ToObject<T>(JsonElement)
-  nameWithType.vb: Extensions.ToObject(Of T)(JsonElement)
 - uid: ID3_Tag_Editor.Scripts.IO
   name: ID3_Tag_Editor.Scripts.IO
   href: api/ID3_Tag_Editor.Scripts.IO.html
@@ -303,6 +312,44 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory
   nameWithType: FileSystem.CreateDirectory
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files
+  name: FileSystem.Files
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html
+  commentId: T:ID3_Tag_Editor.Scripts.IO.FileSystem.Files
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files
+  nameWithType: FileSystem.Files
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove(System.String,System.String,System.String,System.String)
+  name: RenameAndMove(String, String, String, String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_RenameAndMove_System_String_System_String_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove(System.String,System.String,System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove(System.String, System.String, System.String, System.String)
+  nameWithType: FileSystem.Files.RenameAndMove(String, String, String, String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove*
+  name: RenameAndMove
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_RenameAndMove_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove
+  nameWithType: FileSystem.Files.RenameAndMove
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String)
+  name: GetFileName(String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String)
+  nameWithType: FileSystem.GetFileName(String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String,System.Boolean)
+  name: GetFileName(String, Boolean)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_System_Boolean_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String,System.Boolean)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String, System.Boolean)
+  nameWithType: FileSystem.GetFileName(String, Boolean)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName*
+  name: GetFileName
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName
+  nameWithType: FileSystem.GetFileName
 - uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String)
   name: GetFilesFromDirectory(String)
   href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_

@@ -192,7 +192,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html",
-          "hash": "0ltCoIb16rnsruT1IxGVeQ=="
+          "hash": "c4D1KywOJ52JurtHtRvzrQ=="
         }
       },
       "is_incremental": true,
@@ -212,11 +212,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html",
+          "hash": "qasj4Jle6SdleQdJsOk2Iw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/ID3_Tag_Editor.Scripts.IO.FileSystem.yml",
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.IO.FileSystem.html",
-          "hash": "gTJdzrzu/R+RNseL5B705A=="
+          "hash": "Fbh5gx57gDjJguliFfPRNg=="
         }
       },
       "is_incremental": true,
@@ -228,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.IO.html",
-          "hash": "qd7SfQ6cSpVwr4TfANTa3A=="
+          "hash": "n459/RR5wb5jv8/1efVXPg=="
         }
       },
       "is_incremental": true,
@@ -240,7 +252,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.Tags.Tags.html",
-          "hash": "z44IbYnTKoVllWMIeg4U1g=="
+          "hash": "fz3iE8qY76YaIcqYTxdOnA=="
         }
       },
       "is_incremental": true,
@@ -372,7 +384,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "aQ++DFAoDyEqeub9Zvqg6A=="
+          "hash": "BjWlj5AxOWpuUXKCkN90ag=="
         }
       },
       "is_incremental": false,
@@ -397,8 +409,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 25,
-          "skipped_file_count": 25
+          "total_file_count": 26,
+          "skipped_file_count": 26
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
