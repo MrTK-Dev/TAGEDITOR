@@ -16,18 +16,21 @@ namespace ID3_Tag_Editor.Scripts.IO
     public static class FileSystem
     {
         /// <summary>
+        /// Default options set to json serializer.
+        /// </summary>
+        static readonly JsonSerializerOptions JsonOptions = new JsonSerializerOptions
+        {
+            WriteIndented = true
+        };
+
+        /// <summary>
         /// Serializes a given object to a json-formatted string.
         /// </summary>
         /// <param name="Object">The object that gets serialized.</param>
         /// <returns>String in json format.</returns>
         private static string ConvertToJSON(object Object)
         {
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true
-            };
-
-            return System.Text.Json.JsonSerializer.Serialize(Object, options); ;
+            return System.Text.Json.JsonSerializer.Serialize(Object, JsonOptions);
         }
 
         /// <summary>
