@@ -13,57 +13,6 @@ references:
   commentId: T:ID3_Tag_Editor.App
   fullName: ID3_Tag_Editor.App
   nameWithType: App
-- uid: ID3_Tag_Editor.Extensions
-  name: Extensions
-  href: api/ID3_Tag_Editor.Extensions.html
-  commentId: T:ID3_Tag_Editor.Extensions
-  fullName: ID3_Tag_Editor.Extensions
-  nameWithType: Extensions
-- uid: ID3_Tag_Editor.Extensions.ContainsAny(System.String,System.String[])
-  name: ContainsAny(String, String[])
-  href: api/ID3_Tag_Editor.Extensions.html#ID3_Tag_Editor_Extensions_ContainsAny_System_String_System_String___
-  commentId: M:ID3_Tag_Editor.Extensions.ContainsAny(System.String,System.String[])
-  name.vb: ContainsAny(String, String())
-  fullName: ID3_Tag_Editor.Extensions.ContainsAny(System.String, System.String[])
-  fullName.vb: ID3_Tag_Editor.Extensions.ContainsAny(System.String, System.String())
-  nameWithType: Extensions.ContainsAny(String, String[])
-  nameWithType.vb: Extensions.ContainsAny(String, String())
-- uid: ID3_Tag_Editor.Extensions.ContainsAny*
-  name: ContainsAny
-  href: api/ID3_Tag_Editor.Extensions.html#ID3_Tag_Editor_Extensions_ContainsAny_
-  commentId: Overload:ID3_Tag_Editor.Extensions.ContainsAny
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.Extensions.ContainsAny
-  nameWithType: Extensions.ContainsAny
-- uid: ID3_Tag_Editor.Extensions.RemoveLastChar(System.String)
-  name: RemoveLastChar(String)
-  href: api/ID3_Tag_Editor.Extensions.html#ID3_Tag_Editor_Extensions_RemoveLastChar_System_String_
-  commentId: M:ID3_Tag_Editor.Extensions.RemoveLastChar(System.String)
-  fullName: ID3_Tag_Editor.Extensions.RemoveLastChar(System.String)
-  nameWithType: Extensions.RemoveLastChar(String)
-- uid: ID3_Tag_Editor.Extensions.RemoveLastChar*
-  name: RemoveLastChar
-  href: api/ID3_Tag_Editor.Extensions.html#ID3_Tag_Editor_Extensions_RemoveLastChar_
-  commentId: Overload:ID3_Tag_Editor.Extensions.RemoveLastChar
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.Extensions.RemoveLastChar
-  nameWithType: Extensions.RemoveLastChar
-- uid: ID3_Tag_Editor.Extensions.ToObject*
-  name: ToObject
-  href: api/ID3_Tag_Editor.Extensions.html#ID3_Tag_Editor_Extensions_ToObject_
-  commentId: Overload:ID3_Tag_Editor.Extensions.ToObject
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.Extensions.ToObject
-  nameWithType: Extensions.ToObject
-- uid: ID3_Tag_Editor.Extensions.ToObject``1(System.Text.Json.JsonElement)
-  name: ToObject<T>(JsonElement)
-  href: api/ID3_Tag_Editor.Extensions.html#ID3_Tag_Editor_Extensions_ToObject__1_System_Text_Json_JsonElement_
-  commentId: M:ID3_Tag_Editor.Extensions.ToObject``1(System.Text.Json.JsonElement)
-  name.vb: ToObject(Of T)(JsonElement)
-  fullName: ID3_Tag_Editor.Extensions.ToObject<T>(System.Text.Json.JsonElement)
-  fullName.vb: ID3_Tag_Editor.Extensions.ToObject(Of T)(System.Text.Json.JsonElement)
-  nameWithType: Extensions.ToObject<T>(JsonElement)
-  nameWithType.vb: Extensions.ToObject(Of T)(JsonElement)
 - uid: ID3_Tag_Editor.MainWindow
   name: MainWindow
   href: api/ID3_Tag_Editor.MainWindow.html
@@ -229,24 +178,24 @@ references:
   commentId: F:ID3_Tag_Editor.MainWindow.UI.allSubMenus
   fullName: ID3_Tag_Editor.MainWindow.UI.allSubMenus
   nameWithType: MainWindow.UI.allSubMenus
-- uid: ID3_Tag_Editor.MainWindow.UI.userPathBoxes
-  name: MainWindow.UI.userPathBoxes
-  href: api/ID3_Tag_Editor.MainWindow.UI.userPathBoxes.html
-  commentId: T:ID3_Tag_Editor.MainWindow.UI.userPathBoxes
-  fullName: ID3_Tag_Editor.MainWindow.UI.userPathBoxes
-  nameWithType: MainWindow.UI.userPathBoxes
-- uid: ID3_Tag_Editor.MainWindow.UI.userPathBoxes.Export
+- uid: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes
+  name: MainWindow.UI.UserPathBoxes
+  href: api/ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.html
+  commentId: T:ID3_Tag_Editor.MainWindow.UI.UserPathBoxes
+  fullName: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes
+  nameWithType: MainWindow.UI.UserPathBoxes
+- uid: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Export
   name: Export
-  href: api/ID3_Tag_Editor.MainWindow.UI.userPathBoxes.html#ID3_Tag_Editor_MainWindow_UI_userPathBoxes_Export
-  commentId: F:ID3_Tag_Editor.MainWindow.UI.userPathBoxes.Export
-  fullName: ID3_Tag_Editor.MainWindow.UI.userPathBoxes.Export
-  nameWithType: MainWindow.UI.userPathBoxes.Export
-- uid: ID3_Tag_Editor.MainWindow.UI.userPathBoxes.Import
+  href: api/ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.html#ID3_Tag_Editor_MainWindow_UI_UserPathBoxes_Export
+  commentId: F:ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Export
+  fullName: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Export
+  nameWithType: MainWindow.UI.UserPathBoxes.Export
+- uid: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Import
   name: Import
-  href: api/ID3_Tag_Editor.MainWindow.UI.userPathBoxes.html#ID3_Tag_Editor_MainWindow_UI_userPathBoxes_Import
-  commentId: F:ID3_Tag_Editor.MainWindow.UI.userPathBoxes.Import
-  fullName: ID3_Tag_Editor.MainWindow.UI.userPathBoxes.Import
-  nameWithType: MainWindow.UI.userPathBoxes.Import
+  href: api/ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.html#ID3_Tag_Editor_MainWindow_UI_UserPathBoxes_Import
+  commentId: F:ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Import
+  fullName: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Import
+  nameWithType: MainWindow.UI.UserPathBoxes.Import
 - uid: ID3_Tag_Editor.Names
   name: Names
   href: api/ID3_Tag_Editor.Names.html
@@ -272,325 +221,382 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Saves.Jaloley
   nameWithType: Saves.Jaloley
-- uid: ID3_Tag_Editor.scripts
-  name: ID3_Tag_Editor.scripts
-  href: api/ID3_Tag_Editor.scripts.html
-  commentId: N:ID3_Tag_Editor.scripts
-  fullName: ID3_Tag_Editor.scripts
-  nameWithType: ID3_Tag_Editor.scripts
-- uid: ID3_Tag_Editor.scripts.FileSystem
+- uid: ID3_Tag_Editor.Scripts.Extensions
+  name: ID3_Tag_Editor.Scripts.Extensions
+  href: api/ID3_Tag_Editor.Scripts.Extensions.html
+  commentId: N:ID3_Tag_Editor.Scripts.Extensions
+  fullName: ID3_Tag_Editor.Scripts.Extensions
+  nameWithType: ID3_Tag_Editor.Scripts.Extensions
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions
+  name: Extensions
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html
+  commentId: T:ID3_Tag_Editor.Scripts.Extensions.Extensions
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions
+  nameWithType: Extensions
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny(System.String,System.String[])
+  name: ContainsAny(String, String[])
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_ContainsAny_System_String_System_String___
+  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny(System.String,System.String[])
+  name.vb: ContainsAny(String, String())
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny(System.String, System.String[])
+  fullName.vb: ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny(System.String, System.String())
+  nameWithType: Extensions.ContainsAny(String, String[])
+  nameWithType.vb: Extensions.ContainsAny(String, String())
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny*
+  name: ContainsAny
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_ContainsAny_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ContainsAny
+  nameWithType: Extensions.ContainsAny
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar(System.String)
+  name: RemoveLastChar(String)
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_RemoveLastChar_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar(System.String)
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar(System.String)
+  nameWithType: Extensions.RemoveLastChar(String)
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar*
+  name: RemoveLastChar
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_RemoveLastChar_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar
+  nameWithType: Extensions.RemoveLastChar
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject*
+  name: ToObject
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_ToObject_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject
+  nameWithType: Extensions.ToObject
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject``1(System.Text.Json.JsonElement)
+  name: ToObject<T>(JsonElement)
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_ToObject__1_System_Text_Json_JsonElement_
+  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject``1(System.Text.Json.JsonElement)
+  name.vb: ToObject(Of T)(JsonElement)
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject<T>(System.Text.Json.JsonElement)
+  fullName.vb: ID3_Tag_Editor.Scripts.Extensions.Extensions.ToObject(Of T)(System.Text.Json.JsonElement)
+  nameWithType: Extensions.ToObject<T>(JsonElement)
+  nameWithType.vb: Extensions.ToObject(Of T)(JsonElement)
+- uid: ID3_Tag_Editor.Scripts.IO
+  name: ID3_Tag_Editor.Scripts.IO
+  href: api/ID3_Tag_Editor.Scripts.IO.html
+  commentId: N:ID3_Tag_Editor.Scripts.IO
+  fullName: ID3_Tag_Editor.Scripts.IO
+  nameWithType: ID3_Tag_Editor.Scripts.IO
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem
   name: FileSystem
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html
-  commentId: T:ID3_Tag_Editor.scripts.FileSystem
-  fullName: ID3_Tag_Editor.scripts.FileSystem
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html
+  commentId: T:ID3_Tag_Editor.Scripts.IO.FileSystem
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem
   nameWithType: FileSystem
-- uid: ID3_Tag_Editor.scripts.FileSystem.CreateDirectory(System.String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)
   name: CreateDirectory(String)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_CreateDirectory_System_String_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.CreateDirectory(System.String)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.CreateDirectory(System.String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)
   nameWithType: FileSystem.CreateDirectory(String)
-- uid: ID3_Tag_Editor.scripts.FileSystem.CreateDirectory*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory*
   name: CreateDirectory
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_CreateDirectory_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.CreateDirectory
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.CreateDirectory
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory
   nameWithType: FileSystem.CreateDirectory
-- uid: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String)
   name: GetFilesFromDirectory(String)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_GetFilesFromDirectory_System_String_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String)
   nameWithType: FileSystem.GetFilesFromDirectory(String)
-- uid: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)
   name: GetFilesFromDirectory(String, Boolean)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_GetFilesFromDirectory_System_String_System_Boolean_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory(System.String, System.Boolean)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_System_Boolean_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String, System.Boolean)
   nameWithType: FileSystem.GetFilesFromDirectory(String, Boolean)
-- uid: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory*
   name: GetFilesFromDirectory
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_GetFilesFromDirectory_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.GetFilesFromDirectory
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory
   nameWithType: FileSystem.GetFilesFromDirectory
-- uid: ID3_Tag_Editor.scripts.FileSystem.IsDirectory(System.String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)
   name: IsDirectory(String)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_IsDirectory_System_String_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.IsDirectory(System.String)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.IsDirectory(System.String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)
   nameWithType: FileSystem.IsDirectory(String)
-- uid: ID3_Tag_Editor.scripts.FileSystem.IsDirectory*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory*
   name: IsDirectory
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_IsDirectory_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.IsDirectory
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.IsDirectory
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory
   nameWithType: FileSystem.IsDirectory
-- uid: ID3_Tag_Editor.scripts.FileSystem.IsFile(System.String,System.String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile(System.String,System.String)
   name: IsFile(String, String)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_IsFile_System_String_System_String_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.IsFile(System.String,System.String)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.IsFile(System.String, System.String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_IsFile_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile(System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile(System.String, System.String)
   nameWithType: FileSystem.IsFile(String, String)
-- uid: ID3_Tag_Editor.scripts.FileSystem.IsFile*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile*
   name: IsFile
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_IsFile_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.IsFile
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_IsFile_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.IsFile
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile
   nameWithType: FileSystem.IsFile
-- uid: ID3_Tag_Editor.scripts.FileSystem.ReadFromJSON2(System.String,System.String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2(System.String,System.String)
   name: ReadFromJSON2(String, String)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_ReadFromJSON2_System_String_System_String_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.ReadFromJSON2(System.String,System.String)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.ReadFromJSON2(System.String, System.String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_ReadFromJSON2_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2(System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2(System.String, System.String)
   nameWithType: FileSystem.ReadFromJSON2(String, String)
-- uid: ID3_Tag_Editor.scripts.FileSystem.ReadFromJSON2*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2*
   name: ReadFromJSON2
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_ReadFromJSON2_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.ReadFromJSON2
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_ReadFromJSON2_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.ReadFromJSON2
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2
   nameWithType: FileSystem.ReadFromJSON2
-- uid: ID3_Tag_Editor.scripts.FileSystem.SaveToJSON(System.String,System.String,System.Object)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON(System.String,System.String,System.Object)
   name: SaveToJSON(String, String, Object)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_SaveToJSON_System_String_System_String_System_Object_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.SaveToJSON(System.String,System.String,System.Object)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.SaveToJSON(System.String, System.String, System.Object)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_SaveToJSON_System_String_System_String_System_Object_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON(System.String,System.String,System.Object)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON(System.String, System.String, System.Object)
   nameWithType: FileSystem.SaveToJSON(String, String, Object)
-- uid: ID3_Tag_Editor.scripts.FileSystem.SaveToJSON*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON*
   name: SaveToJSON
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_SaveToJSON_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.SaveToJSON
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_SaveToJSON_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.SaveToJSON
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON
   nameWithType: FileSystem.SaveToJSON
-- uid: ID3_Tag_Editor.scripts.FileSystem.WriteToFile(System.String,System.String,System.String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile(System.String,System.String,System.String)
   name: WriteToFile(String, String, String)
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_WriteToFile_System_String_System_String_System_String_
-  commentId: M:ID3_Tag_Editor.scripts.FileSystem.WriteToFile(System.String,System.String,System.String)
-  fullName: ID3_Tag_Editor.scripts.FileSystem.WriteToFile(System.String, System.String, System.String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_WriteToFile_System_String_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile(System.String,System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile(System.String, System.String, System.String)
   nameWithType: FileSystem.WriteToFile(String, String, String)
-- uid: ID3_Tag_Editor.scripts.FileSystem.WriteToFile*
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile*
   name: WriteToFile
-  href: api/ID3_Tag_Editor.scripts.FileSystem.html#ID3_Tag_Editor_scripts_FileSystem_WriteToFile_
-  commentId: Overload:ID3_Tag_Editor.scripts.FileSystem.WriteToFile
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_WriteToFile_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile
   isSpec: "True"
-  fullName: ID3_Tag_Editor.scripts.FileSystem.WriteToFile
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.WriteToFile
   nameWithType: FileSystem.WriteToFile
-- uid: Scripts
-  name: Scripts
-  href: api/Scripts.html
-  commentId: N:Scripts
-  fullName: Scripts
-  nameWithType: Scripts
-- uid: Scripts.PanelHandler
+- uid: ID3_Tag_Editor.Scripts.UI
+  name: ID3_Tag_Editor.Scripts.UI
+  href: api/ID3_Tag_Editor.Scripts.UI.html
+  commentId: N:ID3_Tag_Editor.Scripts.UI
+  fullName: ID3_Tag_Editor.Scripts.UI
+  nameWithType: ID3_Tag_Editor.Scripts.UI
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler
   name: PanelHandler
-  href: api/Scripts.PanelHandler.html
-  commentId: T:Scripts.PanelHandler
-  fullName: Scripts.PanelHandler
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html
+  commentId: T:ID3_Tag_Editor.Scripts.UI.PanelHandler
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler
   nameWithType: PanelHandler
-- uid: Scripts.PanelHandler.HideSubMenus
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler.HideSubMenus
   name: HideSubMenus()
-  href: api/Scripts.PanelHandler.html#Scripts_PanelHandler_HideSubMenus
-  commentId: M:Scripts.PanelHandler.HideSubMenus
-  fullName: Scripts.PanelHandler.HideSubMenus()
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html#ID3_Tag_Editor_Scripts_UI_PanelHandler_HideSubMenus
+  commentId: M:ID3_Tag_Editor.Scripts.UI.PanelHandler.HideSubMenus
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.HideSubMenus()
   nameWithType: PanelHandler.HideSubMenus()
-- uid: Scripts.PanelHandler.HideSubMenus*
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler.HideSubMenus*
   name: HideSubMenus
-  href: api/Scripts.PanelHandler.html#Scripts_PanelHandler_HideSubMenus_
-  commentId: Overload:Scripts.PanelHandler.HideSubMenus
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html#ID3_Tag_Editor_Scripts_UI_PanelHandler_HideSubMenus_
+  commentId: Overload:ID3_Tag_Editor.Scripts.UI.PanelHandler.HideSubMenus
   isSpec: "True"
-  fullName: Scripts.PanelHandler.HideSubMenus
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.HideSubMenus
   nameWithType: PanelHandler.HideSubMenus
-- uid: Scripts.PanelHandler.HighlightSubMenu(System.Windows.Controls.Panel)
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler.HighlightSubMenu(System.Windows.Controls.Panel)
   name: HighlightSubMenu(Panel)
-  href: api/Scripts.PanelHandler.html#Scripts_PanelHandler_HighlightSubMenu_System_Windows_Controls_Panel_
-  commentId: M:Scripts.PanelHandler.HighlightSubMenu(System.Windows.Controls.Panel)
-  fullName: Scripts.PanelHandler.HighlightSubMenu(System.Windows.Controls.Panel)
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html#ID3_Tag_Editor_Scripts_UI_PanelHandler_HighlightSubMenu_System_Windows_Controls_Panel_
+  commentId: M:ID3_Tag_Editor.Scripts.UI.PanelHandler.HighlightSubMenu(System.Windows.Controls.Panel)
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.HighlightSubMenu(System.Windows.Controls.Panel)
   nameWithType: PanelHandler.HighlightSubMenu(Panel)
-- uid: Scripts.PanelHandler.HighlightSubMenu*
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler.HighlightSubMenu*
   name: HighlightSubMenu
-  href: api/Scripts.PanelHandler.html#Scripts_PanelHandler_HighlightSubMenu_
-  commentId: Overload:Scripts.PanelHandler.HighlightSubMenu
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html#ID3_Tag_Editor_Scripts_UI_PanelHandler_HighlightSubMenu_
+  commentId: Overload:ID3_Tag_Editor.Scripts.UI.PanelHandler.HighlightSubMenu
   isSpec: "True"
-  fullName: Scripts.PanelHandler.HighlightSubMenu
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.HighlightSubMenu
   nameWithType: PanelHandler.HighlightSubMenu
-- uid: Scripts.PanelHandler.ShowSubMenu(System.Windows.Controls.Panel)
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu(System.Windows.Controls.Panel)
   name: ShowSubMenu(Panel)
-  href: api/Scripts.PanelHandler.html#Scripts_PanelHandler_ShowSubMenu_System_Windows_Controls_Panel_
-  commentId: M:Scripts.PanelHandler.ShowSubMenu(System.Windows.Controls.Panel)
-  fullName: Scripts.PanelHandler.ShowSubMenu(System.Windows.Controls.Panel)
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html#ID3_Tag_Editor_Scripts_UI_PanelHandler_ShowSubMenu_System_Windows_Controls_Panel_
+  commentId: M:ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu(System.Windows.Controls.Panel)
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu(System.Windows.Controls.Panel)
   nameWithType: PanelHandler.ShowSubMenu(Panel)
-- uid: Scripts.PanelHandler.ShowSubMenu*
+- uid: ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu*
   name: ShowSubMenu
-  href: api/Scripts.PanelHandler.html#Scripts_PanelHandler_ShowSubMenu_
-  commentId: Overload:Scripts.PanelHandler.ShowSubMenu
+  href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html#ID3_Tag_Editor_Scripts_UI_PanelHandler_ShowSubMenu_
+  commentId: Overload:ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu
   isSpec: "True"
-  fullName: Scripts.PanelHandler.ShowSubMenu
+  fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu
   nameWithType: PanelHandler.ShowSubMenu
-- uid: User
-  name: User
-  href: api/User.html
-  commentId: N:User
-  fullName: User
-  nameWithType: User
-- uid: User.OpenFileDialogSample
+- uid: ID3_Tag_Editor.Scripts.User
+  name: ID3_Tag_Editor.Scripts.User
+  href: api/ID3_Tag_Editor.Scripts.User.html
+  commentId: N:ID3_Tag_Editor.Scripts.User
+  fullName: ID3_Tag_Editor.Scripts.User
+  nameWithType: ID3_Tag_Editor.Scripts.User
+- uid: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample
   name: OpenFileDialogSample
-  href: api/User.OpenFileDialogSample.html
-  commentId: T:User.OpenFileDialogSample
-  fullName: User.OpenFileDialogSample
+  href: api/ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.html
+  commentId: T:ID3_Tag_Editor.Scripts.User.OpenFileDialogSample
+  fullName: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample
   nameWithType: OpenFileDialogSample
-- uid: User.OpenFileDialogSample.#ctor
+- uid: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.#ctor
   name: OpenFileDialogSample()
-  href: api/User.OpenFileDialogSample.html#User_OpenFileDialogSample__ctor
-  commentId: M:User.OpenFileDialogSample.#ctor
-  fullName: User.OpenFileDialogSample.OpenFileDialogSample()
+  href: api/ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.html#ID3_Tag_Editor_Scripts_User_OpenFileDialogSample__ctor
+  commentId: M:ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.#ctor
+  fullName: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenFileDialogSample()
   nameWithType: OpenFileDialogSample.OpenFileDialogSample()
-- uid: User.OpenFileDialogSample.#ctor*
+- uid: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.#ctor*
   name: OpenFileDialogSample
-  href: api/User.OpenFileDialogSample.html#User_OpenFileDialogSample__ctor_
-  commentId: Overload:User.OpenFileDialogSample.#ctor
+  href: api/ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.html#ID3_Tag_Editor_Scripts_User_OpenFileDialogSample__ctor_
+  commentId: Overload:ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.#ctor
   isSpec: "True"
-  fullName: User.OpenFileDialogSample.OpenFileDialogSample
+  fullName: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenFileDialogSample
   nameWithType: OpenFileDialogSample.OpenFileDialogSample
-- uid: User.OpenFileDialogSample.OpenDialog(System.Windows.Controls.TextBox)
+- uid: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenDialog(System.Windows.Controls.TextBox)
   name: OpenDialog(TextBox)
-  href: api/User.OpenFileDialogSample.html#User_OpenFileDialogSample_OpenDialog_System_Windows_Controls_TextBox_
-  commentId: M:User.OpenFileDialogSample.OpenDialog(System.Windows.Controls.TextBox)
-  fullName: User.OpenFileDialogSample.OpenDialog(System.Windows.Controls.TextBox)
+  href: api/ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.html#ID3_Tag_Editor_Scripts_User_OpenFileDialogSample_OpenDialog_System_Windows_Controls_TextBox_
+  commentId: M:ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenDialog(System.Windows.Controls.TextBox)
+  fullName: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenDialog(System.Windows.Controls.TextBox)
   nameWithType: OpenFileDialogSample.OpenDialog(TextBox)
-- uid: User.OpenFileDialogSample.OpenDialog*
+- uid: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenDialog*
   name: OpenDialog
-  href: api/User.OpenFileDialogSample.html#User_OpenFileDialogSample_OpenDialog_
-  commentId: Overload:User.OpenFileDialogSample.OpenDialog
+  href: api/ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.html#ID3_Tag_Editor_Scripts_User_OpenFileDialogSample_OpenDialog_
+  commentId: Overload:ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenDialog
   isSpec: "True"
-  fullName: User.OpenFileDialogSample.OpenDialog
+  fullName: ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.OpenDialog
   nameWithType: OpenFileDialogSample.OpenDialog
-- uid: User.PathMethods
+- uid: ID3_Tag_Editor.Scripts.User.PathMethods
   name: PathMethods
-  href: api/User.PathMethods.html
-  commentId: T:User.PathMethods
-  fullName: User.PathMethods
+  href: api/ID3_Tag_Editor.Scripts.User.PathMethods.html
+  commentId: T:ID3_Tag_Editor.Scripts.User.PathMethods
+  fullName: ID3_Tag_Editor.Scripts.User.PathMethods
   nameWithType: PathMethods
-- uid: User.PathMethods.SelectFile
+- uid: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFile
   name: SelectFile()
-  href: api/User.PathMethods.html#User_PathMethods_SelectFile
-  commentId: M:User.PathMethods.SelectFile
-  fullName: User.PathMethods.SelectFile()
+  href: api/ID3_Tag_Editor.Scripts.User.PathMethods.html#ID3_Tag_Editor_Scripts_User_PathMethods_SelectFile
+  commentId: M:ID3_Tag_Editor.Scripts.User.PathMethods.SelectFile
+  fullName: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFile()
   nameWithType: PathMethods.SelectFile()
-- uid: User.PathMethods.SelectFile*
+- uid: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFile*
   name: SelectFile
-  href: api/User.PathMethods.html#User_PathMethods_SelectFile_
-  commentId: Overload:User.PathMethods.SelectFile
+  href: api/ID3_Tag_Editor.Scripts.User.PathMethods.html#ID3_Tag_Editor_Scripts_User_PathMethods_SelectFile_
+  commentId: Overload:ID3_Tag_Editor.Scripts.User.PathMethods.SelectFile
   isSpec: "True"
-  fullName: User.PathMethods.SelectFile
+  fullName: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFile
   nameWithType: PathMethods.SelectFile
-- uid: User.PathMethods.SelectFolder(System.Windows.Controls.TextBox,User.Paths.PathType)
+- uid: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFolder(System.Windows.Controls.TextBox,ID3_Tag_Editor.Scripts.User.Paths.PathType)
   name: SelectFolder(TextBox, Paths.PathType)
-  href: api/User.PathMethods.html#User_PathMethods_SelectFolder_System_Windows_Controls_TextBox_User_Paths_PathType_
-  commentId: M:User.PathMethods.SelectFolder(System.Windows.Controls.TextBox,User.Paths.PathType)
-  fullName: User.PathMethods.SelectFolder(System.Windows.Controls.TextBox, User.Paths.PathType)
+  href: api/ID3_Tag_Editor.Scripts.User.PathMethods.html#ID3_Tag_Editor_Scripts_User_PathMethods_SelectFolder_System_Windows_Controls_TextBox_ID3_Tag_Editor_Scripts_User_Paths_PathType_
+  commentId: M:ID3_Tag_Editor.Scripts.User.PathMethods.SelectFolder(System.Windows.Controls.TextBox,ID3_Tag_Editor.Scripts.User.Paths.PathType)
+  fullName: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFolder(System.Windows.Controls.TextBox, ID3_Tag_Editor.Scripts.User.Paths.PathType)
   nameWithType: PathMethods.SelectFolder(TextBox, Paths.PathType)
-- uid: User.PathMethods.SelectFolder*
+- uid: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFolder*
   name: SelectFolder
-  href: api/User.PathMethods.html#User_PathMethods_SelectFolder_
-  commentId: Overload:User.PathMethods.SelectFolder
+  href: api/ID3_Tag_Editor.Scripts.User.PathMethods.html#ID3_Tag_Editor_Scripts_User_PathMethods_SelectFolder_
+  commentId: Overload:ID3_Tag_Editor.Scripts.User.PathMethods.SelectFolder
   isSpec: "True"
-  fullName: User.PathMethods.SelectFolder
+  fullName: ID3_Tag_Editor.Scripts.User.PathMethods.SelectFolder
   nameWithType: PathMethods.SelectFolder
-- uid: User.Paths
+- uid: ID3_Tag_Editor.Scripts.User.Paths
   name: Paths
-  href: api/User.Paths.html
-  commentId: T:User.Paths
-  fullName: User.Paths
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html
+  commentId: T:ID3_Tag_Editor.Scripts.User.Paths
+  fullName: ID3_Tag_Editor.Scripts.User.Paths
   nameWithType: Paths
-- uid: User.Paths.Defaults
+- uid: ID3_Tag_Editor.Scripts.User.Paths.Defaults
   name: Paths.Defaults
-  href: api/User.Paths.Defaults.html
-  commentId: T:User.Paths.Defaults
-  fullName: User.Paths.Defaults
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.Defaults.html
+  commentId: T:ID3_Tag_Editor.Scripts.User.Paths.Defaults
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.Defaults
   nameWithType: Paths.Defaults
-- uid: User.Paths.Defaults.Music
+- uid: ID3_Tag_Editor.Scripts.User.Paths.Defaults.Music
   name: Music
-  href: api/User.Paths.Defaults.html#User_Paths_Defaults_Music
-  commentId: F:User.Paths.Defaults.Music
-  fullName: User.Paths.Defaults.Music
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.Defaults.html#ID3_Tag_Editor_Scripts_User_Paths_Defaults_Music
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.Defaults.Music
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.Defaults.Music
   nameWithType: Paths.Defaults.Music
-- uid: User.Paths.Export
+- uid: ID3_Tag_Editor.Scripts.User.Paths.Export
   name: Export
-  href: api/User.Paths.html#User_Paths_Export
-  commentId: F:User.Paths.Export
-  fullName: User.Paths.Export
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_Export
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.Export
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.Export
   nameWithType: Paths.Export
-- uid: User.Paths.GetApplicationPath
+- uid: ID3_Tag_Editor.Scripts.User.Paths.GetApplicationPath
   name: GetApplicationPath()
-  href: api/User.Paths.html#User_Paths_GetApplicationPath
-  commentId: M:User.Paths.GetApplicationPath
-  fullName: User.Paths.GetApplicationPath()
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_GetApplicationPath
+  commentId: M:ID3_Tag_Editor.Scripts.User.Paths.GetApplicationPath
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.GetApplicationPath()
   nameWithType: Paths.GetApplicationPath()
-- uid: User.Paths.GetApplicationPath*
+- uid: ID3_Tag_Editor.Scripts.User.Paths.GetApplicationPath*
   name: GetApplicationPath
-  href: api/User.Paths.html#User_Paths_GetApplicationPath_
-  commentId: Overload:User.Paths.GetApplicationPath
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_GetApplicationPath_
+  commentId: Overload:ID3_Tag_Editor.Scripts.User.Paths.GetApplicationPath
   isSpec: "True"
-  fullName: User.Paths.GetApplicationPath
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.GetApplicationPath
   nameWithType: Paths.GetApplicationPath
-- uid: User.Paths.GetFullPath(System.String)
+- uid: ID3_Tag_Editor.Scripts.User.Paths.GetFullPath(System.String)
   name: GetFullPath(String)
-  href: api/User.Paths.html#User_Paths_GetFullPath_System_String_
-  commentId: M:User.Paths.GetFullPath(System.String)
-  fullName: User.Paths.GetFullPath(System.String)
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_GetFullPath_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.User.Paths.GetFullPath(System.String)
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.GetFullPath(System.String)
   nameWithType: Paths.GetFullPath(String)
-- uid: User.Paths.GetFullPath(System.String,System.String)
+- uid: ID3_Tag_Editor.Scripts.User.Paths.GetFullPath(System.String,System.String)
   name: GetFullPath(String, String)
-  href: api/User.Paths.html#User_Paths_GetFullPath_System_String_System_String_
-  commentId: M:User.Paths.GetFullPath(System.String,System.String)
-  fullName: User.Paths.GetFullPath(System.String, System.String)
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_GetFullPath_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.User.Paths.GetFullPath(System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.GetFullPath(System.String, System.String)
   nameWithType: Paths.GetFullPath(String, String)
-- uid: User.Paths.GetFullPath*
+- uid: ID3_Tag_Editor.Scripts.User.Paths.GetFullPath*
   name: GetFullPath
-  href: api/User.Paths.html#User_Paths_GetFullPath_
-  commentId: Overload:User.Paths.GetFullPath
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_GetFullPath_
+  commentId: Overload:ID3_Tag_Editor.Scripts.User.Paths.GetFullPath
   isSpec: "True"
-  fullName: User.Paths.GetFullPath
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.GetFullPath
   nameWithType: Paths.GetFullPath
-- uid: User.Paths.ImageFile
+- uid: ID3_Tag_Editor.Scripts.User.Paths.ImageFile
   name: ImageFile
-  href: api/User.Paths.html#User_Paths_ImageFile
-  commentId: F:User.Paths.ImageFile
-  fullName: User.Paths.ImageFile
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_ImageFile
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.ImageFile
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.ImageFile
   nameWithType: Paths.ImageFile
-- uid: User.Paths.Import
+- uid: ID3_Tag_Editor.Scripts.User.Paths.Import
   name: Import
-  href: api/User.Paths.html#User_Paths_Import
-  commentId: F:User.Paths.Import
-  fullName: User.Paths.Import
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.html#ID3_Tag_Editor_Scripts_User_Paths_Import
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.Import
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.Import
   nameWithType: Paths.Import
-- uid: User.Paths.PathType
+- uid: ID3_Tag_Editor.Scripts.User.Paths.PathType
   name: Paths.PathType
-  href: api/User.Paths.PathType.html
-  commentId: T:User.Paths.PathType
-  fullName: User.Paths.PathType
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.PathType.html
+  commentId: T:ID3_Tag_Editor.Scripts.User.Paths.PathType
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.PathType
   nameWithType: Paths.PathType
-- uid: User.Paths.PathType.INPUT
+- uid: ID3_Tag_Editor.Scripts.User.Paths.PathType.INPUT
   name: INPUT
-  href: api/User.Paths.PathType.html#User_Paths_PathType_INPUT
-  commentId: F:User.Paths.PathType.INPUT
-  fullName: User.Paths.PathType.INPUT
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.PathType.html#ID3_Tag_Editor_Scripts_User_Paths_PathType_INPUT
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.PathType.INPUT
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.PathType.INPUT
   nameWithType: Paths.PathType.INPUT
-- uid: User.Paths.PathType.NONE
+- uid: ID3_Tag_Editor.Scripts.User.Paths.PathType.NONE
   name: NONE
-  href: api/User.Paths.PathType.html#User_Paths_PathType_NONE
-  commentId: F:User.Paths.PathType.NONE
-  fullName: User.Paths.PathType.NONE
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.PathType.html#ID3_Tag_Editor_Scripts_User_Paths_PathType_NONE
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.PathType.NONE
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.PathType.NONE
   nameWithType: Paths.PathType.NONE
-- uid: User.Paths.PathType.OUTPUT
+- uid: ID3_Tag_Editor.Scripts.User.Paths.PathType.OUTPUT
   name: OUTPUT
-  href: api/User.Paths.PathType.html#User_Paths_PathType_OUTPUT
-  commentId: F:User.Paths.PathType.OUTPUT
-  fullName: User.Paths.PathType.OUTPUT
+  href: api/ID3_Tag_Editor.Scripts.User.Paths.PathType.html#ID3_Tag_Editor_Scripts_User_Paths_PathType_OUTPUT
+  commentId: F:ID3_Tag_Editor.Scripts.User.Paths.PathType.OUTPUT
+  fullName: ID3_Tag_Editor.Scripts.User.Paths.PathType.OUTPUT
   nameWithType: Paths.PathType.OUTPUT
