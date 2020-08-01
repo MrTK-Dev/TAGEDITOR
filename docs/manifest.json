@@ -12,10 +12,10 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "kqaSeqt4KgS54dFGhI1CvA=="
+          "hash": "pxnLZ9yluifcvqrL6S2E8w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -24,10 +24,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/CHANGELOG.html",
-          "hash": "XbKBmbTCUwfDLA+ILSsseA=="
+          "hash": "1iQ+1bKef+va3RlD/1Gv2w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -36,10 +36,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "scyh23yyt7aKdSWOBNMqZA=="
+          "hash": "5Y2Fp6S/80QlpRr25OVbDQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,10 +48,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/namespaces.html",
-          "hash": "73tZS3Qr77HM89FzlIm1DQ=="
+          "hash": "jQOqjAOdPtYDeN461i93Cw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -72,10 +72,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.App.html",
-          "hash": "6q1vnSS7bCm1xtmXCMIIag=="
+          "hash": "Meu3cy3LhObMmrXO7pevuw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -84,10 +84,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.html",
-          "hash": "0sW0g+qPNo+r+PZf5Ro/mg=="
+          "hash": "TkMDWhn0ZU0B8W7b4ONjFQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -96,10 +96,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html",
-          "hash": "fMdC1Fh26flCBGv3S8H0NA=="
+          "hash": "0LHS64vhR9aIlvwt9LHdXg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -108,10 +108,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html",
-          "hash": "lomvlheaxZNnlvZbzsycLQ=="
+          "hash": "LAKswwcDBxVC4JDUaiGAHw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -120,10 +120,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.Modes.html",
-          "hash": "5+/6qID3/shKEFXm7Mu+iA=="
+          "hash": "frmXivuj3DE1fOQeu2ZO7g=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -132,10 +132,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.html",
-          "hash": "JG/QiOwK1Zk4QobrwtwxtQ=="
+          "hash": "u6sawNI6u/O5iSp4xDeZbA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -144,10 +144,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.UI.html",
-          "hash": "fV9YH+s6qUvJEf5LMu+3BA=="
+          "hash": "4PKjikBEW0DHcnw/KhJhhA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -156,10 +156,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.MainWindow.html",
-          "hash": "it851o5ITqSA/gjq5m3Tcg=="
+          "hash": "jiOAax4Vl6nItAIu+flwCw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -168,10 +168,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Names.html",
-          "hash": "R04gmC1kCHzkPsUaijpi4w=="
+          "hash": "SaGNNZJAtdTskbZFmYrh9w=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -180,10 +180,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Saves.html",
-          "hash": "WfYXcZiGUcksgRjNDzUIDA=="
+          "hash": "A5UdXiCEbPfEq3shkC7Thw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -192,10 +192,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html",
-          "hash": "c4D1KywOJ52JurtHtRvzrQ=="
+          "hash": "oNq9gbgqGrIri0T/O40ulQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -204,10 +204,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.Extensions.html",
-          "hash": "QQ1INyPeaucFoeCG41qKkw=="
+          "hash": "G4nyOkyKvv1AoD4aXppZmA=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -216,7 +216,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html",
-          "hash": "ivU2K0CXQ3nq1O9hJ36/fQ=="
+          "hash": "1tlNT2IHTXIqS9JOzJiv7Q=="
         }
       },
       "is_incremental": false,
@@ -228,7 +228,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.IO.FileSystem.html",
-          "hash": "0RzdwyF8Jfynrm8lHKpLdw=="
+          "hash": "mMusFxtbldBm6+U78gA+rQ=="
         }
       },
       "is_incremental": false,
@@ -240,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.IO.html",
-          "hash": "n459/RR5wb5jv8/1efVXPg=="
+          "hash": "5LUA3q53WA2kIWO23UAcvg=="
         }
       },
       "is_incremental": false,
@@ -252,10 +252,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.Tags.Tags.html",
-          "hash": "fz3iE8qY76YaIcqYTxdOnA=="
+          "hash": "lWomb4RnqQDSc9KDkYGB/A=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -264,10 +264,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.Tags.html",
-          "hash": "f4bYnUf+HTGM1xjDMnuEyA=="
+          "hash": "PvHfYAXq4GrYJrELabQQEw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -276,10 +276,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html",
-          "hash": "Qxu/4NTxuzGw807blRmqeQ=="
+          "hash": "gR3ziqIO0G7JRsWhbpS4Hw=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -288,10 +288,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.UI.html",
-          "hash": "KxgbxOrYIiTUo/6rhdn58A=="
+          "hash": "fVL6l/++3Whyw6eeGUWPZQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -300,10 +300,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.User.OpenFileDialogSample.html",
-          "hash": "1ZEoC36xESMLYcW3ZvisTg=="
+          "hash": "U0O73/VbiqlkNsSuIPrFKQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -312,10 +312,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.User.PathMethods.html",
-          "hash": "MENFPJ6ck4xZvQ6Dck8Ysw=="
+          "hash": "trwBBCmUa9Acy+NTudkwGQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -324,10 +324,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.User.Paths.Defaults.html",
-          "hash": "OiTO/RuGE2OyB/ulufmSEw=="
+          "hash": "0kqI3ojOXPSKbgZcOqYgbQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -336,10 +336,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.User.Paths.PathType.html",
-          "hash": "SYU5XIm2AL8yKuL7/pmHxQ=="
+          "hash": "ENTVxLQUjHj9knO1UqD1Zg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -348,10 +348,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.User.Paths.html",
-          "hash": "X5nmt4QsWFIyzQVMNbX3ug=="
+          "hash": "9+CEw4Ga8PJDBjSNXPTJDQ=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -360,10 +360,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.Scripts.User.html",
-          "hash": "RqDQfHRY30bjeaqY6ip7BA=="
+          "hash": "0zx560wP68aKiTppKV8Q0Q=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -372,10 +372,10 @@
       "output": {
         ".html": {
           "relative_path": "api/ID3_Tag_Editor.html",
-          "hash": "Yfynhs+0TBiVKy33OiOM+A=="
+          "hash": "wWG9UFKavZlttK+V5vCzJg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -394,23 +394,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 4,
-          "skipped_file_count": 4
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 26,
-          "skipped_file_count": 24
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -423,8 +425,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0
