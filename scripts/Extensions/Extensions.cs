@@ -38,6 +38,33 @@ namespace ID3_Tag_Editor.Scripts.Extensions
             return Input.Substring(0, Input.Length - 1);
         }
 
+        public static bool EqualsAny(this string Input, string[] Chars)
+        {
+            return Input.EqualsAny(Chars, false);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="Input"></param>
+        /// <param name="Chars"></param>
+        /// <param name="ignoreCase"></param>
+        /// <returns></returns>
+        public static bool EqualsAny(this string Input, string[] Chars, bool ignoreCase)
+        {
+            if (ignoreCase)
+                for (int j = 0; j < Chars.Length; j++)
+                    if (Input.Equals(Chars[j], StringComparison.OrdinalIgnoreCase))
+                        return true;
+
+            else
+                for (int i = 0; i < Chars.Length; i++)
+                    if (Input == Chars[i])
+                        return true;
+
+            return false;
+        }
+
         #endregion
     }
 }
