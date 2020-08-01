@@ -57,10 +57,10 @@ namespace ID3_Tag_Editor.Scripts.IO
             return JsonConvert.DeserializeObject(File.ReadAllText(Paths.GetFullPath(Path, fileName + ".json")));
         }
 
-        public static void WriteToFile(string Path, string fileName, string Content)
+        /*public static void WriteToFile(string Path, string fileName, string Content)
         {
 
-        }
+        }*/
 
         /// <summary>
         /// Creates a directory if it does not exist.
