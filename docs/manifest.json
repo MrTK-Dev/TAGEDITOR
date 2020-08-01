@@ -4,18 +4,6 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "Conceptual",
-      "source_relative_path": "CHANGELOG.md",
-      "output": {
-        ".html": {
-          "relative_path": "CHANGELOG.html",
-          "hash": "k8GcF6cY6wZ0NscxnwlAig=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "log_codes": [
         "InvalidFileLink"
       ],
@@ -24,7 +12,31 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "30R+E3IowMT6VFrwwofJBg=="
+          "hash": "9O09XYHvoTbqLzRX8aUr/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/CHANGELOG.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/CHANGELOG.html",
+          "hash": "XbKBmbTCUwfDLA+ILSsseA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "scyh23yyt7aKdSWOBNMqZA=="
         }
       },
       "is_incremental": false,
@@ -36,7 +48,19 @@
       "output": {
         ".html": {
           "relative_path": "articles/namespaces.html",
-          "hash": "p4e//hnNPZrZWeWaHk0g1A=="
+          "hash": "73tZS3Qr77HM89FzlIm1DQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "8kv9RwH8A5N/6+y+H/ufWQ=="
         }
       },
       "is_incremental": false,
@@ -345,7 +369,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 3,
+          "total_file_count": 4,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
