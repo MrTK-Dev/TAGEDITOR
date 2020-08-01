@@ -36,11 +36,9 @@
     ·
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/issues">Request Features</a>
   </p>
-</p>
 
-----------
+  <hr>
 
-<p align="center">
   <h2 align="center"><strong>Latest Release</strong>
   <br />
     0.0.1 - Alpha
@@ -52,13 +50,11 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/releases"><strong>Download »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/tree/master/.github/CONTRIBUTING.md">Changelog</a>
+    <a href="https://mrtk-dev.github.io/TAGEDITOR/CHANGELOG.html">Changelog</a>
     ·
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/issues">Source Code</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR">Source Code</a>
   </p>
 </p>
-
-
 
 <!-- MARKDOWN Shields -->
 
