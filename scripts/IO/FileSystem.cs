@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -123,6 +123,19 @@ namespace ID3_Tag_Editor.Scripts.IO
 
             else
                 return null;
+        }
+
+        public static string GetFileName(string Path)
+        {
+            return GetFileName(Path, true);
+        }
+
+        public static string GetFileName(string Path, bool isRelative)
+        {
+            if (isRelative)
+                return System.IO.Path.GetFileName(Paths.GetFullPath(Path));
+
+            return System.IO.Path.GetFileName(Path);
         }
 
         public static bool IsDirectory(string Path)
