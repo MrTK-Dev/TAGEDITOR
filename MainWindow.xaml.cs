@@ -59,6 +59,9 @@ namespace ID3_Tag_Editor
 
         public void OutputCount(object sender, RoutedEventArgs e)
         {
+
+
+            /*
             string[] allFiles = FileSystem.GetFilesFromDirectory(Paths.Import, true);
 
             Console.WriteLine("The folder contains {0} songs.", allFiles.Length);
@@ -181,10 +184,17 @@ namespace ID3_Tag_Editor
                         Console.WriteLine("Tags are missing!");
                     }
                 }
+
+                
             }
 
             Preferences.Save();
+
+        */
         }
+
+
+      
 
         public void ChangeImage(object sender, RoutedEventArgs e)
         {
@@ -280,6 +290,8 @@ namespace ID3_Tag_Editor
             }
         }
 
+        #region Button Clicks
+
         private void BClick_SelectFolder_Input(object sender, RoutedEventArgs e)
         {
             PathMethods.SelectFolder(TextBox_Dialog_Input, Paths.PathType.INPUT);
@@ -289,5 +301,14 @@ namespace ID3_Tag_Editor
         {
             PathMethods.SelectFolder(TextBox_Dialog_Output, Paths.PathType.OUTPUT);
         }
+
+        private void BC_ProcessSongs(object sender, RoutedEventArgs e)
+        {
+            Tags.ProcessAllSongs();
+
+            Preferences.Save();
+        }
+
+        #endregion
     }
 }
