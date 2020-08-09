@@ -60,6 +60,11 @@ namespace ID3_Tag_Editor.Scripts.IO
             return JsonConvert.DeserializeObject(File.ReadAllText(Paths.GetFullPath(Path, fileName + ".json")));
         }
 
+        public static string ReturnFromJSON(string Path, string fileName)
+        {
+            return File.ReadAllText(Paths.GetFullPath(Path, fileName + ".json"));
+        }
+
         /*public static void WriteToFile(string Path, string fileName, string Content)
         {
 

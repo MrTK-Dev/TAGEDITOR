@@ -98,6 +98,7 @@
     </ApplicationDefinition>
     <Compile Include="Scripts\Extensions\Extensions.cs" />
     <Compile Include="Scripts\IO\FileSystem.cs" />
+    <Compile Include="Scripts\IO\JSON.cs" />
     <Compile Include="Scripts\Names.cs" />
     <Compile Include="Scripts\Tags\Tags.cs" />
     <Compile Include="Scripts\UI\OpenStuff.cs" />
