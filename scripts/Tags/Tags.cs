@@ -10,11 +10,19 @@ using System.Threading.Tasks;
 
 namespace ID3_Tag_Editor.Scripts.Tags
 {
-    public static class Tags
+    public static class TagProcessing
     {
+        #region Variables
+
         static readonly string[] remixSigns = new string[] { "Remix", "Cover", "Flip", "Rework", "Edit", "Redo", "VIP", "Refix" };
 
         static readonly string[] featureSigns = new string[] { "ft", "ft.", "feat", "feat." };
+
+        #endregion
+
+        #region Main Methods
+
+        #region Initialization
 
         public static void ProcessAllSongs()
         {
@@ -28,7 +36,11 @@ namespace ID3_Tag_Editor.Scripts.Tags
                         ProcessSong(allFiles[i]);
         }
 
-        public static void ProcessSong(string newFile)
+        #endregion
+
+        #region Processing
+
+        private static void ProcessSong(string newFile)
         {
             Debug.WriteLine(newFile);
 
@@ -55,6 +67,17 @@ namespace ID3_Tag_Editor.Scripts.Tags
             else
                 Debug.WriteLine(newFile + " does not have the required Tags!");
         }
+
+        /*private static void ProcessImage()
+        {
+
+        }*/
+
+        #endregion
+
+        #endregion
+
+        #region Helper Methods
 
         static string GetFileName(string firstPerformer, string Title)
         {
@@ -92,5 +115,23 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
             return fullTitle;
         }
+
+        #endregion
     }
+
+    #region Enums
+
+    public static class Modes
+    {
+        public static ExportTarget exportTarget = ExportTarget.ONEFILE;
+
+        public enum ExportTarget
+        {
+            ONEFILE,
+            FOLDERS,
+            none
+        }
+    }
+
+    #endregion
 }
