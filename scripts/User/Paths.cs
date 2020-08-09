@@ -92,7 +92,7 @@ namespace ID3_Tag_Editor.Scripts.User
                     textBox.Text = Export;
                 }
 
-                Preferences.Save();
+                Preferences.SaveSettings();
             }
 
             else

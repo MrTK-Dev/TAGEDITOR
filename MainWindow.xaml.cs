@@ -51,10 +51,10 @@ namespace ID3_Tag_Editor
 
             #endregion
 
-            Preferences.Load();
+            Preferences.LoadSettings();
 
             //test
-            Tags.ProcessAllSongs();
+            TagProcessing.ProcessAllSongs();
         }
 
         public void OutputCount(object sender, RoutedEventArgs e)
@@ -304,9 +304,9 @@ namespace ID3_Tag_Editor
 
         private void BC_ProcessSongs(object sender, RoutedEventArgs e)
         {
-            Tags.ProcessAllSongs();
+            TagProcessing.ProcessAllSongs();
 
-            Preferences.Save();
+            Preferences.SaveSettings();
         }
 
         #endregion

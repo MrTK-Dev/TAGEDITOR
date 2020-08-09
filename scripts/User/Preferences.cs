@@ -16,14 +16,33 @@ namespace ID3_Tag_Editor.Scripts.User
         static readonly string settingsPath = @"User/Settings";
 
         /// <summary>
+        /// Name of the settings file.
+        /// </summary>
+        static readonly string settingsFile = "Settings";
+
+        /// <summary>
         /// This works as a switch if it is the first run of the application to make some preparations.
         /// </summary>
         static bool firstRun = true;
 
         #endregion
 
+        #region Classes
+
+        #region Main
+
+        [System.Serializable]
+        public class Settings
+        {
+            public UserPaths UserPaths { get; set; }
+            public UserTags UserTags { get; set; }
+        }
+
+        #endregion
+
         #region Paths
 
+        [System.Serializable]
         /// <summary>
         /// Stores paths to folders that the user choose.
         /// </summary>
@@ -40,46 +59,39 @@ namespace ID3_Tag_Editor.Scripts.User
             public string Export { get; set; }
         }
 
-        /// <summary>
-        /// Caches the paths the user choose.
-        /// </summary>
-        private static readonly UserPaths userPaths = new UserPaths();
+        #endregion
 
-        /// <summary>
-        /// Loads the user preferences from the file and apply it to the cached memory.
-        /// </summary>
-        /// <param name="newUserPaths">The loaded object from the json file.</param>
-        public static void LoadUserPaths(dynamic newUserPaths)
+        #region Tags
+
+        [System.Serializable]
+        public class UserTags
         {
-            Paths.Import = newUserPaths.Import;
-
-            Paths.Export = newUserPaths.Export;
-
-            MainWindow.UI.UserPathBoxes.Import.Text = newUserPaths.Import;
-
-            MainWindow.UI.UserPathBoxes.Export.Text = newUserPaths.Export;
-        }
-
-        /// <summary>
-        /// Saves the current selection of paths to the json file.
-        /// <para>First it caches the current selection to <see cref="userPaths"/> and then it saves it to the corresponding json.</para>
-        /// </summary>
-        public static void SaveUserPaths()
-        {
-            Debug.WriteLine("Starting to save userPaths to File...");
-
-            userPaths.Import = Paths.Import;
-
-            userPaths.Export = Paths.Export;
-
-            FileSystem.SaveToJSON(settingsPath, "Paths", userPaths);
-
-            Debug.WriteLine("...saving done!");
+            public Tags.Modes.ExportTarget ExportTarget { get; set; }
         }
 
         #endregion
 
-        #region Main
+        #endregion
+
+        #region Methods
+
+        public static void SaveSettings()
+        {
+            Settings UserSettings = new Settings
+            {
+                UserPaths = new UserPaths
+                {
+                    Import = Paths.Import,
+                    Export = Paths.Export
+                },
+                UserTags = new UserTags
+                {
+                    ExportTarget = Tags.Modes.exportTarget
+                }
+            };
+
+            FileSystem.SaveToJSON(settingsPath, settingsFile, UserSettings);
+        }
 
         /// <summary>
         /// Loads every setting from files in the cache and applies it to the application.
@@ -93,35 +105,29 @@ namespace ID3_Tag_Editor.Scripts.User
         /// </item>
         /// </list>
         /// </summary>
-        public static void Load()
+        public static void LoadSettings()
         {
             if (firstRun)
             {
                 if (!FileSystem.IsDirectory(settingsPath))
                     FileSystem.CreateDirectory(settingsPath);
 
-                if (!FileSystem.IsFile(settingsPath, "Paths.json"))
-                    SaveUserPaths();
+                if (!FileSystem.IsFile(settingsPath, settingsFile + ".json"))
+                    SaveSettings();
 
                 firstRun = false;
             }
 
-            LoadUserPaths(FileSystem.ReadFromJSON2(settingsPath, "Paths"));
-        }
+            Settings newUserSettings = JSON.ReadSettings(settingsPath, settingsFile);
 
-        /// <summary>
-        /// Saves every setting from the cache and saves it to files.
-        /// <para>The function loads following modules:</para>
-        /// <list type="bullet">
-        /// <item>
-        /// <term><see cref="SaveUserPaths"/></term>
-        /// <description>Paths for the files.</description>
-        /// </item>
-        /// </list>
-        /// </summary>
-        public static void Save()
-        {
-            SaveUserPaths();
+            Paths.Import = newUserSettings.UserPaths.Import;
+            Paths.Export = newUserSettings.UserPaths.Export;
+
+            //TODO Create Method in different class
+            MainWindow.UI.UserPathBoxes.Import.Text = Paths.Import;
+            MainWindow.UI.UserPathBoxes.Export.Text = Paths.Export;
+
+            Tags.Modes.exportTarget = newUserSettings.UserTags.ExportTarget;
         }
 
         #endregion
