@@ -62,14 +62,45 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
                 newSong.Save();
 
+                //Manages the result folder for the processed song. This allows the user to sort the songs.
                 if (Modes.exportTarget != Modes.ExportTarget.none)
                 {
                     if (Modes.exportTarget == Modes.ExportTarget.ONEFOLDER)
                         FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export);
 
                     else if (Modes.exportTarget == Modes.ExportTarget.FOLDERS)
-                        //TODO add sorting options
-                        FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export + @"/" + newSong.Tag.Album.Replace(":", " ").Replace("/", "_"));
+                    {
+                        string newSortingString;
+
+                        switch (Modes.sortingTarget)
+                        {
+                            case Modes.SortingTarget.ALBUM:
+                                newSortingString = newSong.Tag.Album;
+                                break;
+
+                            case Modes.SortingTarget.PERFORMER:
+                                newSortingString = newSong.Tag.FirstPerformer;
+                                break;
+
+                            case Modes.SortingTarget.YEAR:
+                                newSortingString = newSong.Tag.Year.ToString();
+                                break;
+
+                            case Modes.SortingTarget.GENRE:
+                                newSortingString = newSong.Tag.FirstGenre;
+                                break;
+
+                            case Modes.SortingTarget.none:
+                                newSortingString = "ERROR";
+                                break;
+
+                            default:
+                                newSortingString = newSong.Tag.Album;
+                                break;
+                        }
+
+                        FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export + @"/" + newSortingString.Replace(":", " ").Replace("/", "_"));
+                    }
                 }
             }
 
@@ -150,6 +181,17 @@ namespace ID3_Tag_Editor.Scripts.Tags
         {
             ONEFOLDER,
             FOLDERS,
+            none
+        }
+
+        public static SortingTarget sortingTarget = SortingTarget.ALBUM;
+
+        public enum SortingTarget
+        {
+            ALBUM,
+            PERFORMER,
+            YEAR,
+            GENRE,
             none
         }
 

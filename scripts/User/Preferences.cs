@@ -98,6 +98,11 @@ namespace ID3_Tag_Editor.Scripts.User
             /// Max size of images.
             /// </summary>
             public int ImageMaxSize { get; set; }
+
+            /// <summary>
+            /// How the processed songs should be sorted in folders.
+            /// </summary>
+            public Tags.Modes.SortingTarget SortingTarget { get; set; }
         }
 
         #endregion
@@ -123,7 +128,8 @@ namespace ID3_Tag_Editor.Scripts.User
                     ExportTarget = Tags.Modes.exportTarget,
                     ImageCheck = Tags.Modes.imageCheck,
                     ImageProcessing = Tags.Modes.imageProcessing,
-                    ImageMaxSize = Tags.Modes.imageMaxSize
+                    ImageMaxSize = Tags.Modes.imageMaxSize,
+                    SortingTarget = Tags.Modes.sortingTarget
                 }
             };
 
@@ -172,6 +178,7 @@ namespace ID3_Tag_Editor.Scripts.User
             Tags.Modes.imageCheck = newUserSettings.UserTags.ImageCheck;
             Tags.Modes.imageProcessing = newUserSettings.UserTags.ImageProcessing;
             Tags.Modes.imageMaxSize = newUserSettings.UserTags.ImageMaxSize;
+            Tags.Modes.sortingTarget = newUserSettings.UserTags.SortingTarget;
         }
 
         #endregion
