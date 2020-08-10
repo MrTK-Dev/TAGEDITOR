@@ -83,6 +83,16 @@ namespace ID3_Tag_Editor.Scripts.User
             /// How the processed songs should get saved.
             /// </summary>
             public Tags.Modes.ExportTarget ExportTarget { get; set; }
+
+            /// <summary>
+            /// What should be checked about the images.
+            /// </summary>
+            public Tags.Modes.ImageCheck ImageCheck { get; set; }
+
+            /// <summary>
+            /// How the images should be processed.
+            /// </summary>
+            public Tags.Modes.ImageProcessing ImageProcessing { get; set; }
         }
 
         #endregion

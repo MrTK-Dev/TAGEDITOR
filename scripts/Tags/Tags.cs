@@ -1,4 +1,4 @@
-﻿using ID3_Tag_Editor.Scripts.Extensions;
+using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -129,6 +129,25 @@ namespace ID3_Tag_Editor.Scripts.Tags
         {
             ONEFILE,
             FOLDERS,
+            none
+        }
+
+        public static ImageCheck imageCheck = ImageCheck.ALL;
+
+        public enum ImageCheck
+        {
+            SIZE,
+            SQUARE,
+            ALL,
+            none
+        }
+
+        public static ImageProcessing imageProcessing = ImageProcessing.none;
+
+        public enum ImageProcessing
+        {
+            DELETE,
+            OVERWRITE,
             none
         }
     }
