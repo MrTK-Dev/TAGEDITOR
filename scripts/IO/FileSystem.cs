@@ -70,46 +70,46 @@ namespace ID3_Tag_Editor.Scripts.IO
 
         }*/
 
+        public static void CreateDirectoryIf(string Path)
+        {
+            CreateDirectoryIf(Path, true);
+        }
+
         /// <summary>
         /// Creates a directory if it does not exist.
         /// </summary>
         /// <param name="Path">Path to the wanted folder.</param>
-        public static void CreateDirectory(string Path)
+        /// <param name="isRelative">True => relative path, false => absolute path. Default = true.</param>
+        public static void CreateDirectoryIf(string Path, bool isRelative)
         {
-            if (!IsDirectory(Path))
+            if (!IsDirectory(Path, isRelative))
             {
-                Directory.CreateDirectory(Paths.GetFullPath(Path));
+                if (isRelative)
+                    Directory.CreateDirectory(Paths.GetFullPath(Path));
+
+                else
+                    Directory.CreateDirectory(Path);
             }
         }
 
         public static class Files
         {
-            /*enum MoveType
+            public static void Move(string oldFileName, string oldPath, string newFileName)
             {
-                Move,
-                Rename,
-                MoveAndRename
+                Move(oldFileName, oldPath, newFileName, oldPath);
             }
-
-            public static void Move()
-            {
-
-            }
-
-            public static void Rename(string oldFileName, string newFileName)
-            {
-                
-            }*/
 
             /// <summary>
-            /// Rename and move a file to a new place.
+            /// Rename and move a file to a new place. If <paramref name="newPath"/> is empty, the file will only be renamed.
             /// </summary>
-            /// <param name="oldPath">Current path to the file.</param>
             /// <param name="oldFileName">Current name of the file.</param>
-            /// <param name="newPath">New path to the file.</param>
+            /// <param name="oldPath">Current path to the file.</param>
             /// <param name="newFileName">New name of the file.</param>
-            public static void RenameAndMove(string oldPath, string oldFileName, string newPath, string newFileName)
+            /// <param name="newPath">New path to the file.</param>
+            public static void Move(string oldFileName, string oldPath, string newFileName, string newPath)
             {
+                CreateDirectoryIf(newPath);
+
                 File.Move(oldPath + @"/" + oldFileName, newPath + @"/" + newFileName);
             }
         }
@@ -132,12 +132,10 @@ namespace ID3_Tag_Editor.Scripts.IO
                 if (subFolders)
                     return Directory.GetFiles(Path, "*", SearchOption.AllDirectories);
 
-                else
-                    return Directory.GetFiles(Path);
+                return Directory.GetFiles(Path);
             }
 
-            else
-                return null;
+            return null;
         }
 
         public static string GetFileName(string Path)
@@ -168,6 +166,7 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// Checks if the given directory exists. This functions exists because of the weird relative paths.
         /// </summary>
         /// <param name="Path">Path to the wanted directory.</param>
+        /// <param name="isRelative">If the path is relative. Default = true.</param>
         /// <returns>True, if the directory exists.</returns>
         public static bool IsDirectory(string Path, bool isRelative)
         {

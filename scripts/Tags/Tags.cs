@@ -62,7 +62,7 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
                 newSong.Save();
 
-                FileSystem.Files.RenameAndMove(Paths.Import, FileSystem.GetFileName(newFile, false), Paths.Export, newFileName);
+                FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export);
             }
 
             if (Modes.imageCheck != Modes.ImageCheck.none)

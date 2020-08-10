@@ -150,8 +150,7 @@ namespace ID3_Tag_Editor.Scripts.User
         {
             if (firstRun)
             {
-                if (!FileSystem.IsDirectory(settingsPath))
-                    FileSystem.CreateDirectory(settingsPath);
+               FileSystem.CreateDirectoryIf(settingsPath);
 
                 if (!FileSystem.IsFile(settingsPath, settingsFile + ".json"))
                     SaveSettings();
