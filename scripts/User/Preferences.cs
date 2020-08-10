@@ -97,7 +97,7 @@ namespace ID3_Tag_Editor.Scripts.User
             /// <summary>
             /// Max size of images.
             /// </summary>
-            public int imageMaxSize { get; set; }
+            public int ImageMaxSize { get; set; }
         }
 
         #endregion
@@ -123,7 +123,7 @@ namespace ID3_Tag_Editor.Scripts.User
                     ExportTarget = Tags.Modes.exportTarget,
                     ImageCheck = Tags.Modes.imageCheck,
                     ImageProcessing = Tags.Modes.imageProcessing,
-                    imageMaxSize = Tags.Modes.imageMaxSize
+                    ImageMaxSize = Tags.Modes.imageMaxSize
                 }
             };
 
@@ -171,7 +171,7 @@ namespace ID3_Tag_Editor.Scripts.User
             Tags.Modes.exportTarget = newUserSettings.UserTags.ExportTarget;
             Tags.Modes.imageCheck = newUserSettings.UserTags.ImageCheck;
             Tags.Modes.imageProcessing = newUserSettings.UserTags.ImageProcessing;
-            Tags.Modes.imageMaxSize = newUserSettings.UserTags.imageMaxSize;
+            Tags.Modes.imageMaxSize = newUserSettings.UserTags.ImageMaxSize;
         }
 
         #endregion

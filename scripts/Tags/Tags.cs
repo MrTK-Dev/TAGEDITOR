@@ -62,7 +62,15 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
                 newSong.Save();
 
-                FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export);
+                if (Modes.exportTarget != Modes.ExportTarget.none)
+                {
+                    if (Modes.exportTarget == Modes.ExportTarget.ONEFOLDER)
+                        FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export);
+
+                    else if (Modes.exportTarget == Modes.ExportTarget.FOLDERS)
+                        //TODO add sorting options
+                        FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export + @"/" + newSong.Tag.Album.Replace(":", " ").Replace("/", "_"));
+                }
             }
 
             if (Modes.imageCheck != Modes.ImageCheck.none)
@@ -76,25 +84,14 @@ namespace ID3_Tag_Editor.Scripts.Tags
         {
             Bitmap coverImage = TagLibEXT.GetCoverImage(newSong);
 
+            //TODO add better output
             if (Modes.imageCheck == Modes.ImageCheck.SQUARE || Modes.imageCheck != Modes.ImageCheck.ALL)
-            {
                 if (coverImage.Width != coverImage.Height)
-                {
-                    //TODO add better output
-
                     Console.WriteLine("!= Square: {0} [{1} x {2}]", newSong.Tag.Title, coverImage.Width, coverImage.Height);
-                }
-            }
 
             if (Modes.imageCheck == Modes.ImageCheck.SQUARE || Modes.imageCheck != Modes.ImageCheck.ALL)
-            {
                 if (coverImage.Width > Modes.imageMaxSize)
-                {
-                    //TODO add better output
-
                     Console.WriteLine(Modes.imageMaxSize + "< {0} [{1} x {2}]", newSong.Tag.Title, coverImage.Width, coverImage.Height);
-                }
-            }
         }
 
         #endregion
@@ -147,11 +144,11 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
     public static class Modes
     {
-        public static ExportTarget exportTarget = ExportTarget.ONEFILE;
+        public static ExportTarget exportTarget = ExportTarget.ONEFOLDER;
 
         public enum ExportTarget
         {
-            ONEFILE,
+            ONEFOLDER,
             FOLDERS,
             none
         }
