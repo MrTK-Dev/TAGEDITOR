@@ -1,4 +1,4 @@
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using ID3_Tag_Editor.Scripts.IO;
 
 namespace ID3_Tag_Editor.Scripts.User
@@ -93,6 +93,11 @@ namespace ID3_Tag_Editor.Scripts.User
             /// How the images should be processed.
             /// </summary>
             public Tags.Modes.ImageProcessing ImageProcessing { get; set; }
+
+            /// <summary>
+            /// Max size of images.
+            /// </summary>
+            public int imageMaxSize { get; set; }
         }
 
         #endregion

@@ -1,9 +1,10 @@
-using ID3_Tag_Editor.Scripts.Extensions;
+﻿using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -64,14 +65,34 @@ namespace ID3_Tag_Editor.Scripts.Tags
                 FileSystem.Files.RenameAndMove(Paths.Import, FileSystem.GetFileName(newFile, false), Paths.Export, newFileName);
             }
 
+            if (Modes.imageCheck != Modes.ImageCheck.none)
+                CheckImage(newSong);
+
             else
                 Debug.WriteLine(newFile + " does not have the required Tags!");
         }
 
-        /*private static void ProcessImage()
+        private static void CheckImage(TagLib.File newSong)
         {
+            Bitmap coverImage = TagLibEXT.GetCoverImage(newSong);
 
-        }*/
+            if (Modes.imageCheck == Modes.ImageCheck.SQUARE || Modes.imageCheck != Modes.ImageCheck.ALL)
+            {
+                if (coverImage.Width != coverImage.Height)
+                {
+                    //TODO add better output
+
+                    Console.WriteLine("!= Square: {0} [{1} x {2}]", newSong.Tag.Title, coverImage.Width, coverImage.Height);
+                }
+            }
+
+            if (coverImage.Width > Modes.imageMaxSize)
+            {
+                //TODO add better output
+
+                Console.WriteLine(Modes.imageMaxSize + "< {0} [{1} x {2}]", newSong.Tag.Title, coverImage.Width, coverImage.Height);
+            }
+        }
 
         #endregion
 
@@ -133,6 +154,8 @@ namespace ID3_Tag_Editor.Scripts.Tags
         }
 
         public static ImageCheck imageCheck = ImageCheck.ALL;
+
+        public static int imageMaxSize = 2000;
 
         public enum ImageCheck
         {
