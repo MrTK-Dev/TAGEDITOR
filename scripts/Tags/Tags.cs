@@ -86,11 +86,14 @@ namespace ID3_Tag_Editor.Scripts.Tags
                 }
             }
 
-            if (coverImage.Width > Modes.imageMaxSize)
+            if (Modes.imageCheck == Modes.ImageCheck.SQUARE || Modes.imageCheck != Modes.ImageCheck.ALL)
             {
-                //TODO add better output
+                if (coverImage.Width > Modes.imageMaxSize)
+                {
+                    //TODO add better output
 
-                Console.WriteLine(Modes.imageMaxSize + "< {0} [{1} x {2}]", newSong.Tag.Title, coverImage.Width, coverImage.Height);
+                    Console.WriteLine(Modes.imageMaxSize + "< {0} [{1} x {2}]", newSong.Tag.Title, coverImage.Width, coverImage.Height);
+                }
             }
         }
 
