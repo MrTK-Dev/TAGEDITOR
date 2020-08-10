@@ -54,42 +54,8 @@ namespace ID3_Tag_Editor
             Preferences.LoadSettings();
 
             //test
-            TagProcessing.ProcessAllSongs();
+            //TagProcessing.ProcessAllSongs();
         }
-
-        public void OutputCount(object sender, RoutedEventArgs e)
-        {
-            /*
-            Console.WriteLine("Title: " + Song.Tag.Title);
-            Console.WriteLine("Artist: " + Song.Tag.FirstPerformer);
-            Console.WriteLine("Album: " + Song.Tag.Album);
-
-            if (Modes.text != Modes.Text_Mode.none)
-            {
-
-                if (Modes.text == Modes.Text_Mode.all || Modes.text == Modes.Text_Mode.Folders)
-                {
-                    string newPath = Paths.Export + @"\" + Song.Tag.Album.Replace(":", " ").Replace("/", "_");
-
-                    if (!Directory.Exists(newPath))
-                    {
-                        Directory.CreateDirectory(newPath);
-
-                        Debug.WriteLine("Created the directory {0}", Song.Tag.Album);
-                    }
-
-                    File.Move(allFiles[i], newPath + @"\" + newFileName + ".mp3");
-                }
-
-                else if (Modes.text == Modes.Text_Mode.Rename)
-                {
-                    File.Move(allFiles[i], Paths.Export + @"\" + newFileName + ".mp3");
-                }
-            }
-        */
-        }
-
-
       
         /*
         public void ChangeImage(object sender, RoutedEventArgs e)

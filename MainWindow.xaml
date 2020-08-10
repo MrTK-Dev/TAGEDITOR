@@ -13,7 +13,6 @@
         <Grid.ColumnDefinitions>
 
         </Grid.ColumnDefinitions>
-        <Button Content="Rename" HorizontalAlignment="Left" Margin="1160,120,-293,0" VerticalAlignment="Top" Width="75" Click="OutputCount"/>
         <StackPanel x:Name="panel_SideMenu" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Stretch" Width="100" Background="#FF2A2A2A" CanVerticallyScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto">
             <Button Content="Automation" Height="40" Margin="0,0,0,0" Click="Button_OpenSubMenu_Automation"/>
             <StackPanel x:Name="panel_SubMenu_Automation" Height="80" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
