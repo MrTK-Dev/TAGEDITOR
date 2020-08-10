@@ -91,7 +91,7 @@ namespace ID3_Tag_Editor
 
 
       
-
+        /*
         public void ChangeImage(object sender, RoutedEventArgs e)
         {
             if (Modes.image_2 == Modes.Image_2_Mode.overwrite)
@@ -127,37 +127,9 @@ namespace ID3_Tag_Editor
                     }
                 }
             }
-        }
+        }*/
 
-        public static class Modes
-        {
-            public static Text_Mode text = Text_Mode.Rename;
-            public static Image_Mode image = Image_Mode.all;
-            public static Image_2_Mode image_2 = Image_2_Mode.none;
 
-            public enum Text_Mode
-            {
-                Folders,
-                Rename,
-                all,
-                none
-            }
-
-            public enum Image_Mode
-            {
-                CheckSize,
-                CheckSquare,
-                all,
-                none
-            }
-
-            public enum Image_2_Mode
-            {
-                delete,
-                overwrite,
-                none
-            }
-        }
 
         private void Button_OpenSubMenu_Automation(object sender, RoutedEventArgs e)
         {
