@@ -4,7 +4,7 @@ using ID3_Tag_Editor.Scripts.IO;
 namespace ID3_Tag_Editor.Scripts.User
 {
     /// <summary>
-    /// This class handles everything related to saving settings made by the user. This heavily relies on the FileSystem by saving data on files.
+    /// This class handles everything related to saving and loading <see cref="Settings"/> made by the user. This heavily relies on the <see cref="FileSystem"/> by saving data on files.
     /// </summary>
     class Preferences
     {
@@ -31,10 +31,20 @@ namespace ID3_Tag_Editor.Scripts.User
 
         #region Main
 
+        /// <summary>
+        /// This class saves all preferences choosen by the user. This works as a cache before saving it to a json file.
+        /// </summary>
         [System.Serializable]
         public class Settings
         {
+            /// <summary>
+            /// This class saves all preferences regarding paths on the user's PC.
+            /// </summary>
             public UserPaths UserPaths { get; set; }
+
+            /// <summary>
+            /// This class saves all preferences regarding the tagsystem.
+            /// </summary>
             public UserTags UserTags { get; set; }
         }
 
@@ -42,10 +52,10 @@ namespace ID3_Tag_Editor.Scripts.User
 
         #region Paths
 
-        [System.Serializable]
         /// <summary>
         /// Stores paths to folders that the user choose.
         /// </summary>
+        [System.Serializable]
         public class UserPaths
         {
             /// <summary>
@@ -63,9 +73,15 @@ namespace ID3_Tag_Editor.Scripts.User
 
         #region Tags
 
+        /// <summary>
+        /// Stores preferences regarding the tag system.
+        /// </summary>
         [System.Serializable]
         public class UserTags
         {
+            /// <summary>
+            /// How the processed songs should get saved.
+            /// </summary>
             public Tags.Modes.ExportTarget ExportTarget { get; set; }
         }
 
@@ -75,6 +91,9 @@ namespace ID3_Tag_Editor.Scripts.User
 
         #region Methods
 
+        /// <summary>
+        /// Saves all cached preferences to a json file.
+        /// </summary>
         public static void SaveSettings()
         {
             Settings UserSettings = new Settings
@@ -100,8 +119,12 @@ namespace ID3_Tag_Editor.Scripts.User
         /// <para>The function loads following modules:</para>
         /// <list type="bullet">
         /// <item>
-        /// <term><see cref="LoadUserPaths(dynamic)"/></term>
+        /// <term><see cref="UserPaths"/></term>
         /// <description>Paths for the files.</description>
+        /// </item>
+        /// <item>
+        /// <term><see cref="UserTags"/></term>
+        /// <description>Settings for the tag system.</description>
         /// </item>
         /// </list>
         /// </summary>
@@ -118,6 +141,7 @@ namespace ID3_Tag_Editor.Scripts.User
                 firstRun = false;
             }
 
+            //cache
             Settings newUserSettings = JSON.ReadSettings(settingsPath, settingsFile);
 
             Paths.Import = newUserSettings.UserPaths.Import;
