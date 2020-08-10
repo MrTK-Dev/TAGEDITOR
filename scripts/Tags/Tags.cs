@@ -201,9 +201,9 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
         public enum ImageCheck
         {
+            ALL,
             SIZE,
             SQUARE,
-            ALL,
             none
         }
 
@@ -211,9 +211,9 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
         public enum ImageProcessing
         {
+            none,
             DELETE,
-            OVERWRITE,
-            none
+            OVERWRITE
         }
     }
 

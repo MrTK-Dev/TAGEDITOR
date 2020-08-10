@@ -95,14 +95,14 @@ namespace ID3_Tag_Editor.Scripts.User
             public Tags.Modes.ImageProcessing ImageProcessing { get; set; }
 
             /// <summary>
-            /// Max size of images.
-            /// </summary>
-            public int ImageMaxSize { get; set; }
-
-            /// <summary>
             /// How the processed songs should be sorted in folders.
             /// </summary>
             public Tags.Modes.SortingTarget SortingTarget { get; set; }
+
+            /// <summary>
+            /// Max size of images.
+            /// </summary>
+            public int ImageMaxSize { get; set; }
         }
 
         #endregion
