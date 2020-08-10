@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using ID3_Tag_Editor.Scripts.IO;
 
 namespace ID3_Tag_Editor.Scripts.User
@@ -115,7 +115,10 @@ namespace ID3_Tag_Editor.Scripts.User
                 },
                 UserTags = new UserTags
                 {
-                    ExportTarget = Tags.Modes.exportTarget
+                    ExportTarget = Tags.Modes.exportTarget,
+                    ImageCheck = Tags.Modes.imageCheck,
+                    ImageProcessing = Tags.Modes.imageProcessing,
+                    imageMaxSize = Tags.Modes.imageMaxSize
                 }
             };
 
@@ -162,6 +165,9 @@ namespace ID3_Tag_Editor.Scripts.User
             MainWindow.UI.UserPathBoxes.Export.Text = Paths.Export;
 
             Tags.Modes.exportTarget = newUserSettings.UserTags.ExportTarget;
+            Tags.Modes.imageCheck = newUserSettings.UserTags.ImageCheck;
+            Tags.Modes.imageProcessing = newUserSettings.UserTags.ImageProcessing;
+            Tags.Modes.imageMaxSize = newUserSettings.UserTags.imageMaxSize;
         }
 
         #endregion
