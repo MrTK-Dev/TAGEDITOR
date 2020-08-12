@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.Extensions;
+﻿using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -60,7 +60,7 @@ namespace ID3_Tag_Editor.Scripts.Tags
                         newSong.Tag.Album = GetRealTitle(newSong.Tag.Title) + " - Single";
                 }
 
-                newSong.Save();
+                newSong.Refresh(newFile);
 
                 //Manages the result folder for the processed song. This allows the user to sort the songs.
                 if (Modes.exportTarget != Modes.ExportTarget.none)

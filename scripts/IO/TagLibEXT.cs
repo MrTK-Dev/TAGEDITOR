@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -48,6 +48,35 @@ namespace ID3_Tag_Editor.Scripts.IO
 
             //TODO this should be done in the main methode
             Song.Save();
+        }
+
+        /// <summary>
+        /// This refreshes the file to get rid of unused bytes and saves all made changes.
+        /// </summary>
+        /// <param name="Item"></param>
+        /// <param name="Source"></param>
+        public static void Refresh(this TagLib.File Item, string Source)
+        {
+            //temporary file
+            TagLib.File newSong2 = TagLib.File.Create(Source);
+
+            //temporary tag that is null
+            TagLib.Tag tempTag = new TagLib.Id3v2.Tag();
+
+            //cache tags
+            Item.Tag.CopyTo(tempTag, true);
+
+            //clear all tags
+            Item.RemoveTags(TagLib.TagTypes.AllTags);
+
+            Item.Save();
+            Item.Dispose();
+
+            //rewrite the old tags to the file
+            tempTag.CopyTo(newSong2.Tag, true);
+
+            newSong2.Save();
+            newSong2.Dispose();
         }
     }
 }
