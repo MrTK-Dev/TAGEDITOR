@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -30,6 +30,24 @@ namespace ID3_Tag_Editor.Scripts.IO
             }
 
             return null;
+        }
+
+        /// <summary>
+        /// Sets the cover image of the given song to the given Picture. Setting it to "null" should result in a deletion.
+        /// </summary>
+        /// <param name="Song"></param>
+        /// <param name="newPicture"></param>
+        public static void SetImage(TagLib.File Song, TagLib.Picture newPicture)
+        {
+            //some var that I do not get
+            TagLib.IPicture[] pic = new TagLib.IPicture[1];
+            pic[0] = newPicture;
+
+            //overwrite cover inage
+            Song.Tag.Pictures = pic;
+
+            //TODO this should be done in the main methode
+            Song.Save();
         }
     }
 }
