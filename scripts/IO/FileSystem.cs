@@ -108,7 +108,7 @@ namespace ID3_Tag_Editor.Scripts.IO
             /// <param name="newPath">New path to the file.</param>
             public static void Move(string oldFileName, string oldPath, string newFileName, string newPath)
             {
-                CreateDirectoryIf(newPath);
+                CreateDirectoryIf(newPath, false);
 
                 File.Move(oldPath + @"/" + oldFileName, newPath + @"/" + newFileName);
             }
