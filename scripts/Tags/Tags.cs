@@ -1,4 +1,4 @@
-﻿using ID3_Tag_Editor.Scripts.Extensions;
+using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -99,7 +99,11 @@ namespace ID3_Tag_Editor.Scripts.Tags
                                 break;
                         }
 
-                        FileSystem.Files.Move(FileSystem.GetFileName(newFile, false), Paths.Import, newFileName, Paths.Export + @"/" + newSortingString.Replace(":", " ").Replace("/", "_"));
+                        FileSystem.Files.Move(
+                            FileSystem.GetFileName(newFile, false),
+                            Paths.Import, newFileName, 
+                            Paths.Export + @"/" + newSortingString.Replace(":", " ").Replace("/", "_")
+                        );
                     }
                 }
             }
