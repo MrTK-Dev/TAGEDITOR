@@ -20,6 +20,7 @@ using ID3_Tag_Editor.Scripts.UI;
 using ID3_Tag_Editor.Scripts.User;
 using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.Tags;
+using ID3_Tag_Editor.Scripts.UI.Window;
 
 namespace ID3_Tag_Editor
 {
@@ -28,6 +29,12 @@ namespace ID3_Tag_Editor
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Initialize
+
+        readonly Buttons Buttons = new Buttons();
+
+        #endregion
+
         public MainWindow()
         {
             InitializeComponent();
@@ -95,8 +102,6 @@ namespace ID3_Tag_Editor
             }
         }*/
 
-
-
         private void Button_OpenSubMenu_Automation(object sender, RoutedEventArgs e)
         {
             PanelHandler.HighlightSubMenu(panel_SubMenu_Automation);
@@ -142,6 +147,8 @@ namespace ID3_Tag_Editor
 
             Preferences.SaveSettings();
         }
+
+        private void BC_OpenEditor(object sender, RoutedEventArgs e) => Buttons.OpenEditor();
 
         #endregion
     }
