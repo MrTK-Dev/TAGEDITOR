@@ -100,14 +100,12 @@
     <Compile Include="Scripts\IO\FileSystem.cs" />
     <Compile Include="Scripts\IO\JSON.cs" />
     <Compile Include="Scripts\IO\TagLibEXT.cs" />
-    <Compile Include="Scripts\Names.cs" />
     <Compile Include="Scripts\Tags\Tags.cs" />
     <Compile Include="Scripts\UI\OpenStuff.cs" />
+    <Compile Include="Scripts\UI\Window\Buttons.cs" />
     <Compile Include="Scripts\User\Paths.cs" />
     <Compile Include="Scripts\UI\PanelHandler.cs" />
     <Compile Include="Scripts\UI\ButtonHandler.cs" />
-    <Compile Include="Scripts\Saves.cs" />
-    <Compile Include="Scripts\DefaultVar.cs" />
     <Compile Include="Scripts\UI\TabHandler.cs" />
     <Compile Include="Scripts\User\Preferences.cs" />
     <Page Include="MainWindow.xaml">
