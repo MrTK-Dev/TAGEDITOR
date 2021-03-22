@@ -80,14 +80,14 @@ namespace ID3_Tag_Editor.Scripts.User
             {
                 if (pathType == PathType.INPUT)
                 {
-                    Import = OpenStuff.Folders.OpenDialog("Hallo", Import);
+                    Import = OpenStuff.Folders.GetPathFromFolderDialog("Choose the folder that contains the unprocessed files.\nThis setting will be saved.", Import);
 
                     textBox.Text = Import;
                 }
 
                 else if (pathType == PathType.OUTPUT)
                 {
-                    Export = OpenStuff.Folders.OpenDialog("Hallo", Export);
+                    Export = OpenStuff.Folders.GetPathFromFolderDialog("Choose the folder that should contain the processed files.\nThis setting will be saved.", Export);
 
                     textBox.Text = Export;
                 }
