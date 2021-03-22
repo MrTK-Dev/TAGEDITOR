@@ -19,17 +19,31 @@ namespace ID3_Tag_Editor.Scripts.UI
                 InitializeComponent();
             }
 
-            public static string OpenDialog(string description, string startingPath)
+            public static FolderBrowserDialog OpenFoldersDialog(string description, string startingPath)
             {
-                FolderBrowserDialog objDialog = new FolderBrowserDialog();
+                FolderBrowserDialog objDialog = new FolderBrowserDialog
+                {
+                    Description = description,
 
-                objDialog.Description = description;
+                    SelectedPath = startingPath
+                };
 
-                objDialog.SelectedPath = startingPath;
+                if (objDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    return objDialog;
 
-                DialogResult newResult = objDialog.ShowDialog();
+                return null;
+            }
 
-                if (newResult == System.Windows.Forms.DialogResult.OK)
+            public static string GetPathFromFolderDialog(string description, string startingPath)
+            {
+                return GetPathFromFolderDialog(
+                    OpenFoldersDialog(description, startingPath)
+                    );
+            }
+
+            public static string GetPathFromFolderDialog(FolderBrowserDialog objDialog)
+            {
+                if (objDialog.SelectedPath != " ")
                     return objDialog.SelectedPath;
 
                 else
@@ -44,23 +58,40 @@ namespace ID3_Tag_Editor.Scripts.UI
                 InitializeComponent();
             }
 
-            /// <summary>
-            /// 
-            /// </summary>
-            /// <param name="textBox"></param>
-            public static void OpenDialog(TextBox textBox)
+            //TODO add ability to add multiple files
+            //https://www.wpf-tutorial.com/dialogs/the-openfiledialog/
+            public static OpenFileDialog OpenFilesDialog(string description, string startingPath)
             {
-                OpenFileDialog openFileDialog = new OpenFileDialog
+                OpenFileDialog objDialog = new OpenFileDialog
                 {
-                    Title = "Open Import Path",
+                    Filter = "Music Files (*.mp3)|*.mp3",
 
-                    InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic)
+                    Title = "File Selection",
 
-                    //Filter
+
+                    InitialDirectory = startingPath
                 };
 
-                //if (openFileDialog.ShowDialog() == true)
-                textBox.Text = Path.GetFileName(openFileDialog.FileName);
+                if (objDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    return objDialog;
+
+                return null;
+            }
+
+            public static string GetPathFromFilesDialog(string description, string startingPath)
+            {
+                return GetPathFromFilesDialog(
+                    OpenFilesDialog(description, startingPath)
+                    );
+            }
+
+            public static string GetPathFromFilesDialog(OpenFileDialog objDialog)
+            {
+                if (objDialog.FileName != " ")
+                    return objDialog.FileName;
+
+                else
+                    return null;
             }
         }
     }
