@@ -101,6 +101,7 @@
     <Compile Include="Scripts\IO\JSON.cs" />
     <Compile Include="Scripts\IO\TagLibEXT.cs" />
     <Compile Include="Scripts\Tags\Tags.cs" />
+    <Compile Include="Scripts\TempScripts.cs" />
     <Compile Include="Scripts\UI\OpenStuff.cs" />
     <Compile Include="Scripts\UI\Window\Buttons.cs" />
     <Compile Include="Scripts\User\Paths.cs" />
