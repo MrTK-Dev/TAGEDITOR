@@ -19,6 +19,16 @@ namespace ID3_Tag_Editor.Scripts.Tags
 
         static readonly string[] featureSigns = new string[] { "ft", "ft.", "feat", "feat." };
 
+        public class SongFile
+        {
+            public string Title;
+            public string Interpret;
+            public string Album;
+            public int Year;
+            public int Track;
+            public string Genre;
+        }
+
         #endregion
 
         #region Main Methods
@@ -41,6 +51,20 @@ namespace ID3_Tag_Editor.Scripts.Tags
                     if (!string.IsNullOrEmpty(allFiles[i]) && allFiles[i].Contains(".mp3"))
                         ProcessSong(allFiles[i]);
             //TempScripts.ProcessAMatter(allFiles[i]);
+        }
+
+        public static void SaveTags(SongFile songFile, string path)
+        {
+            TagLib.File newFile = GetTagsFromFile(path);
+
+            newFile.SetInterpret(songFile.Interpret);
+            newFile.Tag.Title = songFile.Title;
+            newFile.Tag.Album = songFile.Album;
+            newFile.Tag.Track = (uint)songFile.Track;
+            newFile.Tag.Year = (uint)songFile.Year;
+            newFile.SetGenre(songFile.Genre);
+
+            newFile.Refresh(path);
         }
 
         #endregion
