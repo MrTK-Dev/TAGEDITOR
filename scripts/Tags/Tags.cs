@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.Extensions;
+﻿using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -24,6 +24,11 @@ namespace ID3_Tag_Editor.Scripts.Tags
         #region Main Methods
 
         #region Initialization
+
+        public static TagLib.File GetTagsFromFile(string newFile)
+        {
+            return TagLib.File.Create(newFile);
+        }
 
         public static void ProcessAllSongs()
         {
