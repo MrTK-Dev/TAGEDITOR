@@ -19,7 +19,7 @@ namespace ID3_Tag_Editor.Scripts.UI
                 InitializeComponent();
             }
 
-            public static FolderBrowserDialog OpenFoldersDialog(string description, string startingPath)
+            public static FolderBrowserDialog OpenDialog(string description, string startingPath)
             {
                 FolderBrowserDialog objDialog = new FolderBrowserDialog
                 {
@@ -34,14 +34,14 @@ namespace ID3_Tag_Editor.Scripts.UI
                 return null;
             }
 
-            public static string GetPathFromFolderDialog(string description, string startingPath)
+            public static string GetPathFromDialog(string description, string startingPath)
             {
-                return GetPathFromFolderDialog(
-                    OpenFoldersDialog(description, startingPath)
+                return GetPathFromDialog(
+                    OpenDialog(description, startingPath)
                     );
             }
 
-            public static string GetPathFromFolderDialog(FolderBrowserDialog objDialog)
+            public static string GetPathFromDialog(FolderBrowserDialog objDialog)
             {
                 if (objDialog.SelectedPath != " ")
                     return objDialog.SelectedPath;
@@ -60,7 +60,7 @@ namespace ID3_Tag_Editor.Scripts.UI
 
             //TODO add ability to add multiple files
             //https://www.wpf-tutorial.com/dialogs/the-openfiledialog/
-            public static OpenFileDialog OpenFilesDialog(string description, string startingPath)
+            public static OpenFileDialog OpenDialog(string description, string startingPath)
             {
                 OpenFileDialog objDialog = new OpenFileDialog
                 {
@@ -78,14 +78,14 @@ namespace ID3_Tag_Editor.Scripts.UI
                 return null;
             }
 
-            public static string GetPathFromFilesDialog(string description, string startingPath)
+            public static string GetPathFromDialog(string description, string startingPath)
             {
-                return GetPathFromFilesDialog(
-                    OpenFilesDialog(description, startingPath)
+                return GetPathFromDialog(
+                    OpenDialog(description, startingPath)
                     );
             }
 
-            public static string GetPathFromFilesDialog(OpenFileDialog objDialog)
+            public static string GetPathFromDialog(OpenFileDialog objDialog)
             {
                 if (objDialog.FileName != " ")
                     return objDialog.FileName;
