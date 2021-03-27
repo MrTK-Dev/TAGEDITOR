@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class FileSystem
    ">
-    <meta name="generator" content="docfx 2.56.2.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -115,19 +115,51 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L72">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L73">View Source</a>
   </span>
-  <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory*"></a>
-  <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)">CreateDirectory(String)</h4>
+  <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf*"></a>
+  <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String)">CreateDirectoryIf(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CreateDirectoryIf(string Path)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L83">View Source</a>
+  </span>
+  <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf*"></a>
+  <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_System_String_System_Boolean_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String,System.Boolean)">CreateDirectoryIf(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Creates a directory if it does not exist.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CreateDirectory(string Path)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CreateDirectoryIf(string Path, bool isRelative)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,6 +177,12 @@
         <td><p>Path to the wanted folder.</p>
 </td>
       </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isRelative</span></td>
+        <td><p>True =&gt; relative path, false =&gt; absolute path. Default = true.</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
@@ -152,7 +190,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L138">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L141">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String)">GetFileName(String)</h4>
@@ -199,7 +237,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L149">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L152">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_System_Boolean_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String,System.Boolean)">GetFileName(String, Boolean)</h4>
@@ -255,7 +293,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L112">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L117">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String)">GetFilesFromDirectory(String)</h4>
@@ -302,7 +340,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L123">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L128">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_GetFilesFromDirectory_System_String_System_Boolean_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.GetFilesFromDirectory(System.String,System.Boolean)">GetFilesFromDirectory(String, Boolean)</h4>
@@ -358,7 +396,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L157">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L160">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String)">IsDirectory(String)</h4>
@@ -405,7 +443,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L167">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L171">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_IsDirectory_System_String_System_Boolean_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.IsDirectory(System.String,System.Boolean)">IsDirectory(String, Boolean)</h4>
@@ -435,7 +473,8 @@
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">isRelative</span></td>
-        <td></td>
+        <td><p>If the path is relative. Default = true.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -460,7 +499,7 @@
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_IsFile_System_String_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L181">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L185">View Source</a>
   </span>
   <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_IsFile_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile*"></a>
   <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_IsFile_System_String_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.IsFile(System.String,System.String)">IsFile(String, String)</h4>
@@ -567,6 +606,58 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_ReturnFromJSON_System_String_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L63">View Source</a>
+  </span>
+  <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_ReturnFromJSON_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON*"></a>
+  <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_ReturnFromJSON_System_String_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON(System.String,System.String)">ReturnFromJSON(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReturnFromJSON(string Path, string fileName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_SaveToJSON_System_String_System_String_System_Object_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON(System.String%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -627,7 +718,8 @@
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

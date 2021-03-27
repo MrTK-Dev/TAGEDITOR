@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class FileSystem.Files
+    <title>Class TagProcessing
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class FileSystem.Files
+    <meta name="title" content="Class TagProcessing
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,17 +68,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.Files">
+            <article class="content wrap" id="_content" data-uid="ID3_Tag_Editor.Scripts.Tags.TagProcessing">
   
   
-  <h1 id="ID3_Tag_Editor_Scripts_IO_FileSystem_Files" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.Files" class="text-break">Class FileSystem.Files
+  <h1 id="ID3_Tag_Editor_Scripts_Tags_TagProcessing" data-uid="ID3_Tag_Editor.Scripts.Tags.TagProcessing" class="text-break">Class TagProcessing
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">FileSystem.Files</span></div>
+    <div class="level1"><span class="xref">TagProcessing</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -104,28 +104,28 @@
       <span class="xref">System.Object.MemberwiseClone()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="ID3_Tag_Editor.Scripts.IO.html">ID3_Tag_Editor.Scripts.IO</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ID3_Tag_Editor.Scripts.Tags.html">ID3_Tag_Editor.Scripts.Tags</a></h6>
   <h6><strong>Assembly</strong>: ID3 Tag Editor.dll</h6>
-  <h5 id="ID3_Tag_Editor_Scripts_IO_FileSystem_Files_syntax">Syntax</h5>
+  <h5 id="ID3_Tag_Editor_Scripts_Tags_TagProcessing_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class Files</code></pre>
+    <pre><code class="lang-csharp hljs">public static class TagProcessing</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_Tags_TagProcessing_GetTagsFromFile_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L97">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/Tags/Tags.cs/#L28">View Source</a>
   </span>
-  <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move*"></a>
-  <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_System_String_System_String_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String,System.String,System.String)">Move(String, String, String)</h4>
+  <a id="ID3_Tag_Editor_Scripts_Tags_TagProcessing_GetTagsFromFile_" data-uid="ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile*"></a>
+  <h4 id="ID3_Tag_Editor_Scripts_Tags_TagProcessing_GetTagsFromFile_System_String_" data-uid="ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile(System.String)">GetTagsFromFile(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Move(string oldFileName, string oldPath, string newFileName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static File GetTagsFromFile(string newFile)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -139,73 +139,41 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">oldFileName</span></td>
+        <td><span class="parametername">newFile</span></td>
         <td></td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">oldPath</span></td>
-        <td></td>
+        <th>Type</th>
+        <th>Description</th>
       </tr>
+    </thead>
+    <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">newFileName</span></td>
+        <td><span class="xref">TagLib.File</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_Tags_TagProcessing_ProcessAllSongs.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L109">View Source</a>
+    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/Tags/Tags.cs/#L33">View Source</a>
   </span>
-  <a id="ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move*"></a>
-  <h4 id="ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_System_String_System_String_System_String_System_String_" data-uid="ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String,System.String,System.String,System.String)">Move(String, String, String, String)</h4>
-  <div class="markdown level1 summary"><p>Rename and move a file to a new place. If <code data-dev-comment-type="paramref" class="paramref">newPath</code> is empty, the file will only be renamed.</p>
-</div>
+  <a id="ID3_Tag_Editor_Scripts_Tags_TagProcessing_ProcessAllSongs_" data-uid="ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs*"></a>
+  <h4 id="ID3_Tag_Editor_Scripts_Tags_TagProcessing_ProcessAllSongs" data-uid="ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs">ProcessAllSongs()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Move(string oldFileName, string oldPath, string newFileName, string newPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ProcessAllSongs()</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">oldFileName</span></td>
-        <td><p>Current name of the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">oldPath</span></td>
-        <td><p>Current path to the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">newFileName</span></td>
-        <td><p>New name of the file.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">newPath</span></td>
-        <td><p>New path to the file.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
 </article>
           </div>
           
@@ -214,10 +182,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_IO_FileSystem_Files.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.IO.FileSystem.Files%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/MrTK-Dev/TAGEDITOR/new/master/apiSpec/new?filename=ID3_Tag_Editor_Scripts_Tags_TagProcessing.md&amp;value=---%0Auid%3A%20ID3_Tag_Editor.Scripts.Tags.TagProcessing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/IO/FileSystem.cs/#L95" class="contribution-link">View Source</a>
+                    <a href="https://github.com/MrTK-Dev/TAGEDITOR/blob/master/Scripts/Tags/Tags.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

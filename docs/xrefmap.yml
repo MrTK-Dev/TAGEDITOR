@@ -32,140 +32,6 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.MainWindow.MainWindow
   nameWithType: MainWindow.MainWindow
-- uid: ID3_Tag_Editor.MainWindow.ChangeImage(System.Object,System.Windows.RoutedEventArgs)
-  name: ChangeImage(Object, RoutedEventArgs)
-  href: api/ID3_Tag_Editor.MainWindow.html#ID3_Tag_Editor_MainWindow_ChangeImage_System_Object_System_Windows_RoutedEventArgs_
-  commentId: M:ID3_Tag_Editor.MainWindow.ChangeImage(System.Object,System.Windows.RoutedEventArgs)
-  fullName: ID3_Tag_Editor.MainWindow.ChangeImage(System.Object, System.Windows.RoutedEventArgs)
-  nameWithType: MainWindow.ChangeImage(Object, RoutedEventArgs)
-- uid: ID3_Tag_Editor.MainWindow.ChangeImage*
-  name: ChangeImage
-  href: api/ID3_Tag_Editor.MainWindow.html#ID3_Tag_Editor_MainWindow_ChangeImage_
-  commentId: Overload:ID3_Tag_Editor.MainWindow.ChangeImage
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.MainWindow.ChangeImage
-  nameWithType: MainWindow.ChangeImage
-- uid: ID3_Tag_Editor.MainWindow.Modes
-  name: MainWindow.Modes
-  href: api/ID3_Tag_Editor.MainWindow.Modes.html
-  commentId: T:ID3_Tag_Editor.MainWindow.Modes
-  fullName: ID3_Tag_Editor.MainWindow.Modes
-  nameWithType: MainWindow.Modes
-- uid: ID3_Tag_Editor.MainWindow.Modes.image
-  name: image
-  href: api/ID3_Tag_Editor.MainWindow.Modes.html#ID3_Tag_Editor_MainWindow_Modes_image
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.image
-  fullName: ID3_Tag_Editor.MainWindow.Modes.image
-  nameWithType: MainWindow.Modes.image
-- uid: ID3_Tag_Editor.MainWindow.Modes.image_2
-  name: image_2
-  href: api/ID3_Tag_Editor.MainWindow.Modes.html#ID3_Tag_Editor_MainWindow_Modes_image_2
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.image_2
-  fullName: ID3_Tag_Editor.MainWindow.Modes.image_2
-  nameWithType: MainWindow.Modes.image_2
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode
-  name: MainWindow.Modes.Image_2_Mode
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.html
-  commentId: T:ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode
-  nameWithType: MainWindow.Modes.Image_2_Mode
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.delete
-  name: delete
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_2_Mode_delete
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.delete
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.delete
-  nameWithType: MainWindow.Modes.Image_2_Mode.delete
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.none
-  name: none
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_2_Mode_none
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.none
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.none
-  nameWithType: MainWindow.Modes.Image_2_Mode.none
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.overwrite
-  name: overwrite
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_2_Mode_overwrite
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.overwrite
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_2_Mode.overwrite
-  nameWithType: MainWindow.Modes.Image_2_Mode.overwrite
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_Mode
-  name: MainWindow.Modes.Image_Mode
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html
-  commentId: T:ID3_Tag_Editor.MainWindow.Modes.Image_Mode
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_Mode
-  nameWithType: MainWindow.Modes.Image_Mode
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.all
-  name: all
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_Mode_all
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_Mode.all
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.all
-  nameWithType: MainWindow.Modes.Image_Mode.all
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.CheckSize
-  name: CheckSize
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_Mode_CheckSize
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_Mode.CheckSize
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.CheckSize
-  nameWithType: MainWindow.Modes.Image_Mode.CheckSize
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.CheckSquare
-  name: CheckSquare
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_Mode_CheckSquare
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_Mode.CheckSquare
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.CheckSquare
-  nameWithType: MainWindow.Modes.Image_Mode.CheckSquare
-- uid: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.none
-  name: none
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Image_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Image_Mode_none
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Image_Mode.none
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Image_Mode.none
-  nameWithType: MainWindow.Modes.Image_Mode.none
-- uid: ID3_Tag_Editor.MainWindow.Modes.text
-  name: text
-  href: api/ID3_Tag_Editor.MainWindow.Modes.html#ID3_Tag_Editor_MainWindow_Modes_text
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.text
-  fullName: ID3_Tag_Editor.MainWindow.Modes.text
-  nameWithType: MainWindow.Modes.text
-- uid: ID3_Tag_Editor.MainWindow.Modes.Text_Mode
-  name: MainWindow.Modes.Text_Mode
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html
-  commentId: T:ID3_Tag_Editor.MainWindow.Modes.Text_Mode
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Text_Mode
-  nameWithType: MainWindow.Modes.Text_Mode
-- uid: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.all
-  name: all
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Text_Mode_all
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Text_Mode.all
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.all
-  nameWithType: MainWindow.Modes.Text_Mode.all
-- uid: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.Folders
-  name: Folders
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Text_Mode_Folders
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Text_Mode.Folders
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.Folders
-  nameWithType: MainWindow.Modes.Text_Mode.Folders
-- uid: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.none
-  name: none
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Text_Mode_none
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Text_Mode.none
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.none
-  nameWithType: MainWindow.Modes.Text_Mode.none
-- uid: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.Rename
-  name: Rename
-  href: api/ID3_Tag_Editor.MainWindow.Modes.Text_Mode.html#ID3_Tag_Editor_MainWindow_Modes_Text_Mode_Rename
-  commentId: F:ID3_Tag_Editor.MainWindow.Modes.Text_Mode.Rename
-  fullName: ID3_Tag_Editor.MainWindow.Modes.Text_Mode.Rename
-  nameWithType: MainWindow.Modes.Text_Mode.Rename
-- uid: ID3_Tag_Editor.MainWindow.OutputCount(System.Object,System.Windows.RoutedEventArgs)
-  name: OutputCount(Object, RoutedEventArgs)
-  href: api/ID3_Tag_Editor.MainWindow.html#ID3_Tag_Editor_MainWindow_OutputCount_System_Object_System_Windows_RoutedEventArgs_
-  commentId: M:ID3_Tag_Editor.MainWindow.OutputCount(System.Object,System.Windows.RoutedEventArgs)
-  fullName: ID3_Tag_Editor.MainWindow.OutputCount(System.Object, System.Windows.RoutedEventArgs)
-  nameWithType: MainWindow.OutputCount(Object, RoutedEventArgs)
-- uid: ID3_Tag_Editor.MainWindow.OutputCount*
-  name: OutputCount
-  href: api/ID3_Tag_Editor.MainWindow.html#ID3_Tag_Editor_MainWindow_OutputCount_
-  commentId: Overload:ID3_Tag_Editor.MainWindow.OutputCount
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.MainWindow.OutputCount
-  nameWithType: MainWindow.OutputCount
 - uid: ID3_Tag_Editor.MainWindow.UI
   name: MainWindow.UI
   href: api/ID3_Tag_Editor.MainWindow.UI.html
@@ -196,31 +62,12 @@ references:
   commentId: F:ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Import
   fullName: ID3_Tag_Editor.MainWindow.UI.UserPathBoxes.Import
   nameWithType: MainWindow.UI.UserPathBoxes.Import
-- uid: ID3_Tag_Editor.Names
-  name: Names
-  href: api/ID3_Tag_Editor.Names.html
-  commentId: T:ID3_Tag_Editor.Names
-  fullName: ID3_Tag_Editor.Names
-  nameWithType: Names
-- uid: ID3_Tag_Editor.Saves
-  name: Saves
-  href: api/ID3_Tag_Editor.Saves.html
-  commentId: T:ID3_Tag_Editor.Saves
-  fullName: ID3_Tag_Editor.Saves
-  nameWithType: Saves
-- uid: ID3_Tag_Editor.Saves.Jaloley
-  name: Jaloley()
-  href: api/ID3_Tag_Editor.Saves.html#ID3_Tag_Editor_Saves_Jaloley
-  commentId: M:ID3_Tag_Editor.Saves.Jaloley
-  fullName: ID3_Tag_Editor.Saves.Jaloley()
-  nameWithType: Saves.Jaloley()
-- uid: ID3_Tag_Editor.Saves.Jaloley*
-  name: Jaloley
-  href: api/ID3_Tag_Editor.Saves.html#ID3_Tag_Editor_Saves_Jaloley_
-  commentId: Overload:ID3_Tag_Editor.Saves.Jaloley
-  isSpec: "True"
-  fullName: ID3_Tag_Editor.Saves.Jaloley
-  nameWithType: Saves.Jaloley
+- uid: ID3_Tag_Editor.Scripts
+  name: ID3_Tag_Editor.Scripts
+  href: api/ID3_Tag_Editor.Scripts.html
+  commentId: N:ID3_Tag_Editor.Scripts
+  fullName: ID3_Tag_Editor.Scripts
+  nameWithType: ID3_Tag_Editor.Scripts
 - uid: ID3_Tag_Editor.Scripts.Extensions
   name: ID3_Tag_Editor.Scripts.Extensions
   href: api/ID3_Tag_Editor.Scripts.Extensions.html
@@ -274,6 +121,22 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.EqualsAny
   nameWithType: Extensions.EqualsAny
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild*
+  name: FindChild
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_FindChild_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild
+  nameWithType: Extensions.FindChild
+- uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild``1(System.Windows.DependencyObject,System.String)
+  name: FindChild<T>(DependencyObject, String)
+  href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_FindChild__1_System_Windows_DependencyObject_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild``1(System.Windows.DependencyObject,System.String)
+  name.vb: FindChild(Of T)(DependencyObject, String)
+  fullName: ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild<T>(System.Windows.DependencyObject, System.String)
+  fullName.vb: ID3_Tag_Editor.Scripts.Extensions.Extensions.FindChild(Of T)(System.Windows.DependencyObject, System.String)
+  nameWithType: Extensions.FindChild<T>(DependencyObject, String)
+  nameWithType.vb: Extensions.FindChild(Of T)(DependencyObject, String)
 - uid: ID3_Tag_Editor.Scripts.Extensions.Extensions.RemoveLastChar(System.String)
   name: RemoveLastChar(String)
   href: api/ID3_Tag_Editor.Scripts.Extensions.Extensions.html#ID3_Tag_Editor_Scripts_Extensions_Extensions_RemoveLastChar_System_String_
@@ -299,38 +162,50 @@ references:
   commentId: T:ID3_Tag_Editor.Scripts.IO.FileSystem
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem
   nameWithType: FileSystem
-- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)
-  name: CreateDirectory(String)
-  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_System_String_
-  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)
-  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory(System.String)
-  nameWithType: FileSystem.CreateDirectory(String)
-- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory*
-  name: CreateDirectory
-  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectory_
-  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String)
+  name: CreateDirectoryIf(String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String)
+  nameWithType: FileSystem.CreateDirectoryIf(String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String,System.Boolean)
+  name: CreateDirectoryIf(String, Boolean)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_System_String_System_Boolean_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String,System.Boolean)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf(System.String, System.Boolean)
+  nameWithType: FileSystem.CreateDirectoryIf(String, Boolean)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf*
+  name: CreateDirectoryIf
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_CreateDirectoryIf_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf
   isSpec: "True"
-  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectory
-  nameWithType: FileSystem.CreateDirectory
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.CreateDirectoryIf
+  nameWithType: FileSystem.CreateDirectoryIf
 - uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files
   name: FileSystem.Files
   href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html
   commentId: T:ID3_Tag_Editor.Scripts.IO.FileSystem.Files
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files
   nameWithType: FileSystem.Files
-- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove(System.String,System.String,System.String,System.String)
-  name: RenameAndMove(String, String, String, String)
-  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_RenameAndMove_System_String_System_String_System_String_System_String_
-  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove(System.String,System.String,System.String,System.String)
-  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove(System.String, System.String, System.String, System.String)
-  nameWithType: FileSystem.Files.RenameAndMove(String, String, String, String)
-- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove*
-  name: RenameAndMove
-  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_RenameAndMove_
-  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String,System.String,System.String)
+  name: Move(String, String, String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_System_String_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String,System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String, System.String, System.String)
+  nameWithType: FileSystem.Files.Move(String, String, String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String,System.String,System.String,System.String)
+  name: Move(String, String, String, String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_System_String_System_String_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String,System.String,System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move(System.String, System.String, System.String, System.String)
+  nameWithType: FileSystem.Files.Move(String, String, String, String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move*
+  name: Move
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.Files.html#ID3_Tag_Editor_Scripts_IO_FileSystem_Files_Move_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move
   isSpec: "True"
-  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.RenameAndMove
-  nameWithType: FileSystem.Files.RenameAndMove
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.Files.Move
+  nameWithType: FileSystem.Files.Move
 - uid: ID3_Tag_Editor.Scripts.IO.FileSystem.GetFileName(System.String)
   name: GetFileName(String)
   href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_GetFileName_System_String_
@@ -414,6 +289,19 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.ReadFromJSON2
   nameWithType: FileSystem.ReadFromJSON2
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON(System.String,System.String)
+  name: ReturnFromJSON(String, String)
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_ReturnFromJSON_System_String_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON(System.String,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON(System.String, System.String)
+  nameWithType: FileSystem.ReturnFromJSON(String, String)
+- uid: ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON*
+  name: ReturnFromJSON
+  href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_ReturnFromJSON_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.ReturnFromJSON
+  nameWithType: FileSystem.ReturnFromJSON
 - uid: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON(System.String,System.String,System.Object)
   name: SaveToJSON(String, String, Object)
   href: api/ID3_Tag_Editor.Scripts.IO.FileSystem.html#ID3_Tag_Editor_Scripts_IO_FileSystem_SaveToJSON_System_String_System_String_System_Object_
@@ -427,50 +315,289 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.IO.FileSystem.SaveToJSON
   nameWithType: FileSystem.SaveToJSON
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT
+  name: TagLibEXT
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html
+  commentId: T:ID3_Tag_Editor.Scripts.IO.TagLibEXT
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT
+  nameWithType: TagLibEXT
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT.GetCoverImage(TagLib.File)
+  name: GetCoverImage(File)
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html#ID3_Tag_Editor_Scripts_IO_TagLibEXT_GetCoverImage_TagLib_File_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.TagLibEXT.GetCoverImage(TagLib.File)
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT.GetCoverImage(TagLib.File)
+  nameWithType: TagLibEXT.GetCoverImage(File)
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT.GetCoverImage*
+  name: GetCoverImage
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html#ID3_Tag_Editor_Scripts_IO_TagLibEXT_GetCoverImage_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.TagLibEXT.GetCoverImage
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT.GetCoverImage
+  nameWithType: TagLibEXT.GetCoverImage
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT.Refresh(TagLib.File,System.String)
+  name: Refresh(File, String)
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html#ID3_Tag_Editor_Scripts_IO_TagLibEXT_Refresh_TagLib_File_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.TagLibEXT.Refresh(TagLib.File,System.String)
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT.Refresh(TagLib.File, System.String)
+  nameWithType: TagLibEXT.Refresh(File, String)
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT.Refresh*
+  name: Refresh
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html#ID3_Tag_Editor_Scripts_IO_TagLibEXT_Refresh_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.TagLibEXT.Refresh
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT.Refresh
+  nameWithType: TagLibEXT.Refresh
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT.SetImage(TagLib.File,TagLib.Picture)
+  name: SetImage(File, Picture)
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html#ID3_Tag_Editor_Scripts_IO_TagLibEXT_SetImage_TagLib_File_TagLib_Picture_
+  commentId: M:ID3_Tag_Editor.Scripts.IO.TagLibEXT.SetImage(TagLib.File,TagLib.Picture)
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT.SetImage(TagLib.File, TagLib.Picture)
+  nameWithType: TagLibEXT.SetImage(File, Picture)
+- uid: ID3_Tag_Editor.Scripts.IO.TagLibEXT.SetImage*
+  name: SetImage
+  href: api/ID3_Tag_Editor.Scripts.IO.TagLibEXT.html#ID3_Tag_Editor_Scripts_IO_TagLibEXT_SetImage_
+  commentId: Overload:ID3_Tag_Editor.Scripts.IO.TagLibEXT.SetImage
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.IO.TagLibEXT.SetImage
+  nameWithType: TagLibEXT.SetImage
 - uid: ID3_Tag_Editor.Scripts.Tags
   name: ID3_Tag_Editor.Scripts.Tags
   href: api/ID3_Tag_Editor.Scripts.Tags.html
   commentId: N:ID3_Tag_Editor.Scripts.Tags
   fullName: ID3_Tag_Editor.Scripts.Tags
   nameWithType: ID3_Tag_Editor.Scripts.Tags
-- uid: ID3_Tag_Editor.Scripts.Tags.Tags
-  name: Tags
-  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html
-  commentId: T:ID3_Tag_Editor.Scripts.Tags.Tags
-  fullName: ID3_Tag_Editor.Scripts.Tags.Tags
-  nameWithType: Tags
-- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes
+  name: Modes
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.Modes
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes
+  nameWithType: Modes
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.exportTarget
+  name: exportTarget
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.html#ID3_Tag_Editor_Scripts_Tags_Modes_exportTarget
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.exportTarget
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.exportTarget
+  nameWithType: Modes.exportTarget
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget
+  name: Modes.ExportTarget
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget
+  nameWithType: Modes.ExportTarget
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.FOLDERS
+  name: FOLDERS
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_ExportTarget_FOLDERS
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.FOLDERS
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.FOLDERS
+  nameWithType: Modes.ExportTarget.FOLDERS
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.none
+  name: none
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_ExportTarget_none
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.none
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.none
+  nameWithType: Modes.ExportTarget.none
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.ONEFOLDER
+  name: ONEFOLDER
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_ExportTarget_ONEFOLDER
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.ONEFOLDER
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ExportTarget.ONEFOLDER
+  nameWithType: Modes.ExportTarget.ONEFOLDER
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.imageCheck
+  name: imageCheck
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.html#ID3_Tag_Editor_Scripts_Tags_Modes_imageCheck
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.imageCheck
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.imageCheck
+  nameWithType: Modes.imageCheck
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck
+  name: Modes.ImageCheck
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck
+  nameWithType: Modes.ImageCheck
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.ALL
+  name: ALL
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageCheck_ALL
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.ALL
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.ALL
+  nameWithType: Modes.ImageCheck.ALL
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.none
+  name: none
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageCheck_none
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.none
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.none
+  nameWithType: Modes.ImageCheck.none
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.SIZE
+  name: SIZE
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageCheck_SIZE
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.SIZE
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.SIZE
+  nameWithType: Modes.ImageCheck.SIZE
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.SQUARE
+  name: SQUARE
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageCheck_SQUARE
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.SQUARE
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageCheck.SQUARE
+  nameWithType: Modes.ImageCheck.SQUARE
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.imageMaxSize
+  name: imageMaxSize
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.html#ID3_Tag_Editor_Scripts_Tags_Modes_imageMaxSize
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.imageMaxSize
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.imageMaxSize
+  nameWithType: Modes.imageMaxSize
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.imageProcessing
+  name: imageProcessing
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.html#ID3_Tag_Editor_Scripts_Tags_Modes_imageProcessing
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.imageProcessing
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.imageProcessing
+  nameWithType: Modes.imageProcessing
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing
+  name: Modes.ImageProcessing
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing
+  nameWithType: Modes.ImageProcessing
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.DELETE
+  name: DELETE
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageProcessing_DELETE
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.DELETE
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.DELETE
+  nameWithType: Modes.ImageProcessing.DELETE
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.none
+  name: none
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageProcessing_none
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.none
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.none
+  nameWithType: Modes.ImageProcessing.none
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.OVERWRITE
+  name: OVERWRITE
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.html#ID3_Tag_Editor_Scripts_Tags_Modes_ImageProcessing_OVERWRITE
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.OVERWRITE
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.ImageProcessing.OVERWRITE
+  nameWithType: Modes.ImageProcessing.OVERWRITE
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.sortingTarget
+  name: sortingTarget
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.html#ID3_Tag_Editor_Scripts_Tags_Modes_sortingTarget
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.sortingTarget
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.sortingTarget
+  nameWithType: Modes.sortingTarget
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget
+  name: Modes.SortingTarget
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget
+  nameWithType: Modes.SortingTarget
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.ALBUM
+  name: ALBUM
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_SortingTarget_ALBUM
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.ALBUM
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.ALBUM
+  nameWithType: Modes.SortingTarget.ALBUM
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.GENRE
+  name: GENRE
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_SortingTarget_GENRE
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.GENRE
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.GENRE
+  nameWithType: Modes.SortingTarget.GENRE
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.none
+  name: none
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_SortingTarget_none
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.none
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.none
+  nameWithType: Modes.SortingTarget.none
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.PERFORMER
+  name: PERFORMER
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_SortingTarget_PERFORMER
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.PERFORMER
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.PERFORMER
+  nameWithType: Modes.SortingTarget.PERFORMER
+- uid: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.YEAR
+  name: YEAR
+  href: api/ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.html#ID3_Tag_Editor_Scripts_Tags_Modes_SortingTarget_YEAR
+  commentId: F:ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.YEAR
+  fullName: ID3_Tag_Editor.Scripts.Tags.Modes.SortingTarget.YEAR
+  nameWithType: Modes.SortingTarget.YEAR
+- uid: ID3_Tag_Editor.Scripts.Tags.TagProcessing
+  name: TagProcessing
+  href: api/ID3_Tag_Editor.Scripts.Tags.TagProcessing.html
+  commentId: T:ID3_Tag_Editor.Scripts.Tags.TagProcessing
+  fullName: ID3_Tag_Editor.Scripts.Tags.TagProcessing
+  nameWithType: TagProcessing
+- uid: ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile(System.String)
+  name: GetTagsFromFile(String)
+  href: api/ID3_Tag_Editor.Scripts.Tags.TagProcessing.html#ID3_Tag_Editor_Scripts_Tags_TagProcessing_GetTagsFromFile_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile(System.String)
+  fullName: ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile(System.String)
+  nameWithType: TagProcessing.GetTagsFromFile(String)
+- uid: ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile*
+  name: GetTagsFromFile
+  href: api/ID3_Tag_Editor.Scripts.Tags.TagProcessing.html#ID3_Tag_Editor_Scripts_Tags_TagProcessing_GetTagsFromFile_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.Tags.TagProcessing.GetTagsFromFile
+  nameWithType: TagProcessing.GetTagsFromFile
+- uid: ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs
   name: ProcessAllSongs()
-  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessAllSongs
-  commentId: M:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
-  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs()
-  nameWithType: Tags.ProcessAllSongs()
-- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs*
+  href: api/ID3_Tag_Editor.Scripts.Tags.TagProcessing.html#ID3_Tag_Editor_Scripts_Tags_TagProcessing_ProcessAllSongs
+  commentId: M:ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs
+  fullName: ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs()
+  nameWithType: TagProcessing.ProcessAllSongs()
+- uid: ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs*
   name: ProcessAllSongs
-  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessAllSongs_
-  commentId: Overload:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
+  href: api/ID3_Tag_Editor.Scripts.Tags.TagProcessing.html#ID3_Tag_Editor_Scripts_Tags_TagProcessing_ProcessAllSongs_
+  commentId: Overload:ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs
   isSpec: "True"
-  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessAllSongs
-  nameWithType: Tags.ProcessAllSongs
-- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong(System.String)
-  name: ProcessSong(String)
-  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessSong_System_String_
-  commentId: M:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong(System.String)
-  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong(System.String)
-  nameWithType: Tags.ProcessSong(String)
-- uid: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong*
-  name: ProcessSong
-  href: api/ID3_Tag_Editor.Scripts.Tags.Tags.html#ID3_Tag_Editor_Scripts_Tags_Tags_ProcessSong_
-  commentId: Overload:ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong
+  fullName: ID3_Tag_Editor.Scripts.Tags.TagProcessing.ProcessAllSongs
+  nameWithType: TagProcessing.ProcessAllSongs
+- uid: ID3_Tag_Editor.Scripts.TempScripts
+  name: TempScripts
+  href: api/ID3_Tag_Editor.Scripts.TempScripts.html
+  commentId: T:ID3_Tag_Editor.Scripts.TempScripts
+  fullName: ID3_Tag_Editor.Scripts.TempScripts
+  nameWithType: TempScripts
+- uid: ID3_Tag_Editor.Scripts.TempScripts.ProcessAMatter(System.String)
+  name: ProcessAMatter(String)
+  href: api/ID3_Tag_Editor.Scripts.TempScripts.html#ID3_Tag_Editor_Scripts_TempScripts_ProcessAMatter_System_String_
+  commentId: M:ID3_Tag_Editor.Scripts.TempScripts.ProcessAMatter(System.String)
+  fullName: ID3_Tag_Editor.Scripts.TempScripts.ProcessAMatter(System.String)
+  nameWithType: TempScripts.ProcessAMatter(String)
+- uid: ID3_Tag_Editor.Scripts.TempScripts.ProcessAMatter*
+  name: ProcessAMatter
+  href: api/ID3_Tag_Editor.Scripts.TempScripts.html#ID3_Tag_Editor_Scripts_TempScripts_ProcessAMatter_
+  commentId: Overload:ID3_Tag_Editor.Scripts.TempScripts.ProcessAMatter
   isSpec: "True"
-  fullName: ID3_Tag_Editor.Scripts.Tags.Tags.ProcessSong
-  nameWithType: Tags.ProcessSong
+  fullName: ID3_Tag_Editor.Scripts.TempScripts.ProcessAMatter
+  nameWithType: TempScripts.ProcessAMatter
 - uid: ID3_Tag_Editor.Scripts.UI
   name: ID3_Tag_Editor.Scripts.UI
   href: api/ID3_Tag_Editor.Scripts.UI.html
   commentId: N:ID3_Tag_Editor.Scripts.UI
   fullName: ID3_Tag_Editor.Scripts.UI
   nameWithType: ID3_Tag_Editor.Scripts.UI
+- uid: ID3_Tag_Editor.Scripts.UI.ButtonHandler
+  name: ButtonHandler
+  href: api/ID3_Tag_Editor.Scripts.UI.ButtonHandler.html
+  commentId: T:ID3_Tag_Editor.Scripts.UI.ButtonHandler
+  fullName: ID3_Tag_Editor.Scripts.UI.ButtonHandler
+  nameWithType: ButtonHandler
+- uid: ID3_Tag_Editor.Scripts.UI.ButtonHandler.HidePanel
+  name: HidePanel()
+  href: api/ID3_Tag_Editor.Scripts.UI.ButtonHandler.html#ID3_Tag_Editor_Scripts_UI_ButtonHandler_HidePanel
+  commentId: M:ID3_Tag_Editor.Scripts.UI.ButtonHandler.HidePanel
+  fullName: ID3_Tag_Editor.Scripts.UI.ButtonHandler.HidePanel()
+  nameWithType: ButtonHandler.HidePanel()
+- uid: ID3_Tag_Editor.Scripts.UI.ButtonHandler.HidePanel*
+  name: HidePanel
+  href: api/ID3_Tag_Editor.Scripts.UI.ButtonHandler.html#ID3_Tag_Editor_Scripts_UI_ButtonHandler_HidePanel_
+  commentId: Overload:ID3_Tag_Editor.Scripts.UI.ButtonHandler.HidePanel
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.UI.ButtonHandler.HidePanel
+  nameWithType: ButtonHandler.HidePanel
+- uid: ID3_Tag_Editor.Scripts.UI.ButtonHandler.Test
+  name: Test
+  href: api/ID3_Tag_Editor.Scripts.UI.ButtonHandler.html#ID3_Tag_Editor_Scripts_UI_ButtonHandler_Test
+  commentId: F:ID3_Tag_Editor.Scripts.UI.ButtonHandler.Test
+  fullName: ID3_Tag_Editor.Scripts.UI.ButtonHandler.Test
+  nameWithType: ButtonHandler.Test
 - uid: ID3_Tag_Editor.Scripts.UI.PanelHandler
   name: PanelHandler
   href: api/ID3_Tag_Editor.Scripts.UI.PanelHandler.html
@@ -516,6 +643,44 @@ references:
   isSpec: "True"
   fullName: ID3_Tag_Editor.Scripts.UI.PanelHandler.ShowSubMenu
   nameWithType: PanelHandler.ShowSubMenu
+- uid: ID3_Tag_Editor.Scripts.UI.Window
+  name: ID3_Tag_Editor.Scripts.UI.Window
+  href: api/ID3_Tag_Editor.Scripts.UI.Window.html
+  commentId: N:ID3_Tag_Editor.Scripts.UI.Window
+  fullName: ID3_Tag_Editor.Scripts.UI.Window
+  nameWithType: ID3_Tag_Editor.Scripts.UI.Window
+- uid: ID3_Tag_Editor.Scripts.UI.Window.Buttons
+  name: Buttons
+  href: api/ID3_Tag_Editor.Scripts.UI.Window.Buttons.html
+  commentId: T:ID3_Tag_Editor.Scripts.UI.Window.Buttons
+  fullName: ID3_Tag_Editor.Scripts.UI.Window.Buttons
+  nameWithType: Buttons
+- uid: ID3_Tag_Editor.Scripts.UI.Window.Buttons.OpenEditor
+  name: OpenEditor()
+  href: api/ID3_Tag_Editor.Scripts.UI.Window.Buttons.html#ID3_Tag_Editor_Scripts_UI_Window_Buttons_OpenEditor
+  commentId: M:ID3_Tag_Editor.Scripts.UI.Window.Buttons.OpenEditor
+  fullName: ID3_Tag_Editor.Scripts.UI.Window.Buttons.OpenEditor()
+  nameWithType: Buttons.OpenEditor()
+- uid: ID3_Tag_Editor.Scripts.UI.Window.Buttons.OpenEditor*
+  name: OpenEditor
+  href: api/ID3_Tag_Editor.Scripts.UI.Window.Buttons.html#ID3_Tag_Editor_Scripts_UI_Window_Buttons_OpenEditor_
+  commentId: Overload:ID3_Tag_Editor.Scripts.UI.Window.Buttons.OpenEditor
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.UI.Window.Buttons.OpenEditor
+  nameWithType: Buttons.OpenEditor
+- uid: ID3_Tag_Editor.Scripts.UI.Window.Buttons.SelectFile
+  name: SelectFile()
+  href: api/ID3_Tag_Editor.Scripts.UI.Window.Buttons.html#ID3_Tag_Editor_Scripts_UI_Window_Buttons_SelectFile
+  commentId: M:ID3_Tag_Editor.Scripts.UI.Window.Buttons.SelectFile
+  fullName: ID3_Tag_Editor.Scripts.UI.Window.Buttons.SelectFile()
+  nameWithType: Buttons.SelectFile()
+- uid: ID3_Tag_Editor.Scripts.UI.Window.Buttons.SelectFile*
+  name: SelectFile
+  href: api/ID3_Tag_Editor.Scripts.UI.Window.Buttons.html#ID3_Tag_Editor_Scripts_UI_Window_Buttons_SelectFile_
+  commentId: Overload:ID3_Tag_Editor.Scripts.UI.Window.Buttons.SelectFile
+  isSpec: "True"
+  fullName: ID3_Tag_Editor.Scripts.UI.Window.Buttons.SelectFile
+  nameWithType: Buttons.SelectFile
 - uid: ID3_Tag_Editor.Scripts.User
   name: ID3_Tag_Editor.Scripts.User
   href: api/ID3_Tag_Editor.Scripts.User.html
