@@ -21,6 +21,7 @@ using ID3_Tag_Editor.Scripts.User;
 using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.Tags;
 using ID3_Tag_Editor.Scripts.UI.Window;
+using Brushes = System.Windows.Media.Brushes;
 
 namespace ID3_Tag_Editor
 {
@@ -168,11 +169,13 @@ namespace ID3_Tag_Editor
 
         #region newButtons
 
+        string currentPath;
+
         private void ImportSong_Click(object sender, RoutedEventArgs e)
         {
-            string newpath = OpenStuff.Files.GetPathFromDialog("lol", Paths.Defaults.Music);
+            currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music);
 
-            TagLib.File newfile = TagProcessing.GetTagsFromFile(newpath);
+            TagLib.File newfile = TagProcessing.GetTagsFromFile(currentPath);
 
             TB_Interpret.Text = newfile.Tag.FirstPerformer;
             TB_Title.Text = newfile.Tag.Title;
@@ -185,9 +188,30 @@ namespace ID3_Tag_Editor
 
         private void SaveTags_Click(object sender, RoutedEventArgs e)
         {
+            TagProcessing.SaveTags(
+                new TagProcessing.SongFile
+                {
+                    Interpret = TB_Interpret.Text,
+                    Title = TB_Title.Text,
+                    Album = TB_Album.Text,
+                    //TODO
+                    //add checks to the UI to prevent Exceptions
+                    Track = int.Parse(TB_Track.Text),
+                    Year = int.Parse(TB_Year.Text),
 
+                    Genre = CB_Genre.GetSelectedContent()
+                }, currentPath);
         }
 
         #endregion
+
+        private void TB_INT_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (Int32.TryParse(((TextBox)sender).Text, out _))
+                ((TextBox)sender).Foreground = Brushes.Black;
+
+            else
+                ((TextBox)sender).Foreground = Brushes.Red;
+        }
     }
 }
