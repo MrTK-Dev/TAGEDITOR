@@ -157,6 +157,15 @@ namespace ID3_Tag_Editor.Scripts.Extensions
             }
         }
 
+        public static string GetSelectedContent(this ComboBox comboBox)
+        {
+            foreach (ComboBoxItem item in comboBox.Items)
+                if (item == comboBox.SelectedItem)
+                    return item.Content.ToString();
+
+            return null;
+        }
+
         #endregion
     }
 }
