@@ -9,6 +9,85 @@
     <Window.Resources>
         <local:TabHandler x:Key="TabHandling"/>
     </Window.Resources>
+
+    <!-- äußere Gerüst-->
+    <StackPanel>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Tags -->
+            <StackPanel Grid.Column="0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Interpret -->
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Interpret"/>
+                        <TextBox x:Name="TB_Interpret"/>
+                    </StackPanel>
+
+                    <!-- Title -->
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Title"/>
+                        <TextBox x:Name="TB_Title"/>
+                    </StackPanel>
+                </Grid>
+
+                <!-- Album -->
+                <TextBlock Text="Album"/>
+                <TextBox x:Name="TB_Album"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Year -->
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Year"/>
+                        <TextBox x:Name="TB_Year"/>
+                    </StackPanel>
+
+                    <!-- Track -->
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Track"/>
+                        <TextBox x:Name="TB_Track"/>
+                    </StackPanel>
+
+                    <!-- Genre -->
+                    <StackPanel Grid.Column="2">
+                        <TextBlock Text="Genre"/>
+                        <ComboBox x:Name="CB_Genre" SelectedIndex="0">
+                            <ComboBoxItem>Trap</ComboBoxItem>
+                            <ComboBoxItem>Dubstep</ComboBoxItem>
+                            <ComboBoxItem>House</ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+
+            </StackPanel>
+
+            <!-- Buttons -->
+            <StackPanel Grid.Column="1">
+                <Button x:Name="ImportSong" Content="Import Song" Height="50" Click="ImportSong_Click"/>
+
+                <Button x:Name="SaveTags" Content="Save Tags" Height="50" Click="SaveTags_Click"/>
+            </StackPanel>
+        </Grid>
+        
+    </StackPanel>
+    
+    <!-- First Try
+     
     <Grid>
         <Grid.ColumnDefinitions>
 
@@ -25,8 +104,8 @@
             <StackPanel x:Name="panel_SubMenu_Editor" Height="100" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
                 <StackPanel x:Name="panel_SubMenu_Automation_Copy" Height="80" Margin="0,0,0,0" Width="100" Background="#FF780A0A">
                     <Button Content="Open Editor" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="BC_OpenEditor" Background="#FF2A2A2A" Foreground="White" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
-                    <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
-                    <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
+                    <Button Content="Write Lyrics" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="BC_WriteTestLyrics" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
+                    <Button Content="Select File" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="BC_SelectFile" Foreground="White" Background="#FF2A2A2A" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
                     <Button Content="Button1" HorizontalAlignment="Center" Height="20" Margin="-1,0,0,0" Width="100" Click="Button_Click" Background="#FF2A2A2A" Foreground="White" BorderBrush="#FF454545" VerticalAlignment="Top" HorizontalContentAlignment="Left" Padding="10,1,1,1"/>
                 </StackPanel>
             </StackPanel>
@@ -43,6 +122,11 @@
             <TextBox x:Name="TextBox_Dialog_Input" HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.583,-0.824"/>
             <Button Content="Output Folder" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="BClick_SelectFolder_Output"/>
             <TextBox x:Name="TextBox_Dialog_Output" HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120" x:FieldModifier="public"/>
+
+            <DockPanel x:Name="Tags_TEMP">
+                <TextBox x:Name="Song_Title" HorizontalAlignment="Left" Height="85" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-1.583,-0.824"/>
+            </DockPanel>
         </DockPanel>
     </Grid>
+    -->
 </Window>

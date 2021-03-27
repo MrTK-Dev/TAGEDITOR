@@ -39,8 +39,9 @@ namespace ID3_Tag_Editor
         {
             InitializeComponent();
 
-            #region LoadUI Variables
 
+            #region LoadUI Variables
+            /*
             UI.allSubMenus = new List<StackPanel>()
             {
                 panel_SubMenu_Automation,
@@ -50,13 +51,16 @@ namespace ID3_Tag_Editor
             UI.UserPathBoxes.Import = TextBox_Dialog_Input;
             UI.UserPathBoxes.Export = TextBox_Dialog_Output;
 
+            //Tags_TEMP.find
+
             #endregion
 
             #region LoadUI Graphics
 
             PanelHandler.HideSubMenus();
-
+            */
             #endregion
+
 
             Preferences.LoadSettings();
 
@@ -102,7 +106,7 @@ namespace ID3_Tag_Editor
             }
         }*/
 
-        private void Button_OpenSubMenu_Automation(object sender, RoutedEventArgs e)
+        /*private void Button_OpenSubMenu_Automation(object sender, RoutedEventArgs e)
         {
             PanelHandler.HighlightSubMenu(panel_SubMenu_Automation);
         }
@@ -110,7 +114,7 @@ namespace ID3_Tag_Editor
         private void Button_OpenSubMenu_Editor(object sender, RoutedEventArgs e)
         {
             PanelHandler.HighlightSubMenu(panel_SubMenu_Editor);
-        }
+        }*/
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -130,7 +134,7 @@ namespace ID3_Tag_Editor
         }
 
         #region Button Clicks
-
+        /*
         private void BClick_SelectFolder_Input(object sender, RoutedEventArgs e)
         {
             PathMethods.SelectFolder(TextBox_Dialog_Input, Paths.PathType.INPUT);
@@ -148,7 +152,41 @@ namespace ID3_Tag_Editor
             Preferences.SaveSettings();
         }
 
+        private void BC_SelectFile(object sender, RoutedEventArgs e)
+        {
+            Buttons.SelectFile();
+        }
+
         private void BC_OpenEditor(object sender, RoutedEventArgs e) => Buttons.OpenEditor();
+
+        private void BC_WriteTestLyrics(object sender, RoutedEventArgs e)
+        {
+            Buttons.OpenEditor();
+        }
+        */
+        #endregion
+
+        #region newButtons
+
+        private void ImportSong_Click(object sender, RoutedEventArgs e)
+        {
+            string newpath = OpenStuff.Files.GetPathFromDialog("lol", Paths.Defaults.Music);
+
+            TagLib.File newfile = TagProcessing.GetTagsFromFile(newpath);
+
+            TB_Interpret.Text = newfile.Tag.FirstPerformer;
+            TB_Title.Text = newfile.Tag.Title;
+            TB_Album.Text = newfile.Tag.Album;
+            TB_Track.Text = newfile.Tag.Track.ToString();
+            TB_Year.Text = newfile.Tag.Year.ToString();
+
+            CB_Genre.SelectNewItem(newfile.Tag.FirstGenre);
+        }
+
+        private void SaveTags_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
 
         #endregion
     }
