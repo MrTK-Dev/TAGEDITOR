@@ -43,7 +43,7 @@ namespace ID3_Tag_Editor.Scripts.UI
 
             public static string GetPathFromDialog(FolderBrowserDialog objDialog)
             {
-                if (objDialog.SelectedPath != " ")
+                if (objDialog != null)
                     return objDialog.SelectedPath;
 
                 else
@@ -87,7 +87,7 @@ namespace ID3_Tag_Editor.Scripts.UI
 
             public static string GetPathFromDialog(OpenFileDialog objDialog)
             {
-                if (objDialog.FileName != " ")
+                if (objDialog != null)
                     return objDialog.FileName;
 
                 else
