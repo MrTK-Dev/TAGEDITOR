@@ -1,4 +1,4 @@
-﻿using ID3_Tag_Editor.Scripts.Extensions;
+using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -35,6 +35,7 @@ namespace ID3_Tag_Editor.Scripts.Tags
                 for (int i = 0; i < allFiles.Length; i++)
                     if (!string.IsNullOrEmpty(allFiles[i]) && allFiles[i].Contains(".mp3"))
                         ProcessSong(allFiles[i]);
+            //TempScripts.ProcessAMatter(allFiles[i]);
         }
 
         #endregion
@@ -44,8 +45,17 @@ namespace ID3_Tag_Editor.Scripts.Tags
         private static void ProcessSong(string newFile)
         {
             Debug.WriteLine(newFile);
-
             TagLib.File newSong = TagLib.File.Create(newFile);
+            /*
+            //Lyrics Test
+            Debug.WriteLine("(before)Test Lyrics: " + newSong.Tag.Lyrics);
+
+            newSong.Tag.Lyrics = "";
+            newSong.Tag.Lyrics = "Wad ya mine";
+
+            Debug.WriteLine("(after)Test Lyrics: " + newSong.Tag.Lyrics);
+            */
+            newSong.Save();
 
             if (newSong.Tag.FirstPerformer != null && newSong.Tag.Title != null)
             {
@@ -59,6 +69,14 @@ namespace ID3_Tag_Editor.Scripts.Tags
                     else
                         newSong.Tag.Album = GetRealTitle(newSong.Tag.Title) + " - Single";
                 }
+
+                //TEMP           
+                newSong.Tag.Comment = " ";
+                newSong.Tag.Comment = "Processed by TagEditor";
+                newSong.Tag.Genres = new string[] { "Electronic" };
+                newSong.Tag.Performers = new string[] { "DROELOE" };
+                newSong.Tag.Album = "A Matter Of Perspective";
+                newSong.Tag.AlbumArtists = new string[] { "DROELOE" };
 
                 newSong.Refresh(newFile);
 
