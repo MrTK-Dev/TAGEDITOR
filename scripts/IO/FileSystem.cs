@@ -186,5 +186,17 @@ namespace ID3_Tag_Editor.Scripts.IO
         {
             return File.Exists(Paths.GetFullPath(Path, fileName));
         }
+
+        public static void ClearFolder(string Path, bool isRelative)
+        {
+            if (IsDirectory(Path, isRelative))
+            {
+                if (isRelative)
+                    Path = Paths.GetFullPath(Path);
+                            
+                foreach (FileInfo file in new DirectoryInfo(Path).EnumerateFiles())
+                    file.Delete();
+            }
+        }
     }
 }
