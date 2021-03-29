@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.User;
+﻿using ID3_Tag_Editor.Scripts.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
