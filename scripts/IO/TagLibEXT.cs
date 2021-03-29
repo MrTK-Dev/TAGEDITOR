@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TagLib;
 
 namespace ID3_Tag_Editor.Scripts.IO
 {
@@ -77,6 +78,16 @@ namespace ID3_Tag_Editor.Scripts.IO
 
             newSong2.Save();
             newSong2.Dispose();
+        }
+
+        public static void SetInterpret(this TagLib.File item, string newInterpret)
+        {
+            item.Tag.Performers = new string[] { newInterpret };
+        }
+
+        public static void SetGenre(this TagLib.File item, string newGenre)
+        {
+            item.Tag.Genres = new string[] { newGenre };
         }
     }
 }
