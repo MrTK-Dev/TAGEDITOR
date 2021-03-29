@@ -39,23 +39,30 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <!-- Interpret -->
-                    <StackPanel Grid.Column="0" Margin="10 10 10 10">
-                        <TextBlock Text="Interpret"/>
-                        <TextBox x:Name="TB_Interpret"/>
-                    </StackPanel>
-                </Grid>
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    
-                    <!-- Album -->
-                    <StackPanel Grid.Column="0" Margin="10 10 10 10">
-                        <TextBlock Text="Album"/>
-                        <TextBox x:Name="TB_Album"/>
+                    <StackPanel Grid.Column="0">
+                        <!-- Interpret -->
+                        <StackPanel Margin="10 10 10 10">
+                            <TextBlock Text="Interpret"/>
+                            <TextBox x:Name="TB_Interpret"/>
+                        </StackPanel>
+
+                        <!-- Album -->
+                        <StackPanel Margin="10 10 10 10">
+                            <TextBlock Text="Album"/>
+                            <TextBox x:Name="TB_Album"/>
+                        </StackPanel>
+
+                        <!-- Comment -->
+                        <StackPanel Margin="10 10 10 10">
+                            <TextBlock Text="Comment"/>
+                            <TextBox x:Name="TB_Comment"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Cover"/>
+                        <Image x:Name="IMG_Cover" HorizontalAlignment="Center" VerticalAlignment="Center" Source="F:\Timo\Pictures\Musik\MrTK\MrTK_Logo.png"/>
                     </StackPanel>
                 </Grid>
 
