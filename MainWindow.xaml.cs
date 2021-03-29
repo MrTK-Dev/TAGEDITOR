@@ -40,6 +40,9 @@ namespace ID3_Tag_Editor
         {
             InitializeComponent();
 
+            //TODO
+            //Add a better place for this
+            Images.ClearCache();
 
             #region LoadUI Variables
             /*
@@ -183,7 +186,11 @@ namespace ID3_Tag_Editor
             TB_Track.Text = newfile.Tag.Track.ToString();
             TB_Year.Text = newfile.Tag.Year.ToString();
 
+            //TODO
+            //Check for null
             CB_Genre.SelectNewItem(newfile.Tag.FirstGenre);
+
+            IMG_Cover.Source = Images.GetCoverUI(newfile);
         }
 
         private void SaveTags_Click(object sender, RoutedEventArgs e)
