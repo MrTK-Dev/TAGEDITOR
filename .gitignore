@@ -344,8 +344,11 @@ healthchecksdb
 # User Settings
 User/*
 
-#DocFX log
+# DocFX log
 log.txt
 
-#ignore templates till homebrew version
+# TEMP stuff
+resources/TEMP/*
+
+# ignore templates till homebrew version
 articles/templates/
