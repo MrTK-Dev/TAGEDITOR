@@ -60,14 +60,13 @@ namespace ID3_Tag_Editor.Scripts.UI
 
             //TODO add ability to add multiple files
             //https://www.wpf-tutorial.com/dialogs/the-openfiledialog/
-            public static OpenFileDialog OpenDialog(string description, string startingPath)
+            public static OpenFileDialog OpenDialog(string description, string startingPath, Kinds kind)
             {
                 OpenFileDialog objDialog = new OpenFileDialog
                 {
-                    Filter = "Music Files (*.mp3)|*.mp3",
+                    Filter = GetKind(kind),
 
                     Title = "File Selection",
-
 
                     InitialDirectory = startingPath
                 };
@@ -78,20 +77,42 @@ namespace ID3_Tag_Editor.Scripts.UI
                 return null;
             }
 
-            public static string GetPathFromDialog(string description, string startingPath)
+            public static string GetPathFromDialog(string description, string startingPath, Kinds kind)
             {
                 return GetPathFromDialog(
-                    OpenDialog(description, startingPath)
+                    OpenDialog(description, startingPath, kind)
                     );
             }
 
-            public static string GetPathFromDialog(OpenFileDialog objDialog)
+            static string GetPathFromDialog(OpenFileDialog objDialog)
             {
                 if (objDialog != null)
                     return objDialog.FileName;
 
                 else
                     return null;
+            }
+
+            public enum Kinds
+            {
+                Music,
+                Image,
+                ALL
+            }
+
+            public static string GetKind(Kinds kind)
+            {
+                switch (kind)
+                {
+                    case Kinds.Music:
+                        return "Music Files (*.mp3)|*.mp3";
+                    case Kinds.Image:
+                        return "Image Files (*.png)|*.png";
+                    case Kinds.ALL:
+                        return "All Files (*.*)|*.*";
+                    default:
+                        return null;
+                }
             }
         }
     }

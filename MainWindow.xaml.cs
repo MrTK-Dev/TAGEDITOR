@@ -178,7 +178,7 @@ namespace ID3_Tag_Editor
 
         private void ImportSong_Click(object sender, RoutedEventArgs e)
         {
-            currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music);
+            currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music, OpenStuff.Files.Kinds.Music);
 
             TagLib.File newfile = TagProcessing.GetTagsFromFile(currentPath);
 
