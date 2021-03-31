@@ -1,11 +1,11 @@
-﻿<Window x:Class="ID3_Tag_Editor.MainWindow"
+<Window x:Class="ID3_Tag_Editor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ID3_Tag_Editor.Scripts.UI"
         mc:Ignorable="d"
-        Title="TAGEDITOR by MrTK" Height="600" Width="950" ResizeMode="CanResizeWithGrip" Icon="MrTK_Logo.png" MinHeight="600" MinWidth="950" Background="#FFB2C3C7" WindowStartupLocation="CenterScreen">
+        Title="TAGEDITOR by MrTK" Height="600" Width="950" ResizeMode="CanResizeWithGrip" Icon="/resources/MrTK_Logo.png" MinHeight="600" MinWidth="950" Background="#FFB2C3C7" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <local:TabHandler x:Key="TabHandling"/>
     </Window.Resources>
@@ -62,7 +62,7 @@
 
                     <StackPanel Grid.Column="1">
                         <TextBlock Text="Cover"/>
-                        <Image x:Name="IMG_Cover" HorizontalAlignment="Center" VerticalAlignment="Center" Source="F:\Timo\Pictures\Musik\MrTK\MrTK_Logo.png"/>
+                        <Image x:Name="IMG_Cover" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/resources/MrTK_Logo.png"/>
                     </StackPanel>
                 </Grid>
 
