@@ -164,6 +164,11 @@
   <ItemGroup>
     <Resource Include="MrTK_Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="button_newcover.png" />
+    <Resource Include="button_delete.png" />
+    <Resource Include="button_download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\docfx.console.2.56.7\build\docfx.console.targets" Condition="Exists('packages\docfx.console.2.56.7\build\docfx.console.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
