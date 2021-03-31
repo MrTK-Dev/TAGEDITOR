@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.User;
+﻿using ID3_Tag_Editor.Scripts.User;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -34,11 +34,16 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// <param name="fileName">The name of the new file + ".png".</param>
         public static void SaveBitMapToFile(Bitmap bitMap, string newPath, string fileName)
         {
-            Bitmap copy = new Bitmap(bitMap);
-            copy.Save(newPath + @"\" + fileName + ".png", ImageFormat.Png);
+            string fullpath = newPath + @"\" + fileName + ".png";
 
-            bitMap.Dispose();
-            copy.Dispose();
+            if (!File.Exists(fullpath))
+            {
+                Bitmap copy = new Bitmap(bitMap);
+                copy.Save(fullpath, ImageFormat.Png);
+
+                bitMap.Dispose();
+                copy.Dispose();
+            }
         }
 
         /// <summary>
@@ -59,10 +64,8 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// <summary>
         /// This clears the temporary cache folder. (<see cref="TEMP_Folder"/>)
         /// </summary>
-        public static void ClearCache()
-        {
-            FileSystem.ClearFolder(TEMP_Folder, true);
-        }
+        public static void ClearCache() => FileSystem.ClearFolder(TEMP_Folder, true);
+
 
         /// <summary>
         /// This caches the cover of a song file and returns the BitmapImage. If the cover is null a placeholder image gets returned.
