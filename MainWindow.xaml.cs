@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +32,7 @@ namespace ID3_Tag_Editor
     {
         #region Initialize
 
-        readonly Buttons Buttons = new Buttons();
+        //readonly Buttons Buttons = new Buttons();
 
         #endregion
 
@@ -187,6 +187,7 @@ namespace ID3_Tag_Editor
             TB_Album.Text = newfile.Tag.Album;
             TB_Track.Text = newfile.Tag.Track.ToString();
             TB_Year.Text = newfile.Tag.Year.ToString();
+            TB_Comment.Text = newfile.Tag.Comment;
 
             //TODO
             //Check for null
@@ -197,19 +198,70 @@ namespace ID3_Tag_Editor
 
         private void SaveTags_Click(object sender, RoutedEventArgs e)
         {
-            TagProcessing.SaveTags(
-                new TagProcessing.SongFile
-                {
-                    Interpret = TB_Interpret.Text,
-                    Title = TB_Title.Text,
-                    Album = TB_Album.Text,
-                    //TODO
-                    //add checks to the UI to prevent Exceptions
-                    Track = int.Parse(TB_Track.Text),
-                    Year = int.Parse(TB_Year.Text),
+            if (saveable)
+            {
+                string cover = null;
 
-                    Genre = CB_Genre.GetSelectedContent()
-                }, currentPath);
+                if (IMG_Cover.Source != new BitmapImage(new Uri(Images.Ressources.Placeholder)) && IMG_Cover.Source != null)
+                {
+                    Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource.LocalPath);
+
+                    cover = (IMG_Cover.Source as BitmapImage).UriSource.LocalPath;
+
+                    /*Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource);
+
+                    Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource.AbsoluteUri);
+
+                    Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource.AbsolutePath);*/
+
+                    //TB_Comment.Text = cover;
+                }
+
+                TagProcessing.SaveTags(
+                    new TagProcessing.SongFile
+                    {
+                        Interpret = TB_Interpret.Text,
+                        Title = TB_Title.Text,
+                        Album = TB_Album.Text,
+                        //TODO
+                        //add checks to the UI to prevent Exceptions
+                        Track = int.Parse(TB_Track.Text),
+                        Year = int.Parse(TB_Year.Text),
+
+                        Cover = cover,
+
+                        Genre = CB_Genre.GetSelectedContent()
+                    }, currentPath);
+            }
+
+            else
+                //TODO
+                return;
+        }
+
+        private void B_SelectCover_Click(object sender, RoutedEventArgs e)
+        {
+            string path = OpenStuff.Files.GetPathFromDialog("Pick your cover.", Paths.Defaults.Pictures, OpenStuff.Files.Kinds.Image);
+
+            Console.Write(path);
+        }
+
+        private void B_DeleteCover_Click(object sender, RoutedEventArgs e)
+        {
+            if (currentPath != null)
+                if (IMG_Cover.Source != new BitmapImage(new Uri(Images.Ressources.Placeholder)) && IMG_Cover.Source != null)
+                {
+                    TagLib.File newfile = TagProcessing.GetTagsFromFile(currentPath);
+
+                    newfile.SetImage((TagLib.Picture)null);
+
+                    IMG_Cover.Source = Images.GetCoverUI(newfile);
+                }
+        }
+
+        private void B_DownloadCover_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         #endregion
