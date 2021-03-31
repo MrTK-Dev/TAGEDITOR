@@ -1,4 +1,4 @@
-﻿using ID3_Tag_Editor.Scripts.User;
+using ID3_Tag_Editor.Scripts.User;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -16,6 +16,11 @@ namespace ID3_Tag_Editor.Scripts.IO
     /// </summary>
     public static class Images
     {
+        public static class Ressources
+        {
+            public static string Placeholder = GetResourceLocation(@"no_cover.jpg");
+        }
+        
         /// <summary>
         /// Relative folder to TEMP files.
         /// </summary>
@@ -72,6 +77,11 @@ namespace ID3_Tag_Editor.Scripts.IO
                 return new BitmapImage(new Uri(@"C:\Users\Megaport\source\repos\ID3 Tag Editor\resources\no_cover.jpg"));
 
             return new BitmapImage(new Uri(CacheBitMap(bitmap, newFile.Tag.Title)));
+        }
+
+        public static string GetResourceLocation(string fileName)
+        {
+            return Paths.GetFullPath("resources", fileName);
         }
     }
 }
