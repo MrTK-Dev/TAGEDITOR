@@ -27,6 +27,10 @@ namespace ID3_Tag_Editor.Scripts.Tags
             public int Year;
             public int Track;
             public string Genre;
+            /// <summary>
+            /// Absolute path to the image.
+            /// </summary>
+            public string Cover;
         }
 
         #endregion
@@ -63,6 +67,7 @@ namespace ID3_Tag_Editor.Scripts.Tags
             newFile.Tag.Track = (uint)songFile.Track;
             newFile.Tag.Year = (uint)songFile.Year;
             newFile.SetGenre(songFile.Genre);
+            newFile.SetImage(songFile.Cover);
 
             newFile.Refresh(path);
         }
