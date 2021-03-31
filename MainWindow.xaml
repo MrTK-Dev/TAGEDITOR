@@ -1,4 +1,4 @@
-<Window x:Class="ID3_Tag_Editor.MainWindow"
+﻿<Window x:Class="ID3_Tag_Editor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -60,9 +60,33 @@
                         </StackPanel>
                     </StackPanel>
 
+                    <!-- Cover -->
                     <StackPanel Grid.Column="1">
                         <TextBlock Text="Cover"/>
                         <Image x:Name="IMG_Cover" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/resources/MrTK_Logo.png"/>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- select new file -->
+                            <Button Grid.Column="0" MaxWidth="50" x:Name="B_SelectCover" Click="B_SelectCover_Click">
+                                <Image Source="/resources/buttons/button_newcover.png"/>
+                            </Button>
+
+                            <!-- delete cover -->
+                            <Button Grid.Column="1" MaxWidth="50" x:Name="B_DeleteCover" Click="B_DeleteCover_Click">
+                                <Image Source="/resources/buttons/button_delete.png"/>
+                            </Button>
+
+                            <!-- download cover -->
+                            <Button Grid.Column="2" MaxWidth="50" x:Name="B_DownloadCover" Click="B_DownloadCover_Click">
+                                <Image Source="/resources/buttons/button_download.png"/>
+                            </Button>
+                        </Grid>
                     </StackPanel>
                 </Grid>
 
