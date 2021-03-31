@@ -38,18 +38,42 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// </summary>
         /// <param name="Song"></param>
         /// <param name="newPicture"></param>
-        public static void SetImage(TagLib.File Song, TagLib.Picture newPicture)
+        public static void SetImage2(TagLib.File Song, TagLib.Picture newPicture)
         {
             //some var that I do not get
             TagLib.IPicture[] pic = new TagLib.IPicture[1];
             pic[0] = newPicture;
 
-            //overwrite cover inage
+            //overwrite cover image
             Song.Tag.Pictures = pic;
 
             //TODO this should be done in the main methode
             Song.Save();
         }
+
+        /// <summary>
+        /// Sets the cover image of the given song to the given Picture. Setting it to "null" should result in a deletion.
+        /// </summary>
+        /// <param name="Song"></param>
+        /// <param name="newPicture"></param>
+        public static void SetImage(this TagLib.File Song, TagLib.Picture newPicture)
+        {
+            if (newPicture != null)
+            {
+                TagLib.IPicture[] pic = new TagLib.IPicture[1];
+
+                pic[0] = newPicture;
+
+                Song.Tag.Pictures = pic;
+            }
+
+            else
+                Song.Tag.Pictures = new TagLib.IPicture[0];
+        }
+
+        public static void SetImage(this TagLib.File Song, string fullPath) => Song.SetImage(new TagLib.Picture(fullPath));
+
+        //public static void Delete
 
         /// <summary>
         /// This refreshes the file to get rid of unused bytes and saves all made changes.
