@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -174,6 +174,8 @@ namespace ID3_Tag_Editor
 
         string currentPath;
 
+        bool saveable = true;
+
         private void ImportSong_Click(object sender, RoutedEventArgs e)
         {
             currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music);
@@ -212,13 +214,23 @@ namespace ID3_Tag_Editor
 
         #endregion
 
+        #region Changed Events
+
         private void TB_INT_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (Int32.TryParse(((TextBox)sender).Text, out _))
-                ((TextBox)sender).Foreground = Brushes.Black;
+            TextBox textBox = (TextBox)sender;
+
+            bool parseable = Int32.TryParse(textBox.Text, out _);
+
+            if (parseable)
+                textBox.Foreground = Brushes.Black;
 
             else
-                ((TextBox)sender).Foreground = Brushes.Red;
+                textBox.Foreground = Brushes.Red;
+
+            saveable = parseable;
         }
+
+        #endregion
     }
 }
