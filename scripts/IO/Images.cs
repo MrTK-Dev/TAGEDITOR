@@ -90,12 +90,10 @@ namespace ID3_Tag_Editor.Scripts.IO
 
     public static class Converter
     {
-        public static BitmapImage ConvertToBitmapImage(this Bitmap bitmap)
+        public static BitmapSource ConvertToBitmapImage(this Bitmap bitmap)
         {
-            IntPtr hBitmap = bitmap.GetHbitmap();
-
-            return (BitmapImage)Imaging.CreateBitmapSourceFromHBitmap(
-                hBitmap,
+            return Imaging.CreateBitmapSourceFromHBitmap(
+                bitmap.GetHbitmap(),
                 IntPtr.Zero,
                 Int32Rect.Empty,
                 BitmapSizeOptions.FromEmptyOptions());
