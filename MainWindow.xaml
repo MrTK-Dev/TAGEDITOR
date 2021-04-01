@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="TAGEDITOR by MrTK" Height="600" Width="950" ResizeMode="CanResizeWithGrip" Icon="/resources/MrTK_Logo.png" MinHeight="600" MinWidth="950" Background="#FFB2C3C7" WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <local:TabHandler x:Key="TabHandling"/>
+        <!--<local:TabHandler x:Key="TabHandling"/>-->
     </Window.Resources>
 
     <!-- äußere Gerüst-->
@@ -63,7 +63,10 @@
                     <!-- Cover -->
                     <StackPanel Grid.Column="1">
                         <TextBlock Text="Cover"/>
-                        <Image x:Name="IMG_Cover" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/resources/MrTK_Logo.png"/>
+
+                        <StackPanel Background="WhiteSmoke">
+                            <Image x:Name="IMG_Cover" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/resources/no_cover.png"/>
+                        </StackPanel>
 
                         <Grid>
                             <Grid.ColumnDefinitions>

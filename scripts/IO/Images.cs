@@ -20,7 +20,7 @@ namespace ID3_Tag_Editor.Scripts.IO
     {
         public static class Ressources
         {
-            public static string Placeholder = GetResourceLocation(@"no_cover.jpg");
+            public static string Placeholder = GetResourceLocation(@"no_cover.png");
         }
         
         /// <summary>
