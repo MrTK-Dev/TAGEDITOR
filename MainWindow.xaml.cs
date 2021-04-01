@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,8 +31,6 @@ namespace ID3_Tag_Editor
     public partial class MainWindow : Window
     {
         #region Initialize
-
-        //readonly Buttons Buttons = new Buttons();
 
         #endregion
 

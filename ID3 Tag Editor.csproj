@@ -104,13 +104,10 @@
     <Compile Include="Scripts\IO\JSON.cs" />
     <Compile Include="Scripts\IO\TagLibEXT.cs" />
     <Compile Include="Scripts\Tags\Tags.cs" />
-    <Compile Include="Scripts\TempScripts.cs" />
     <Compile Include="Scripts\UI\OpenStuff.cs" />
-    <Compile Include="Scripts\UI\Window\Buttons.cs" />
     <Compile Include="Scripts\User\Paths.cs" />
     <Compile Include="Scripts\UI\PanelHandler.cs" />
     <Compile Include="Scripts\UI\ButtonHandler.cs" />
-    <Compile Include="Scripts\UI\TabHandler.cs" />
     <Compile Include="Scripts\User\Preferences.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -160,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="resources\TEMP\" />
+    <Folder Include="Scripts\UI\Window\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="resources\MrTK_Logo.png" />

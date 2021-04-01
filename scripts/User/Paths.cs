@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -100,11 +100,6 @@ namespace ID3_Tag_Editor.Scripts.User
             {
                 //Error
             }
-        }
-
-        public static void SelectFile()
-        {
-
         }
     }
 
