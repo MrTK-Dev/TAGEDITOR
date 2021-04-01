@@ -7,6 +7,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 
 namespace ID3_Tag_Editor.Scripts.IO
@@ -85,6 +87,14 @@ namespace ID3_Tag_Editor.Scripts.IO
         public static string GetResourceLocation(string fileName)
         {
             return Paths.GetFullPath("resources", fileName);
+        }
+
+        public static BitmapSource GetCoverForUI(Bitmap bitmap)
+        {
+            if (bitmap == null)
+                return new BitmapImage(new Uri(Ressources.Placeholder));
+
+            return Converter.ConvertToBitmapImage(bitmap);
         }
     }
 

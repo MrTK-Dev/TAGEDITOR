@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
@@ -11,7 +11,7 @@ namespace ID3_Tag_Editor.Scripts.IO
 {
     public static class TagLibEXT
     {
-        public static Bitmap GetCoverImage(TagLib.File newSong)
+        public static Bitmap GetCoverImage(this TagLib.File newSong)
         {
             MemoryStream mStream = new MemoryStream();
 
