@@ -20,7 +20,6 @@ using ID3_Tag_Editor.Scripts.UI;
 using ID3_Tag_Editor.Scripts.User;
 using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.Tags;
-using ID3_Tag_Editor.Scripts.UI.Window;
 using Brushes = System.Windows.Media.Brushes;
 
 namespace ID3_Tag_Editor

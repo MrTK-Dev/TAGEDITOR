@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,7 +47,7 @@ namespace ID3_Tag_Editor.Scripts.User
             if (fileName == null)
                 return GetApplicationPath() + Path;
 
-            return GetApplicationPath() + Path + @"/" + fileName;
+            return GetApplicationPath() + Path + @"\" + fileName;
         }
 
         /// <summary>
