@@ -1,4 +1,4 @@
-﻿using ID3_Tag_Editor.Scripts.User;
+using ID3_Tag_Editor.Scripts.User;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -85,6 +85,20 @@ namespace ID3_Tag_Editor.Scripts.IO
         public static string GetResourceLocation(string fileName)
         {
             return Paths.GetFullPath("resources", fileName);
+        }
+    }
+
+    public static class Converter
+    {
+        public static BitmapImage ConvertToBitmapImage(this Bitmap bitmap)
+        {
+            IntPtr hBitmap = bitmap.GetHbitmap();
+
+            return (BitmapImage)Imaging.CreateBitmapSourceFromHBitmap(
+                hBitmap,
+                IntPtr.Zero,
+                Int32Rect.Empty,
+                BitmapSizeOptions.FromEmptyOptions());
         }
     }
 }
