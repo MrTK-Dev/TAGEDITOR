@@ -273,5 +273,18 @@ namespace ID3_Tag_Editor.Scripts.Tags
         }
     }
 
+    public static class Caching
+    {
+        public class CachedFile
+        {
+            public string fullPath = null;
+            public TagLib.File File = null;
+            public Bitmap Cover = null;
+            public bool active = false;
+        }
+
+        public static CachedFile currentFile = new CachedFile();
+    }
+
     #endregion
 }

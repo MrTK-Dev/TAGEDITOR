@@ -175,22 +175,31 @@ namespace ID3_Tag_Editor
 
         private void ImportSong_Click(object sender, RoutedEventArgs e)
         {
+            //select file
             currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music, OpenStuff.Files.Kinds.Music);
 
-            TagLib.File newfile = TagProcessing.GetTagsFromFile(currentPath);
+            //Cache Info
+            Caching.currentFile = new Caching.CachedFile
+            {
+                fullPath = currentPath,
+                File = TagProcessing.GetTagsFromFile(currentPath),
+                active = true
+            };
 
-            TB_Interpret.Text = newfile.Tag.FirstPerformer;
-            TB_Title.Text = newfile.Tag.Title;
-            TB_Album.Text = newfile.Tag.Album;
-            TB_Track.Text = newfile.Tag.Track.ToString();
-            TB_Year.Text = newfile.Tag.Year.ToString();
-            TB_Comment.Text = newfile.Tag.Comment;
+            Caching.currentFile.Cover = Caching.currentFile.File.GetCoverImage();
+
+            TB_Interpret.Text = Caching.currentFile.File.Tag.FirstPerformer;
+            TB_Title.Text = Caching.currentFile.File.Tag.Title;
+            TB_Album.Text = Caching.currentFile.File.Tag.Album;
+            TB_Track.Text = Caching.currentFile.File.Tag.Track.ToString();
+            TB_Year.Text = Caching.currentFile.File.Tag.Year.ToString();
+            TB_Comment.Text = Caching.currentFile.File.Tag.Comment;
 
             //TODO
             //Check for null
-            CB_Genre.SelectNewItem(newfile.Tag.FirstGenre);
+            CB_Genre.SelectNewItem(Caching.currentFile.File.Tag.FirstGenre);
 
-            IMG_Cover.Source = Images.GetCoverUI(newfile);
+            IMG_Cover.Source = Images.GetCoverForUI(Caching.currentFile.Cover);
         }
 
         private void SaveTags_Click(object sender, RoutedEventArgs e)
