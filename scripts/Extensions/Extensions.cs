@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -132,28 +132,31 @@ namespace ID3_Tag_Editor.Scripts.Extensions
         /// <param name="newContent">The content of the ComboBoxItem that will be selected.</param>
         public static void SelectNewItem(this ComboBox comboBox, string newContent)
         {
-            bool itemexists = false;
-
-            foreach (ComboBoxItem item in comboBox.Items)
-                if (item.Content.Equals(newContent))
-                {
-                    itemexists = true;
-
-                    comboBox.SelectedItem = item;
-
-                    break;
-                }
-            
-            if (!itemexists)
+            if (newContent != null)
             {
-                ComboBoxItem comboBoxItem = new ComboBoxItem()
+                bool itemexists = false;
+
+                foreach (ComboBoxItem item in comboBox.Items)
+                    if (item.Content.Equals(newContent))
+                    {
+                        itemexists = true;
+
+                        comboBox.SelectedItem = item;
+
+                        break;
+                    }
+
+                if (!itemexists)
                 {
-                    Content = newContent
-                };
+                    ComboBoxItem comboBoxItem = new ComboBoxItem()
+                    {
+                        Content = newContent
+                    };
 
-                comboBox.Items.Add(comboBoxItem);
+                    comboBox.Items.Add(comboBoxItem);
 
-                comboBox.SelectedItem = comboBoxItem;
+                    comboBox.SelectedItem = comboBoxItem;
+                }
             }
         }
 
