@@ -255,15 +255,9 @@ namespace ID3_Tag_Editor
 
         private void B_DeleteCover_Click(object sender, RoutedEventArgs e)
         {
-            if (currentPath != null)
-                if (IMG_Cover.Source != new BitmapImage(new Uri(Images.Ressources.Placeholder)) && IMG_Cover.Source != null)
-                {
-                    TagLib.File newfile = TagProcessing.GetTagsFromFile(currentPath);
-
-                    newfile.SetImage((TagLib.Picture)null);
-
-                    IMG_Cover.Source = Images.GetCoverUI(newfile);
-                }
+            if (Caching.currentFile.active == true &&
+                Caching.currentFile.Cover != null)
+                Caching.currentFile.Cover = null;
         }
 
         private void B_DownloadCover_Click(object sender, RoutedEventArgs e)
