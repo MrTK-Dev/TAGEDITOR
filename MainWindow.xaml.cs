@@ -262,7 +262,9 @@ namespace ID3_Tag_Editor
 
         private void B_DownloadCover_Click(object sender, RoutedEventArgs e)
         {
-
+            if (Caching.currentFile.active == true &&
+                Caching.currentFile.Cover != null)
+                Images.SaveBitMapToFile(Caching.currentFile.Cover, OpenStuff.Folders.GetPathFromDialog("Pick the final destination.", Paths.Defaults.Pictures), Caching.currentFile.File.Tag.Title);
         }
 
         #endregion
