@@ -249,7 +249,8 @@ namespace ID3_Tag_Editor
         {
             string path = OpenStuff.Files.GetPathFromDialog("Pick your cover.", Paths.Defaults.Pictures, OpenStuff.Files.Kinds.Image);
 
-            Console.Write(path);
+            if (path != null)
+                Caching.currentFile.Cover = new Bitmap(path);
         }
 
         private void B_DeleteCover_Click(object sender, RoutedEventArgs e)
