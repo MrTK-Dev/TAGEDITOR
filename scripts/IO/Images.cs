@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.User;
+﻿using ID3_Tag_Editor.Scripts.User;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -34,7 +34,7 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// <param name="bitMap">The given Bitmap that gets saved as a file.</param>
         /// <param name="newPath">The absolute path for the new file.</param>
         /// <param name="fileName">The name of the new file + ".png".</param>
-        public static void SaveBitMapToFile(Bitmap bitMap, string newPath, string fileName)
+        public static string SaveBitMapToFile(Bitmap bitMap, string newPath, string fileName)
         {
             string fullpath = newPath + @"\" + fileName + ".png";
 
@@ -46,6 +46,8 @@ namespace ID3_Tag_Editor.Scripts.IO
                 bitMap.Dispose();
                 copy.Dispose();
             }
+
+            return fullpath;
         }
 
         /// <summary>
@@ -54,13 +56,16 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// <param name="bitMap">The given Bitmap that gets cached.</param>
         /// <param name="fileName">The name of the new file + ".png".</param>
         /// <returns>The absolute path to the new file.</returns>
-        public static string CacheBitMap(Bitmap bitMap, string fileName)
+        public static string CacheBitMap(Bitmap bitMap, string fileName, string newPath)
         {
-            string newPath = Paths.GetFullPath(TEMP_Folder);
-
             SaveBitMapToFile(bitMap, newPath, fileName);
 
             return Path.Combine(newPath, fileName + ".png");
+        }
+
+        public static string CacheBitMap(Bitmap bitMap, string fileName)
+        {
+            return CacheBitMap(bitMap, fileName, Paths.GetFullPath(TEMP_Folder));
         }
 
         /// <summary>
@@ -79,7 +84,7 @@ namespace ID3_Tag_Editor.Scripts.IO
             Bitmap bitmap = TagLibEXT.GetCoverImage(newFile);
 
             if (bitmap == null)
-                return new BitmapImage(new Uri(@"C:\Users\Megaport\source\repos\ID3 Tag Editor\resources\no_cover.jpg"));
+                return new BitmapImage(new Uri(Images.Ressources.Placeholder));
 
             return new BitmapImage(new Uri(CacheBitMap(bitmap, newFile.Tag.Title)));
         }
