@@ -245,9 +245,13 @@ namespace ID3_Tag_Editor
 
         private void B_DownloadCover_Click(object sender, RoutedEventArgs e)
         {
-            /*if (Caching.currentFile.active == true &&
-                Caching.currentFile.Cover != null)*/
-                //Images.SaveBitMapToFile(Caching.currentFile.Cover, OpenStuff.Folders.GetPathFromDialog("Pick the final destination.", Paths.Defaults.Pictures), Caching.currentFile.File.Tag.Title);
+            /*
+             * Maybe add some kind of indicator or log system for the user.
+             * This function does return a string to the file!
+             */
+            if (Caching.currentFile.active == true &&
+                Caching.currentFile.Cover != null)
+                Images.SaveBitMapToFile(Caching.currentFile.Cover, OpenStuff.Folders.GetPathFromDialog("Pick the final destination.", Paths.Defaults.Pictures), TB_Title.Text);
         }
 
         #endregion
