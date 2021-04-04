@@ -1,4 +1,4 @@
-﻿using ID3_Tag_Editor.Scripts.Extensions;
+using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -24,6 +24,7 @@ namespace ID3_Tag_Editor.Scripts.Tags
             public string Title;
             public string Interpret;
             public string Album;
+            public string Comment;
             public int Year;
             public int Track;
             public string Genre;
@@ -57,21 +58,31 @@ namespace ID3_Tag_Editor.Scripts.Tags
             //TempScripts.ProcessAMatter(allFiles[i]);
         }
 
-        public static void SaveTags(SongFile songFile, string path)
+        public static void SaveTags(SongFile songFile)
         {
-            TagLib.File newFile = GetTagsFromFile(path);
+            TagLib.File newFile = GetTagsFromFile(Caching.currentFile.fullPath);
 
             newFile.SetInterpret(songFile.Interpret);
             newFile.Tag.Title = songFile.Title;
             newFile.Tag.Album = songFile.Album;
+            newFile.Tag.Comment = songFile.Comment;
             newFile.Tag.Track = (uint)songFile.Track;
             newFile.Tag.Year = (uint)songFile.Year;
             newFile.SetGenre(songFile.Genre);
-            newFile.SetImage(songFile.Cover);
+            newFile.SetImage(Caching.currentFile.Cover.ConvertToPicture());
 
-            newFile.Refresh(path);
+            
+            if (Caching.currentFile.Cover != null)
+            {
+                TagLib.File newFileTEMP = TagLib.File.Create(Caching.currentFile.fullPath);
+
+                newFileTEMP.SetImage(Caching.currentFile.Cover.ConvertToPicture());
+
+                newFileTEMP.Save();
+
+                newFileTEMP.Dispose();
+            }
         }
-
         #endregion
 
         #region Processing
@@ -278,7 +289,6 @@ namespace ID3_Tag_Editor.Scripts.Tags
         public class CachedFile
         {
             public string fullPath = null;
-            public TagLib.File File = null;
             public Bitmap Cover = null;
             public bool active = false;
         }

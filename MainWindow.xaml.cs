@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -169,35 +169,31 @@ namespace ID3_Tag_Editor
 
         #region newButtons
 
-        string currentPath;
-
         bool saveable = true;
 
         private void ImportSong_Click(object sender, RoutedEventArgs e)
         {
             //select file
-            currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music, OpenStuff.Files.Kinds.Music);
+            string currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music, OpenStuff.Files.Kinds.Music);
+
+            TagLib.File newFile = TagProcessing.GetTagsFromFile(currentPath);
 
             //Cache Info
             Caching.currentFile = new Caching.CachedFile
             {
                 fullPath = currentPath,
-                File = TagProcessing.GetTagsFromFile(currentPath),
+                Cover = newFile.GetCoverImage(),
                 active = true
             };
 
-            Caching.currentFile.Cover = Caching.currentFile.File.GetCoverImage();
+            TB_Interpret.Text = newFile.Tag.FirstPerformer;
+            TB_Title.Text = newFile.Tag.Title;
+            TB_Album.Text = newFile.Tag.Album;
+            TB_Track.Text = newFile.Tag.Track.ToString();
+            TB_Year.Text = newFile.Tag.Year.ToString();
+            TB_Comment.Text = newFile.Tag.Comment;
 
-            TB_Interpret.Text = Caching.currentFile.File.Tag.FirstPerformer;
-            TB_Title.Text = Caching.currentFile.File.Tag.Title;
-            TB_Album.Text = Caching.currentFile.File.Tag.Album;
-            TB_Track.Text = Caching.currentFile.File.Tag.Track.ToString();
-            TB_Year.Text = Caching.currentFile.File.Tag.Year.ToString();
-            TB_Comment.Text = Caching.currentFile.File.Tag.Comment;
-
-            //TODO
-            //Check for null
-            CB_Genre.SelectNewItem(Caching.currentFile.File.Tag.FirstGenre);
+            CB_Genre.SelectNewItem(newFile.Tag.FirstGenre);
 
             IMG_Cover.Source = Images.GetCoverForUI(Caching.currentFile.Cover);
         }
@@ -206,38 +202,17 @@ namespace ID3_Tag_Editor
         {
             if (saveable)
             {
-                string cover = null;
-
-                if (IMG_Cover.Source != new BitmapImage(new Uri(Images.Ressources.Placeholder)) && IMG_Cover.Source != null)
-                {
-                    Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource.LocalPath);
-
-                    cover = (IMG_Cover.Source as BitmapImage).UriSource.LocalPath;
-
-                    /*Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource);
-
-                    Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource.AbsoluteUri);
-
-                    Console.WriteLine((IMG_Cover.Source as BitmapImage).UriSource.AbsolutePath);*/
-
-                    //TB_Comment.Text = cover;
-                }
-
                 TagProcessing.SaveTags(
                     new TagProcessing.SongFile
                     {
                         Interpret = TB_Interpret.Text,
                         Title = TB_Title.Text,
                         Album = TB_Album.Text,
-                        //TODO
-                        //add checks to the UI to prevent Exceptions
+                        Comment = TB_Comment.Text,
                         Track = int.Parse(TB_Track.Text),
                         Year = int.Parse(TB_Year.Text),
-
-                        Cover = cover,
-
                         Genre = CB_Genre.GetSelectedContent()
-                    }, currentPath);
+                    });
             }
 
             else
@@ -250,21 +225,29 @@ namespace ID3_Tag_Editor
             string path = OpenStuff.Files.GetPathFromDialog("Pick your cover.", Paths.Defaults.Pictures, OpenStuff.Files.Kinds.Image);
 
             if (path != null)
+            {
                 Caching.currentFile.Cover = new Bitmap(path);
+
+                IMG_Cover.Source = Images.GetCoverForUI(Caching.currentFile.Cover);
+            }
         }
 
         private void B_DeleteCover_Click(object sender, RoutedEventArgs e)
         {
             if (Caching.currentFile.active == true &&
                 Caching.currentFile.Cover != null)
+            {
                 Caching.currentFile.Cover = null;
+
+                IMG_Cover.Source = Images.GetCoverForUI(null);
+            }
         }
 
         private void B_DownloadCover_Click(object sender, RoutedEventArgs e)
         {
-            if (Caching.currentFile.active == true &&
-                Caching.currentFile.Cover != null)
-                Images.SaveBitMapToFile(Caching.currentFile.Cover, OpenStuff.Folders.GetPathFromDialog("Pick the final destination.", Paths.Defaults.Pictures), Caching.currentFile.File.Tag.Title);
+            /*if (Caching.currentFile.active == true &&
+                Caching.currentFile.Cover != null)*/
+                //Images.SaveBitMapToFile(Caching.currentFile.Cover, OpenStuff.Folders.GetPathFromDialog("Pick the final destination.", Paths.Defaults.Pictures), Caching.currentFile.File.Tag.Title);
         }
 
         #endregion

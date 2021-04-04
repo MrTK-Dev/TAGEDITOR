@@ -1,3 +1,4 @@
+using ID3_Tag_Editor.Scripts.Tags;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -38,42 +39,54 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// </summary>
         /// <param name="Song"></param>
         /// <param name="newPicture"></param>
-        public static void SetImage2(TagLib.File Song, TagLib.Picture newPicture)
-        {
-            //some var that I do not get
-            TagLib.IPicture[] pic = new TagLib.IPicture[1];
-            pic[0] = newPicture;
-
-            //overwrite cover image
-            Song.Tag.Pictures = pic;
-
-            //TODO this should be done in the main methode
-            Song.Save();
-        }
-
-        /// <summary>
-        /// Sets the cover image of the given song to the given Picture. Setting it to "null" should result in a deletion.
-        /// </summary>
-        /// <param name="Song"></param>
-        /// <param name="newPicture"></param>
         public static void SetImage(this TagLib.File Song, TagLib.Picture newPicture)
         {
             if (newPicture != null)
-            {
-                TagLib.IPicture[] pic = new TagLib.IPicture[1];
+                if (Song.Tag.Pictures.FirstOrDefault() != newPicture)
+                {
+                    TagLib.IPicture[] pic = new TagLib.IPicture[1];
 
-                pic[0] = newPicture;
+                    pic[0] = newPicture;
 
-                Song.Tag.Pictures = pic;
-            }
+                    Song.Tag.Pictures = pic;
+                }
+
+                else {}
 
             else
+            {
+                Console.WriteLine("YOOO");
+
                 Song.Tag.Pictures = new TagLib.IPicture[0];
+            }
+                
         }
 
-        public static void SetImage(this TagLib.File Song, string fullPath) => Song.SetImage(new TagLib.Picture(fullPath));
+        public static void SetImage(this TagLib.File Song, string fullPath)
+        {
+            if (fullPath == null)
+            {
+                Song.SetImage((TagLib.Picture)null);
 
-        //public static void Delete
+                Console.WriteLine("Cover is = " + fullPath);
+            }
+                
+
+            else
+                Song.SetImage(new TagLib.Picture(fullPath));
+        }
+
+        public static void SetInterpret(this TagLib.File item, string newInterpret)
+        {
+            if (newInterpret != null)
+                item.Tag.Performers = new string[] { newInterpret };
+        }
+
+        public static void SetGenre(this TagLib.File item, string newGenre)
+        {
+            if (newGenre != null)
+                item.Tag.Genres = new string[] { newGenre };
+        }
 
         /// <summary>
         /// This refreshes the file to get rid of unused bytes and saves all made changes.
