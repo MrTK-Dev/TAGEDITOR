@@ -108,5 +108,29 @@ namespace ID3_Tag_Editor.Scripts.IO
                 Int32Rect.Empty,
                 BitmapSizeOptions.FromEmptyOptions());
         }
+
+        public static TagLib.Picture ConvertToPicture(this Bitmap bitmap)
+        {
+            if (bitmap != null)
+            {
+                MemoryStream memoryStream = new MemoryStream();
+
+                bitmap.Save(memoryStream, ImageFormat.Png);
+
+                memoryStream.Position = 0;
+
+                TagLib.ByteVector vs = TagLib.ByteVector.FromStream(memoryStream);
+
+                TagLib.Picture newpic = new TagLib.Picture(vs);
+
+                vs.Clear();
+
+                memoryStream.Close();
+
+                return newpic;
+            }
+
+            return null;
+        }
     }
 }
