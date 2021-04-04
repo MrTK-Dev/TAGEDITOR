@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.Tags;
+﻿using ID3_Tag_Editor.Scripts.Tags;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -93,38 +93,24 @@ namespace ID3_Tag_Editor.Scripts.IO
         /// </summary>
         /// <param name="Item"></param>
         /// <param name="Source"></param>
+
         public static void Refresh(this TagLib.File Item, string Source)
         {
-            //temporary file
-            TagLib.File newSong2 = TagLib.File.Create(Source);
-
-            //temporary tag that is null
-            TagLib.Tag tempTag = new TagLib.Id3v2.Tag();
-
-            //cache tags
-            Item.Tag.CopyTo(tempTag, true);
-
-            //clear all tags
-            Item.RemoveTags(TagLib.TagTypes.AllTags);
-
             Item.Save();
             Item.Dispose();
 
-            //rewrite the old tags to the file
-            tempTag.CopyTo(newSong2.Tag, true);
+            TagLib.File tagFile = TagLib.File.Create(Source);
+            TagLib.Tag tempTag = new TagLib.Id3v2.Tag();
+            tagFile.Tag.CopyTo(tempTag, true);
+            tagFile.RemoveTags(TagLib.TagTypes.AllTags);
+            tagFile.Save();
+            tagFile.Dispose();
 
-            newSong2.Save();
-            newSong2.Dispose();
-        }
 
-        public static void SetInterpret(this TagLib.File item, string newInterpret)
-        {
-            item.Tag.Performers = new string[] { newInterpret };
-        }
-
-        public static void SetGenre(this TagLib.File item, string newGenre)
-        {
-            item.Tag.Genres = new string[] { newGenre };
+            TagLib.File tagFile2 = TagLib.File.Create(Source);
+            tempTag.CopyTo(tagFile2.Tag, true);
+            tagFile2.Save();
+            tagFile2.Dispose();
         }
     }
 }

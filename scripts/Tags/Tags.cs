@@ -1,4 +1,4 @@
-using ID3_Tag_Editor.Scripts.Extensions;
+﻿using ID3_Tag_Editor.Scripts.Extensions;
 using ID3_Tag_Editor.Scripts.IO;
 using ID3_Tag_Editor.Scripts.User;
 using System;
@@ -71,6 +71,7 @@ namespace ID3_Tag_Editor.Scripts.Tags
             newFile.SetGenre(songFile.Genre);
             newFile.SetImage(Caching.currentFile.Cover.ConvertToPicture());
 
+            newFile.Refresh(Caching.currentFile.fullPath);
             
             if (Caching.currentFile.Cover != null)
             {
