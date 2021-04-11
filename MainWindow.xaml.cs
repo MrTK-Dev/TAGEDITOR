@@ -265,7 +265,7 @@ namespace ID3_Tag_Editor
             bool parseable = Int32.TryParse(textBox.Text, out _);
 
             if (parseable)
-                textBox.Foreground = Brushes.Black;
+                textBox.Foreground = Brushes.White;
 
             else
                 textBox.Foreground = Brushes.Red;
