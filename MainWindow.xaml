@@ -132,6 +132,8 @@
                 <Button x:Name="ImportSong" Content="Import Song" Height="50" Click="ImportSong_Click"/>
 
                 <Button x:Name="SaveTags" Content="Save Tags" Height="50" Click="SaveTags_Click"/>
+
+                <TextBox x:Name="Logger" Text="Test" Height="200" VerticalScrollBarVisibility="Auto" IsReadOnly="True"></TextBox>
             </StackPanel>
         </Grid>
         
