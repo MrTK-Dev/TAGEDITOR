@@ -64,9 +64,6 @@ namespace ID3_Tag_Editor
 
 
             Preferences.LoadSettings();
-
-            //test
-            //TagProcessing.ProcessAllSongs();
         }
       
         /*
@@ -265,7 +262,7 @@ namespace ID3_Tag_Editor
             bool parseable = Int32.TryParse(textBox.Text, out _);
 
             if (parseable)
-                textBox.Foreground = Brushes.White;
+                textBox.Foreground = Brushes.Black;
 
             else
                 textBox.Foreground = Brushes.Red;
