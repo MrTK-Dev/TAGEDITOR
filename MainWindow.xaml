@@ -133,12 +133,29 @@
 
                 <Button x:Name="SaveTags" Content="Save Tags" Height="50" Click="SaveTags_Click"/>
 
-                <TextBox x:Name="Logger" Text="Test" Height="200" VerticalScrollBarVisibility="Auto" IsReadOnly="True"></TextBox>
+                <!-- Logger -->
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0" Text="Logger" VerticalAlignment="Bottom"/>
+
+                        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Button Content="Export"/>
+                            <Button Content="Clear"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBox x:Name="Logger" Text="Test" Height="200" VerticalScrollBarVisibility="Auto" IsReadOnly="True"></TextBox>
+                </StackPanel>
             </StackPanel>
         </Grid>
-        
+
     </StackPanel>
-    
+
     <!-- First Try
      
     <Grid>
