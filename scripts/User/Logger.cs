@@ -10,4 +10,9 @@ namespace ID3_Tag_Editor.Scripts.User
     {
 
     }
+
+    public static class Log
+    {
+        
+    }
 }
