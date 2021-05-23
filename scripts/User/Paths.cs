@@ -27,6 +27,8 @@ namespace ID3_Tag_Editor.Scripts.User
             public static string Music = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
 
             public static string Pictures = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+            public static string Documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
         public static string GetApplicationPath()
