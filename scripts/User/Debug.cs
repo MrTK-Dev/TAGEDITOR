@@ -33,5 +33,7 @@ namespace ID3_Tag_Editor.Scripts.User
             AUTOMATION,
             GUI
         }
+
+        public static readonly string PathToLogs = @"User/Logs.log";
     }
 }
