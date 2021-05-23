@@ -27,6 +27,8 @@ namespace ID3_Tag_Editor.Scripts.User
             public static string Music = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
 
             public static string Pictures = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+            public static string Documents = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         }
 
         public static string GetApplicationPath()
@@ -42,6 +44,12 @@ namespace ID3_Tag_Editor.Scripts.User
             return GetFullPath(Path, null);
         }
 
+        /// <summary>
+        /// Adds the application path to the given path and returns it. This results in the absolute path.
+        /// </summary>
+        /// <param name="Path">Relative path to the file.</param>
+        /// <param name="fileName">Name of the file.</param>
+        /// <returns>Absolute path to the file.</returns>
         public static string GetFullPath(string Path, string fileName)
         {
             if (fileName == null)

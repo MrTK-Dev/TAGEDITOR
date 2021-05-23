@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ID3_Tag_Editor.Scripts.User;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,9 @@ namespace ID3_Tag_Editor
     /// </summary>
     public partial class App : Application
     {
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            //
+        }
     }
 }

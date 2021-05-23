@@ -70,6 +70,20 @@ namespace ID3_Tag_Editor.Scripts.IO
 
         }*/
 
+        #region Write
+
+        /// <summary>
+        /// Appends the given text to the given file.
+        /// </summary>
+        /// <param name="Line">Content as a string.</param>
+        /// <param name="fullPath">Absolut path to the file. The name of the file has to be included!</param>
+        public static void AppendToFile(string Line, string fullPath)
+        {
+            File.AppendAllText(fullPath, "\n" + Line);
+        }
+
+        #endregion
+
         public static void CreateDirectoryIf(string Path)
         {
             CreateDirectoryIf(Path, true);

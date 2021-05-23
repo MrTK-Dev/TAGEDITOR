@@ -113,6 +113,7 @@
     <Compile Include="Scripts\IO\TagLibEXT.cs" />
     <Compile Include="Scripts\Tags\Tags.cs" />
     <Compile Include="Scripts\UI\OpenStuff.cs" />
+    <Compile Include="Scripts\User\Debug.cs" />
     <Compile Include="Scripts\User\Logger.cs" />
     <Compile Include="Scripts\User\Paths.cs" />
     <Compile Include="Scripts\UI\PanelHandler.cs" />
