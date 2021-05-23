@@ -37,6 +37,8 @@ namespace ID3_Tag_Editor
         {
             InitializeComponent();
 
+            _Debug.Log("Application has started", _Debug.Level.INFO, new _Debug.Tags[] { _Debug.Tags.GUI }, true);
+
             //TODO
             //Add a better place for this
             Images.ClearCache();
@@ -173,26 +175,35 @@ namespace ID3_Tag_Editor
             //select file
             string currentPath = OpenStuff.Files.GetPathFromDialog(null, Paths.Defaults.Music, OpenStuff.Files.Kinds.Music);
 
-            TagLib.File newFile = TagProcessing.GetTagsFromFile(currentPath);
-
-            //Cache Info
-            Caching.currentFile = new Caching.CachedFile
+            if (currentPath != null)
             {
-                fullPath = currentPath,
-                Cover = newFile.GetCoverImage(),
-                active = true
-            };
 
-            TB_Interpret.Text = newFile.Tag.FirstPerformer;
-            TB_Title.Text = newFile.Tag.Title;
-            TB_Album.Text = newFile.Tag.Album;
-            TB_Track.Text = newFile.Tag.Track.ToString();
-            TB_Year.Text = newFile.Tag.Year.ToString();
-            TB_Comment.Text = newFile.Tag.Comment;
+                TagLib.File newFile = TagProcessing.GetTagsFromFile(currentPath);
 
-            CB_Genre.SelectNewItem(newFile.Tag.FirstGenre);
+                //Cache Info
+                Caching.currentFile = new Caching.CachedFile
+                {
+                    fullPath = currentPath,
+                    Cover = newFile.GetCoverImage(),
+                    active = true
+                };
 
-            IMG_Cover.Source = Images.GetCoverForUI(Caching.currentFile.Cover);
+                TB_Interpret.Text = newFile.Tag.FirstPerformer;
+                TB_Title.Text = newFile.Tag.Title;
+                TB_Album.Text = newFile.Tag.Album;
+                TB_Track.Text = newFile.Tag.Track.ToString();
+                TB_Year.Text = newFile.Tag.Year.ToString();
+                TB_Comment.Text = newFile.Tag.Comment;
+
+                CB_Genre.SelectNewItem(newFile.Tag.FirstGenre);
+
+                IMG_Cover.Source = Images.GetCoverForUI(Caching.currentFile.Cover);
+
+                _Debug.Log("Imported: " + currentPath, _Debug.Level.INFO, true);
+            }
+
+            else
+                _Debug.Log("Import was canceled!", _Debug.Level.INFO, true);
         }
 
         private void SaveTags_Click(object sender, RoutedEventArgs e)
@@ -268,6 +279,15 @@ namespace ID3_Tag_Editor
                 textBox.Foreground = Brushes.Red;
 
             saveable = parseable;
+        }
+
+        #endregion
+
+        #region UI Functions
+
+        public void UpdateLogger(string content)
+        {
+            TB_Logger.Text = content;
         }
 
         #endregion
